@@ -18,11 +18,11 @@
 
 <br>
 
-- A passionate Self-taught Front-end developer
+- A passionate Self-taught Machine Learning Researcher 
 - Playing CTF's at spare time
-- Currently learning Web Development by Self
+- Currently learning 3D Taking Face Genenration using Stable Diffsin Models
 - Personal website [link](https://www.0xabdulkhalid.ml)
-- I’m currently open for an Intern or a new job opportunity, this is [my resume](https://read.cv/0xabdulkhalid)
+- I’m currently open for an Intern or a new job opportunity, this is [my resume](https://drive.google.com/file/d/1fCgFeyqKW64yksPEDkH04Z1fkW3-46Cf/view?usp=drive_link)
 
 <br><br>
 
