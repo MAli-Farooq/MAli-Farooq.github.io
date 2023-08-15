@@ -50,7 +50,7 @@
   
 - **My Publications**:
     
-    ![C](https://scholar.google.com.pk/citations?user=Km-BcFoAAAAJ&hl=en)
+    ![Google Scholar](https://scholar.google.com.pk/citations?user=Km-BcFoAAAAJ&hl=en)
   
 
 <br>
