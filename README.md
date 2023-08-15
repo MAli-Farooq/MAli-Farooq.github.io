@@ -19,9 +19,9 @@
 <br>
 
 - A passionate Self-taught Machine Learning Researcher 
-- Playing CTF's at spare time
-- Currently learning 3D Taking Face Genenration using Stable Diffsin Models
-- Personal website [link](https://www.0xabdulkhalid.ml)
+- Playing CS-GO at spare time
+- Currently learning 3D Taking Face Genenration using Stable Diffsion Models
+- Personal website [link](https://)
 - I’m currently open for an Intern or a new job opportunity, this is [my resume](https://drive.google.com/file/d/1fCgFeyqKW64yksPEDkH04Z1fkW3-46Cf/view?usp=drive_link)
 
 <br><br>
