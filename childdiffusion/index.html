@@ -166,11 +166,15 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-              In this research work, we proposed a novel ChildGAN, a pair of GAN networks for generating synthetic boys and girls facial data derived from StyleGAN2. 
-              ChildGAN is built by performing smooth domain transfer using transfer learning. It provides photo-realistic, high-quality data samples. 
-              A large-scale dataset is rendered with a variety of smart facial transformations: facial expressions, age progression, eye blink effects, head pose, skin and hair color variations, and variable lighting conditions. 
-              The dataset comprises more than 300k distinct data samples. Further, the uniqueness and characteristics of the rendered facial features are validated by running different computer vision application tests which include CNN-based child gender classifier, face localization and facial landmarks detection test, identity similarity evaluation using ArcFace, and lastly running eye detection and eye aspect ratio tests.
-              The results demonstrate that synthetic child facial data of high quality offers an alternative to the cost and complexity of collecting a large-scale dataset from real children. 
+              In this research work we have proposed high-level ChildDiffusion framework capable of generating photorealistic child facial samples and further embedding several intelligent
+augmentations on child facial data using short text prompts, detailed and complex textual guidance genearted via LLMs, and further image to image transformation using text guidance
+control conditioning thus providing an opportunity to curate fully synthetic large scale child datasets. The framework is validated by rendering high-quality child faces representing ethnicity data,
+micro expressions, face pose variations, eye blinking effects, facial accessories, different hair colours and styles, aging, multiple and different child gender subjects in a single frame. Addressing
+privacy concerns regarding child data acquisition requires a comprehensive approach that involves legal, ethical, and technological considerations. Keeping this in view this framework can be adapted to synthesise child facial data which can be effectively
+used for numerous downstream machine learning tasks. The proposed method circumvents common issues encountered in generative AI tools, such as temporal inconsistency and limited
+control over the rendered outputs. As an exemplary use case we have open-sourced child ethnicity data consisting of 2.5k child facial samples of five different classes which includes African, Asian, White, Indian, and Hispanic races by deploying the model
+in production inference phase. The rendered data undergoes rigorous qualitative as well as quantitative tests to cross validate its efficacy and further fine-tuning Yolo architecture for detecting
+and classifying child ethnicity as an exemplary downstream machine learning task. 
           </p>
         </div>
         <div class="item">
