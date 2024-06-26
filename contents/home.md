@@ -3,6 +3,12 @@ Postdoctoral Researcher and Machine Learning Research Intern with expertise in C
 #### GitHub
 [![senli1073](https://img.shields.io/badge/Muhammad-github-blue?logo=github)](https://github.com/MAli-Farooq)
 
+#### Google Scholar Profile
+[[social]]
+  icon = "google-scholar"
+  icon_pack = "ai"
+  link = "https://scholar.google.com.pk/citations?user=Km-BcFoAAAAJ&hl=en"
+
 
 
 #### Email
