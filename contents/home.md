@@ -1,7 +1,7 @@
 Postdoctoral Researcher and Machine Learning Research Intern with expertise in Computer Vision, ADAS, Sensor Fusion, Smart Embedded Systems, Edge Computing, Medical Imaging and Autonomous Systems | EU H2020 Scholarship Recipient
 
 #### GitHub
-#[![senli1073](https://img.shields.io/badge/Muhammad-github-blue?logo=github)](https://github.com/senli1073)
+#[![senli1073](https://img.shields.io/badge/Muhammad Ali Farooq-github-blue?logo=github)](https://github.com/MAli-Farooq)
 [![MAli-Farooq](https://img.shields.io/badge/MAli-Farooq-github-blue?logo=github)](https://github.com/MAli-Farooq)
 
 
