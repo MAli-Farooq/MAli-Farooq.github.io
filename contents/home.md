@@ -6,9 +6,7 @@ Postdoctoral Researcher and Machine Learning Research Intern with expertise in C
 #### Google Scholar Profile
 [![senli1073](https://img.shields.io/badge/Muhammad-Scholar-blue?logo=github)](https://scholar.google.com.pk/citations?user=Km-BcFoAAAAJ&hl=en)
 [[social]]
-  icon = "google-scholar"
-  icon_pack = "ai"
-  link = "https://scholar.google.com.pk/citations?user=Km-BcFoAAAAJ&hl=en"
+  
 
 
 
