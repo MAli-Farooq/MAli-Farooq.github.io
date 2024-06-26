@@ -13,4 +13,4 @@ muhammadali.farooq[at]universityofgalway.ie
 2018.08 - 2022.06, Data Science and Big Data Technology, School of Computer Science and Technology, China University of Mining and Technology.
 
 #### Research Interests
-Deep Learning, Artificial Intelligence Seismology, Mine Microseismic.
+Deep Learning, Artificial Intelligence, Machine Learning, Sensor Fusion, Medical Imaging, Thermal Imaging, Edge Computing
