@@ -1,9 +1,9 @@
-- First-prize Academic Scholarship, 2023.
+- EU Horizon H2020 Schlorship, 2019.
 
-- Freshman Academic Scholarship, 2022.
+- NUIG Employability Award, 2021.
 
-- Excellent Graduation Project of Jiangsu Province, 2022.
+- First-prize Poster Award, Univeristy of Galway CSE Program, 2023.
 
-- First-prize Enterprise Scholarship, 2021.
+- Lifts Leadership Award, 2022.
 
 - First-prize Academic Scholarship, 2019.
