@@ -5,7 +5,7 @@ He is currently pursuing a Master's Degree in computer science, at School of Com
 
 
 #### Email
-sli[at]cumt.edu.cn
+muhammadali.farooq[at]universityofgalway.ie
 
 #### Education
 2022.08 - present, Computer Science and Technology, School of Computer Science and Technology, China University of Mining and Technology.
