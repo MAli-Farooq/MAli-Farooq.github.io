@@ -8,6 +8,8 @@ Journal Publication
 
 - <strong>Muhammad Ali Farooq* </strong>, Wang Yao, Gabriel Costache, and Peter Corcoran. "Childgan: large scale synthetic child facial data using domain adaptation in stylegan." IEEE Access (2023).</strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/10268402)
 
+- <strong>Muhammad Ali Farooq* </strong>, Hossein Javidnia, and Peter Corcoran. "Performance estimation of the state-of-the-art convolution neural networks for thermal images-based gender classification system." Journal of Electronic Imaging 29, no. 6 (2020): 063004-063004.</strong> [[Paper]](https://www.spiedigitallibrary.org/journals/journal-of-electronic-imaging/volume-29/issue-6/063004/Performance-estimation-of-the-state-of-the-art-convolution-neural/10.1117/1.JEI.29.6.063004.full)
+
 - X. Yang, <strong>S. Li</strong>, A. Cao*, C. Wang*, Y. Liu, X. Bai, and Q. Niu (2023). Deep Transfer Learning for P-wave Arrival Identification and Automatic Seismic Source Location in Underground Mines. <strong>In Revision.</strong>
 
 - <strong>S. Li</strong>, X. Yang*, A. Cao*, C. Wang, Y. Liu, Y. Liu, and Q. Niu (2024). SeisT: A Foundational Deep-Learning Model for Earthquake Monitoring Tasks. <strong>IEEE Transactions on Geoscience and Remote Sensing</strong>. [[Paper]](https://doi.org/10.1109/TGRS.2024.3371503) [[Code]](https://github.com/senli1073/SeisT)
