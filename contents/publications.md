@@ -1,6 +1,4 @@
 Journal Publication
-
-- <strong>S. Li</strong>, X. Yang*, K. Fan, A. Cao*, Y. Liu, and C. Wang (2024). Label Noise-Robust Learning for Microseismic Arrival Time Picking. <strong>In Revision.</strong> [[Code]](https://github.com/senli1073/LNRL)
   
 - <strong>Muhammad Ali Farooq* </strong>, Peter Corcoran, Cosmin Rotariu, and Waseem Shariff. "Object detection in thermal spectrum for advanced driver-assistance systems (ADAS)." IEEE Access 9 (2021): 156465-156481.</strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/9618926)
 
