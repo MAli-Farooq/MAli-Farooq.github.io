@@ -8,6 +8,8 @@ Journal Publication
 
 - <strong>Muhammad Ali Farooq* </strong>, Hossein Javidnia, and Peter Corcoran. "Performance estimation of the state-of-the-art convolution neural networks for thermal images-based gender classification system." Journal of Electronic Imaging 29, no. 6 (2020): 063004-063004.</strong> [[Paper]](https://www.spiedigitallibrary.org/journals/journal-of-electronic-imaging/volume-29/issue-6/063004/Performance-estimation-of-the-state-of-the-art-convolution-neural/10.1117/1.JEI.29.6.063004.full)
 
+- <strong>Muhammad Ali Farooq* </strong>, Waseem Shariff, David O’callaghan, Arcangelo Merla, and Peter Corcoran. "On the role of thermal imaging in automotive applications: A critical review." IEEE Access 11 (2023): 25152-25173.</strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/10064306)
+
 - 
 
 
