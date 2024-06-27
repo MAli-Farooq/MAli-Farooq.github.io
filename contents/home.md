@@ -14,11 +14,11 @@ Postdoctoral Researcher and Machine Learning Research Intern with expertise in C
 muhammadali.farooq[at]universityofgalway.ie
 
 #### Education
-2022.09 - Ph.D, Electrical and Electronic Engineering, School of Engineering, National University of Ireland Galway (NUIG).
+- 2022.09 - Ph.D, Electrical and Electronic Engineering, School of Engineering, National University of Ireland Galway (NUIG).
 
-2017.05 - Masters of Science (MS), Electrical Control Engineering, School of Electrical Engineering, National University of Sciences and Technology (NUST) Pakistan.
+- 2017.05 - Masters of Science (MS), Electrical Control Engineering, School of Electrical Engineering, National University of Sciences and Technology (NUST) Pakistan.
 
-2012.12 - Bachelors of Engineering (BE), Electronic Engineering, FEST Department, IQRA Univeristy (IU) Pakistan.
+- 2012.12 - Bachelors of Engineering (BE), Electronic Engineering, FEST Department, IQRA Univeristy (IU) Pakistan.
 
 #### Research Interests
-Deep Learning, Artificial Intelligence, Machine Learning, Sensor Fusion, Medical Imaging, Thermal Imaging, Edge Computing
+Deep Learning, Artificial Intelligence, Machine Learning, Sensor Fusion, Medical Imaging, Thermal Imaging, Edge Computing, Generative AI
