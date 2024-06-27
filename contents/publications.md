@@ -1,7 +1,10 @@
 Journal Publication
 
 - <strong>S. Li</strong>, X. Yang*, K. Fan, A. Cao*, Y. Liu, and C. Wang (2024). Label Noise-Robust Learning for Microseismic Arrival Time Picking. <strong>In Revision.</strong> [[Code]](https://github.com/senli1073/LNRL)
+  
 - <strong>Muhammad Ali Farooq* </strong>, Peter Corcoran, Cosmin Rotariu, and Waseem Shariff. "Object detection in thermal spectrum for advanced driver-assistance systems (ADAS)." IEEE Access 9 (2021): 156465-156481.</strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/9618926)
+
+- <strong>Muhammad Ali Farooq* </strong>, Waseem Shariff, and Peter Corcoran. "Evaluation of thermal imaging on embedded GPU platforms for application in vehicular assistance systems." IEEE Transactions on Intelligent Vehicles 8, no. 2 (2022): 1130-1144.</strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/9732195)
 
 - X. Yang, <strong>S. Li</strong>, A. Cao*, C. Wang*, Y. Liu, X. Bai, and Q. Niu (2023). Deep Transfer Learning for P-wave Arrival Identification and Automatic Seismic Source Location in Underground Mines. <strong>In Revision.</strong>
 
