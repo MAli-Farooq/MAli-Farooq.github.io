@@ -6,6 +6,8 @@ Journal Publication
 
 - <strong>Muhammad Ali Farooq* </strong>, Waseem Shariff, and Peter Corcoran. "Evaluation of thermal imaging on embedded GPU platforms for application in vehicular assistance systems." IEEE Transactions on Intelligent Vehicles 8, no. 2 (2022): 1130-1144.</strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/9732195)
 
+- <strong>Muhammad Ali Farooq* </strong>, Wang Yao, Gabriel Costache, and Peter Corcoran. "Childgan: large scale synthetic child facial data using domain adaptation in stylegan." IEEE Access (2023).</strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/10268402)
+
 - X. Yang, <strong>S. Li</strong>, A. Cao*, C. Wang*, Y. Liu, X. Bai, and Q. Niu (2023). Deep Transfer Learning for P-wave Arrival Identification and Automatic Seismic Source Location in Underground Mines. <strong>In Revision.</strong>
 
 - <strong>S. Li</strong>, X. Yang*, A. Cao*, C. Wang, Y. Liu, Y. Liu, and Q. Niu (2024). SeisT: A Foundational Deep-Learning Model for Earthquake Monitoring Tasks. <strong>IEEE Transactions on Geoscience and Remote Sensing</strong>. [[Paper]](https://doi.org/10.1109/TGRS.2024.3371503) [[Code]](https://github.com/senli1073/SeisT)
