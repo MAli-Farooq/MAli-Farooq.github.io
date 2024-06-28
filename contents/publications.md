@@ -31,6 +31,8 @@ Submitted Journal Papers
   <strong> *Paper submitted in IEEE Trasactions Journal* </strong>
 
 
-
 Conference Publications 
+
+ <strong>Muhammad Ali Farooq* </strong>, Wang Yao, Michael Schukat, Mark A. Little, and Peter Corcoran. "Derm-t2im: Harnessing synthetic skin lesion data via stable diffusion models for enhanced skin disease classification using vit and cnn." arXiv preprint arXiv:2401.05159 (2024). </strong> [[Paper]](https://arxiv.org/abs/2401.05159)
+ <strong> *Paper accepted in IEEE EMBC 2024 Conference* </strong>
 
