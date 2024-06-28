@@ -32,23 +32,20 @@
  - <strong>Muhammad Ali Farooq* </strong>, Wang Yao, Michael Schukat, Mark A. Little, and Peter Corcoran. "Derm-t2im: Harnessing synthetic skin lesion data via stable diffusion models for enhanced skin disease classification using vit and cnn." arXiv preprint arXiv:2401.05159 (2024). [Paper] Paper accepted in IEEE EMBC 2024 Conference
 
      - Abaid, Ayman, <strong>Muhammad Ali Farooq* </strong> , Niamh Hynes, Peter Corcoran, and Ihsan Ullah. "Synthesizing CTA Image Data for Type-B Aortic Dissection using Stable Diffusion Models." CoRR (2024). [Paper] Paper accepted in IEEE EMBC 2024 Conference
-
-    Muhammad Ali Farooq* , Muhammad Aatif Mobeen Azhar, and Rana Hammad Raza. "Automatic lesion detection system (ALDS) for skin cancer classification using SVM and neural classifiers." In 2016 IEEE 16th international conference on bioinformatics and bioengineering (BIBE), pp. 301-308. IEEE, 2016. [Paper]
-
-    Muhammad Ali Farooq* , and Peter Corcoran. "Infrared imaging for human thermography and breast tumor classification using thermal images." In 2020 31st Irish Signals and Systems Conference (ISSC), pp. 1-6. IEEE, 2020. [Paper]
-
-    Muhammad Ali Farooq* , Viktor Varkarakis, and Peter Corcoran. "Advanced Deep Learning Methodologies for Skin Cancer Classification in Prodromal Stages." (2019). [Paper]
-
-    Muhammad Ali Farooq* , Dan Bigioi, Rishabh Jain, Wang Yao, Mariam Yiwere, and Peter Corcoran. "Synthetic Speaking Children–Why We Need Them and How to Make Them." In 2023 International Conference on Speech Technology and Human-Computer Dialogue (SpeD), pp. 36-41. IEEE, 2023. [Paper]
-
-    Muhammad Ali Farooq* , Waseem Shariff, Faisal Khan, and Peter Corcoran. "Development, optimization, and deployment of thermal forward vision systems for advance vehicular applications on edge devices." In Fifteenth International Conference on Machine Vision (ICMV 2022), vol. 12701, p. 1270102. SPIE, 2023./strong> [Paper]
-
-    Shariff, Waseem, Muhammad Ali Farooq* , Joe Lemley, and Peter Corcoran. "Event-based YOLO object detection: Proof of concept for forward perception system." In Fifteenth International Conference on Machine Vision (ICMV 2022), vol. 12701, pp. 74-80. SPIE, 2023. [Paper]
+     
+     - Muhammad Ali Farooq* , Muhammad Aatif Mobeen Azhar, and Rana Hammad Raza. "Automatic lesion detection system (ALDS) for skin cancer classification using SVM and neural classifiers." In 2016 IEEE 16th international conference on bioinformatics and bioengineering (BIBE), pp. 301-308. IEEE, 2016. [Paper]
+     
+     - Muhammad Ali Farooq* , and Peter Corcoran. "Infrared imaging for human thermography and breast tumor classification using thermal images." In 2020 31st Irish Signals and Systems Conference (ISSC), pp. 1-6. IEEE, 2020. [Paper]
+     
+     - Muhammad Ali Farooq* , Viktor Varkarakis, and Peter Corcoran. "Advanced Deep Learning Methodologies for Skin Cancer Classification in Prodromal Stages." (2019). [Paper]
+     
+     - Muhammad Ali Farooq* , Dan Bigioi, Rishabh Jain, Wang Yao, Mariam Yiwere, and Peter Corcoran. "Synthetic Speaking Children–Why We Need Them and How to Make Them." In 2023 International Conference on Speech Technology and Human-Computer Dialogue (SpeD), pp. 36-41. IEEE, 2023. [Paper]
+     
+     - Muhammad Ali Farooq* , Waseem Shariff, Faisal Khan, and Peter Corcoran. "Development, optimization, and deployment of thermal forward vision systems for advance vehicular applications on edge devices." In Fifteenth International Conference on Machine Vision (ICMV 2022), vol. 12701, p. 1270102. SPIE, 2023./strong> [Paper]
+     -
+     - Shariff, Waseem, Muhammad Ali Farooq* , Joe Lemley, and Peter Corcoran. "Event-based YOLO object detection: Proof of concept for forward perception system." In Fifteenth International Conference on Machine Vision (ICMV 2022), vol. 12701, pp. 74-80. SPIE, 2023. [Paper]
 
 
 - 
 
-
-
-Conference Publications 
 
