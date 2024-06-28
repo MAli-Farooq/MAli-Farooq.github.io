@@ -16,6 +16,8 @@ Journal Publication
 
 - Yao, Wang, <strong>Muhammad Ali Farooq* </strong>, Joseph Lemley, and Peter Corcoran. "A study on the effect of ageing in facial authentication and the utility of data augmentation to reduce performance bias across age groups." IEEE Access (2023).</strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/10242105)
 
+- Dilmaghani, Mehdi Sefidgar, Waseem Shariff, <strong>Muhammad Ali Farooq* </strong>, Joe Lemley, and Peter Corcoran. "Optimization of Event Camera Bias Settings for a Neuromorphic Driver Monitoring System." IEEE Access (2024).</strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/10453572)
+
 - 
 
 
