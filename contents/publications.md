@@ -14,13 +14,13 @@
 
 - Faisal Khan,<strong>Muhammad Ali Farooq* </strong>, Waseem Shariff, Shubhajit Basak, and Peter Corcoran. "Towards monocular neural facial depth estimation: Past, present, and future." IEEE Access 10 (2022): 29589-29611. </strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/10378691)
 
-- Wang Yao, <strong>Muhammad Ali Farooq* </strong>, Joseph Lemley, and Peter Corcoran. "A study on the effect of ageing in facial authentication and the utility of data augmentation to reduce performance bias across age groups." IEEE Access (2023). </strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/10378691)
+- Wang Yao, <strong>Muhammad Ali Farooq* </strong>, Joseph Lemley, and Peter Corcoran. "A study on the effect of ageing in facial authentication and the utility of data augmentation to reduce performance bias across age groups." IEEE Access (2023). </strong> [[Paper]](https://ieeexplore.ieee.org/document/10242105)
 
-- Mehdi Sefidgar Dilmaghani, , Waseem Shariff, <strong>Muhammad Ali Farooq* </strong>, Joe Lemley, and Peter Corcoran. "Optimization of Event Camera Bias Settings for a Neuromorphic Driver Monitoring System." IEEE Access (2024). </strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/10378691)
+- Mehdi Sefidgar Dilmaghani, , Waseem Shariff, <strong>Muhammad Ali Farooq* </strong>, Joe Lemley, and Peter Corcoran. "Optimization of Event Camera Bias Settings for a Neuromorphic Driver Monitoring System." IEEE Access (2024). </strong> [[Paper]](https://ieeexplore.ieee.org/document/10453572)
 
-- Waseem Shariff, Mehdi Sefidgar Dilmaghani, Paul Kielty, Joe Lemley,<strong>Muhammad Ali Farooq* </strong>, Faisal Khan, and Peter Corcoran. "Neuromorphic driver monitoring systems: A computationally efficient proof-of-concept for driver distraction detection." IEEE Open Journal of Vehicular Technology (2023). </strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/10378691)
+- Waseem Shariff, Mehdi Sefidgar Dilmaghani, Paul Kielty, Joe Lemley,<strong>Muhammad Ali Farooq* </strong>, Faisal Khan, and Peter Corcoran. "Neuromorphic driver monitoring systems: A computationally efficient proof-of-concept for driver distraction detection." IEEE Open Journal of Vehicular Technology (2023). </strong> [[Paper]](https://ieeexplore.ieee.org/document/10287603)
 
-- Faisal Khan, Waseem Shariff, <strong>Muhammad Ali Farooq* </strong>, Shubhajit Basak, and Peter Corcoran. "A robust light-weight fused-feature encoder-decoder model for monocular facial depth estimation from single images trained on synthetic data." IEEE Access 11 (2023): 41480-41491./strong>[[Paper]](https://ieeexplore.ieee.org/abstract/document/10378691)
+- Faisal Khan, Waseem Shariff, <strong>Muhammad Ali Farooq* </strong>, Shubhajit Basak, and Peter Corcoran. "A robust light-weight fused-feature encoder-decoder model for monocular facial depth estimation from single images trained on synthetic data." IEEE Access 11 (2023): 41480-41491./strong>[[Paper]](https://ieeexplore.ieee.org/document/10103585)
 
 ### Submitted Journal Papers
 
