@@ -30,6 +30,10 @@
 
 ### Selected Conference Publications
 
+  - <strong>Muhammad Ali Farooq* </strong>, Wang Yao, and Peter Corcoran. "ChildDiffusion: Unlocking the Potential of Generative AI and Controllable Augmentations for Child Facial Data using Stable Diffusion and Large Language Models." arXiv preprint arXiv:2406.11592 (2024). [Paper] Paper submitted in IEEE TIP Journal
+  
+  - Wang Yao, <strong>Muhammad Ali Farooq* </strong>, Joseph Lemley, and Peter Corcoran. "Synthetic Face Ageing: Evaluation, Analysis and Facilitation of Age-Robust Facial Recognition Algorithms." arXiv preprint arXiv:2406.06932 (2024). [Paper] Paper submitted in IEEE Transactions Journal
+
     - <strong>Muhammad Ali Farooq* </strong>, Wang Yao, Michael Schukat, Mark A. Little, and Peter Corcoran. "Derm-t2im: Harnessing synthetic skin lesion data via stable diffusion models for enhanced skin disease classification using vit and cnn." arXiv preprint arXiv:2401.05159 (2024). [Paper] Paper accepted in IEEE EMBC 2024 Conference
 
      - Abaid, Ayman, <strong>Muhammad Ali Farooq* </strong> , Niamh Hynes, Peter Corcoran, and Ihsan Ullah. "Synthesizing CTA Image Data for Type-B Aortic Dissection using Stable Diffusion Models." CoRR (2024). [Paper] Paper accepted in IEEE EMBC 2024 Conference
