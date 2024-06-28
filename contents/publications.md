@@ -12,15 +12,15 @@
 
 - Julio Zanon Diaz, <strong>Muhammad Ali Farooq* </strong>, and Peter Corcoran. "Automatic Inspection of Seal Integrity in Sterile Barrier Packaging: A Deep Learning Approach." IEEE Access (2024).</strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/10378691)
 
-- Faisal Khan,<strong>Muhammad Ali Farooq* </strong>, Waseem Shariff, Shubhajit Basak, and Peter Corcoran. "Towards monocular neural facial depth estimation: Past, present, and future." IEEE Access 10 (2022): 29589-29611. [Paper]
+- Faisal Khan,<strong>Muhammad Ali Farooq* </strong>, Waseem Shariff, Shubhajit Basak, and Peter Corcoran. "Towards monocular neural facial depth estimation: Past, present, and future." IEEE Access 10 (2022): 29589-29611. </strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/10378691)
 
-- Wang Yao, <strong>Muhammad Ali Farooq* </strong>, Joseph Lemley, and Peter Corcoran. "A study on the effect of ageing in facial authentication and the utility of data augmentation to reduce performance bias across age groups." IEEE Access (2023). [Paper]
+- Wang Yao, <strong>Muhammad Ali Farooq* </strong>, Joseph Lemley, and Peter Corcoran. "A study on the effect of ageing in facial authentication and the utility of data augmentation to reduce performance bias across age groups." IEEE Access (2023). </strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/10378691)
 
-- Mehdi Sefidgar Dilmaghani, , Waseem Shariff, <strong>Muhammad Ali Farooq* </strong>, Joe Lemley, and Peter Corcoran. "Optimization of Event Camera Bias Settings for a Neuromorphic Driver Monitoring System." IEEE Access (2024). [Paper]
+- Mehdi Sefidgar Dilmaghani, , Waseem Shariff, <strong>Muhammad Ali Farooq* </strong>, Joe Lemley, and Peter Corcoran. "Optimization of Event Camera Bias Settings for a Neuromorphic Driver Monitoring System." IEEE Access (2024). </strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/10378691)
 
-- Waseem Shariff, Mehdi Sefidgar Dilmaghani, Paul Kielty, Joe Lemley,<strong>Muhammad Ali Farooq* </strong>, Faisal Khan, and Peter Corcoran. "Neuromorphic driver monitoring systems: A computationally efficient proof-of-concept for driver distraction detection." IEEE Open Journal of Vehicular Technology (2023). [Paper]
+- Waseem Shariff, Mehdi Sefidgar Dilmaghani, Paul Kielty, Joe Lemley,<strong>Muhammad Ali Farooq* </strong>, Faisal Khan, and Peter Corcoran. "Neuromorphic driver monitoring systems: A computationally efficient proof-of-concept for driver distraction detection." IEEE Open Journal of Vehicular Technology (2023). </strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/10378691)
 
-- Faisal Khan, Waseem Shariff, <strong>Muhammad Ali Farooq* </strong>, Shubhajit Basak, and Peter Corcoran. "A robust light-weight fused-feature encoder-decoder model for monocular facial depth estimation from single images trained on synthetic data." IEEE Access 11 (2023): 41480-41491./strong> [Paper]
+- Faisal Khan, Waseem Shariff, <strong>Muhammad Ali Farooq* </strong>, Shubhajit Basak, and Peter Corcoran. "A robust light-weight fused-feature encoder-decoder model for monocular facial depth estimation from single images trained on synthetic data." IEEE Access 11 (2023): 41480-41491./strong>[[Paper]](https://ieeexplore.ieee.org/abstract/document/10378691)
 
 ### Submitted Journal Papers
 
@@ -45,7 +45,5 @@
   
   - Shariff, Waseem, <strong>Muhammad Ali Farooq* </strong>, Joe Lemley, and Peter Corcoran. "Event-based YOLO object detection: Proof of concept for forward perception system." In Fifteenth International Conference on Machine Vision (ICMV 2022), vol. 12701, pp. 74-80. SPIE, 2023. [Paper]
 
-
-- 
 
 
