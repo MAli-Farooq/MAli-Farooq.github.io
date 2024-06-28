@@ -14,6 +14,8 @@ Journal Publication
 
 - Khan, Faisal, <strong>Muhammad Ali Farooq* </strong>, Waseem Shariff, Shubhajit Basak, and Peter Corcoran. "Towards monocular neural facial depth estimation: Past, present, and future." IEEE Access 10 (2022): 29589-29611.</strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/9733350)
 
+- Yao, Wang, <strong>Muhammad Ali Farooq* </strong>, Joseph Lemley, and Peter Corcoran. "A study on the effect of ageing in facial authentication and the utility of data augmentation to reduce performance bias across age groups." IEEE Access (2023).</strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/10242105)
+
 - 
 
 
