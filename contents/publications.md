@@ -10,6 +10,8 @@ Journal Publication
 
 - <strong>Muhammad Ali Farooq* </strong>, Waseem Shariff, David O’callaghan, Arcangelo Merla, and Peter Corcoran. "On the role of thermal imaging in automotive applications: A critical review." IEEE Access 11 (2023): 25152-25173.</strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/10064306)
 
+- Diaz, Julio Zanon, <strong>Muhammad Ali Farooq* </strong>, and Peter Corcoran. "Automatic Inspection of Seal Integrity in Sterile Barrier Packaging: A Deep Learning Approach." IEEE Access (2024).</strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/10378691)
+
 - 
 
 
