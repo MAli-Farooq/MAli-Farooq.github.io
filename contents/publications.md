@@ -30,10 +30,24 @@
 - Wang Yao, <strong>Muhammad Ali Farooq* </strong>, Joseph Lemley, and Peter Corcoran. "Synthetic Face Ageing: Evaluation, Analysis and Facilitation of Age-Robust Facial Recognition Algorithms." arXiv preprint arXiv:2406.06932 (2024).</strong> [[Paper]](https://arxiv.org/abs/2406.06932)
   <strong> *Paper submitted in IEEE Transactions Journal* </strong>
 
-## Conference Publications 
+## Selected Conference Publications 
 
 - <strong>Muhammad Ali Farooq* </strong>, Wang Yao, Michael Schukat, Mark A. Little, and Peter Corcoran. "Derm-t2im: Harnessing synthetic skin lesion data via stable diffusion models for enhanced skin disease classification using vit and cnn." arXiv preprint arXiv:2401.05159 (2024). </strong> [[Paper]](https://arxiv.org/abs/2401.05159)
  <strong> *Paper accepted in IEEE EMBC 2024 Conference* </strong>
 
+ Abaid, Ayman, <strong>Muhammad Ali Farooq* </strong>, Niamh Hynes, Peter Corcoran, and Ihsan Ullah. "Synthesizing CTA Image Data for Type-B Aortic Dissection using Stable Diffusion Models." CoRR (2024). </strong> [[Paper]](https://openreview.net/forum?id=njm4iUMfwk)
+  <strong> *Paper accepted in IEEE EMBC 2024 Conference* </strong>
+
  - <strong>Muhammad Ali Farooq* </strong>, Muhammad Aatif Mobeen Azhar, and Rana Hammad Raza. "Automatic lesion detection system (ALDS) for skin cancer classification using SVM and neural classifiers." In 2016 IEEE 16th international conference on bioinformatics and bioengineering (BIBE), pp. 301-308. IEEE, 2016. </strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/7790001)
+
+ - <strong>Muhammad Ali Farooq* </strong>, and Peter Corcoran. "Infrared imaging for human thermography and breast tumor classification using thermal images." In 2020 31st Irish Signals and Systems Conference (ISSC), pp. 1-6. IEEE, 2020. </strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/9180164)
+
+ - <strong>Muhammad Ali Farooq* </strong>, Viktor Varkarakis, and Peter Corcoran. "Advanced Deep Learning Methodologies for Skin Cancer Classification in Prodromal Stages." (2019).</strong> [[Paper]](https://ui.adsabs.harvard.edu/abs/2020arXiv200306356F/abstract)
+
+ - <strong>Muhammad Ali Farooq* </strong>, Dan Bigioi, Rishabh Jain, Wang Yao, Mariam Yiwere, and Peter Corcoran. "Synthetic Speaking Children–Why We Need Them and How to Make Them." In 2023 International Conference on Speech Technology and Human-Computer Dialogue (SpeD), pp. 36-41. IEEE, 2023.</strong> [[Paper]](https://ieeexplore.ieee.org/author/37090080407)
+
+ - 
+
+
+ - 
 
