@@ -24,8 +24,8 @@ Journal Publication
 
 Submitted Journal Papers
 
-- strong>Muhammad Ali Farooq* </strong>, Wang Yao, and Peter Corcoran. "ChildDiffusion: Unlocking the Potential of Generative AI and Controllable Augmentations for Child Facial Data using Stable Diffusion and Large Language Models." arXiv preprint arXiv:2406.11592 (2024). </strong> [[Paper]](https://arxiv.org/abs/2406.11592)
-  strong> Paper submitted in IEEE TIP Journal </strong>
+- <strong>Muhammad Ali Farooq* </strong>, Wang Yao, and Peter Corcoran. "ChildDiffusion: Unlocking the Potential of Generative AI and Controllable Augmentations for Child Facial Data using Stable Diffusion and Large Language Models." arXiv preprint arXiv:2406.11592 (2024). </strong> [[Paper]](https://arxiv.org/abs/2406.11592)
+  <strong> Paper submitted in IEEE TIP Journal </strong>
 
 
 
