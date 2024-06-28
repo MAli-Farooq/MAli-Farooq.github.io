@@ -12,11 +12,11 @@ Journal Publication
 
 - Diaz, Julio Zanon, <strong>Muhammad Ali Farooq* </strong>, and Peter Corcoran. "Automatic Inspection of Seal Integrity in Sterile Barrier Packaging: A Deep Learning Approach." IEEE Access (2024).</strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/10378691)
 
-- Khan, Faisal, <strong>Muhammad Ali Farooq* </strong>, Waseem Shariff, Shubhajit Basak, and Peter Corcoran. "Towards monocular neural facial depth estimation: Past, present, and future." IEEE Access 10 (2022): 29589-29611.</strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/9733350)
+- Faisal Khan, <strong>Muhammad Ali Farooq* </strong>, Waseem Shariff, Shubhajit Basak, and Peter Corcoran. "Towards monocular neural facial depth estimation: Past, present, and future." IEEE Access 10 (2022): 29589-29611.</strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/9733350)
 
-- Yao, Wang, <strong>Muhammad Ali Farooq* </strong>, Joseph Lemley, and Peter Corcoran. "A study on the effect of ageing in facial authentication and the utility of data augmentation to reduce performance bias across age groups." IEEE Access (2023).</strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/10242105)
+- Wang Yao, <strong>Muhammad Ali Farooq* </strong>, Joseph Lemley, and Peter Corcoran. "A study on the effect of ageing in facial authentication and the utility of data augmentation to reduce performance bias across age groups." IEEE Access (2023).</strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/10242105)
 
-- Dilmaghani, Mehdi Sefidgar, Waseem Shariff, <strong>Muhammad Ali Farooq* </strong>, Joe Lemley, and Peter Corcoran. "Optimization of Event Camera Bias Settings for a Neuromorphic Driver Monitoring System." IEEE Access (2024).</strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/10453572)
+- Mehdi Sefidgar Dilmaghani, , Waseem Shariff, <strong>Muhammad Ali Farooq* </strong>, Joe Lemley, and Peter Corcoran. "Optimization of Event Camera Bias Settings for a Neuromorphic Driver Monitoring System." IEEE Access (2024).</strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/10453572)
 
 - 
 
