@@ -12,6 +12,8 @@ Journal Publication
 
 - Diaz, Julio Zanon, <strong>Muhammad Ali Farooq* </strong>, and Peter Corcoran. "Automatic Inspection of Seal Integrity in Sterile Barrier Packaging: A Deep Learning Approach." IEEE Access (2024).</strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/10378691)
 
+- Khan, Faisal, <strong>Muhammad Ali Farooq* </strong>, Waseem Shariff, Shubhajit Basak, and Peter Corcoran. "Towards monocular neural facial depth estimation: Past, present, and future." IEEE Access 10 (2022): 29589-29611.</strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/9733350)
+
 - 
 
 
