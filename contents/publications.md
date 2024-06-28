@@ -1,4 +1,4 @@
-## Journal Publications
+### Journal Publications
   
 - <strong>Muhammad Ali Farooq* </strong>, Peter Corcoran, Cosmin Rotariu, and Waseem Shariff. "Object detection in thermal spectrum for advanced driver-assistance systems (ADAS)." IEEE Access 9 (2021): 156465-156481.</strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/9618926)
 
@@ -22,7 +22,7 @@
 
 - Faisal Khan, Waseem Shariff, <strong>Muhammad Ali Farooq* </strong>, Shubhajit Basak, and Peter Corcoran. "A robust light-weight fused-feature encoder-decoder model for monocular facial depth estimation from single images trained on synthetic data." IEEE Access 11 (2023): 41480-41491./strong> [[Paper]]([https://ieeexplore.ieee.org/abstract/document/10287603](https://ieeexplore.ieee.org/abstract/document/10103585))
 
-## Submitted Journal Papers
+### Submitted Journal Papers
 
 - <strong>Muhammad Ali Farooq* </strong>, Wang Yao, and Peter Corcoran. "ChildDiffusion: Unlocking the Potential of Generative AI and Controllable Augmentations for Child Facial Data using Stable Diffusion and Large Language Models." arXiv preprint arXiv:2406.11592 (2024). </strong> [[Paper]](https://arxiv.org/abs/2406.11592)
   <strong> *Paper submitted in IEEE TIP Journal* </strong>
@@ -30,7 +30,7 @@
 - Wang Yao, <strong>Muhammad Ali Farooq* </strong>, Joseph Lemley, and Peter Corcoran. "Synthetic Face Ageing: Evaluation, Analysis and Facilitation of Age-Robust Facial Recognition Algorithms." arXiv preprint arXiv:2406.06932 (2024).</strong> [[Paper]](https://arxiv.org/abs/2406.06932)
   <strong> *Paper submitted in IEEE Transactions Journal* </strong>
 
-## Selected Conference Publications 
+### Selected Conference Publications 
 
 - <strong>Muhammad Ali Farooq* </strong>, Wang Yao, Michael Schukat, Mark A. Little, and Peter Corcoran. "Derm-t2im: Harnessing synthetic skin lesion data via stable diffusion models for enhanced skin disease classification using vit and cnn." arXiv preprint arXiv:2401.05159 (2024). </strong> [[Paper]](https://arxiv.org/abs/2401.05159)
  <strong> *Paper accepted in IEEE EMBC 2024 Conference* </strong>
@@ -45,6 +45,8 @@
  - <strong>Muhammad Ali Farooq* </strong>, Viktor Varkarakis, and Peter Corcoran. "Advanced Deep Learning Methodologies for Skin Cancer Classification in Prodromal Stages." (2019).</strong> [[Paper]](https://ui.adsabs.harvard.edu/abs/2020arXiv200306356F/abstract)
 
  - <strong>Muhammad Ali Farooq* </strong>, Dan Bigioi, Rishabh Jain, Wang Yao, Mariam Yiwere, and Peter Corcoran. "Synthetic Speaking Children–Why We Need Them and How to Make Them." In 2023 International Conference on Speech Technology and Human-Computer Dialogue (SpeD), pp. 36-41. IEEE, 2023.</strong> [[Paper]](https://ieeexplore.ieee.org/author/37090080407)
+
+ - <strong>Muhammad Ali Farooq* </strong>, Waseem Shariff, Faisal Khan, and Peter Corcoran. "Development, optimization, and deployment of thermal forward vision systems for advance vehicular applications on edge devices." In Fifteenth International Conference on Machine Vision (ICMV 2022), vol. 12701, p. 1270102. SPIE, 2023./strong> [[Paper]]([https://ieeexplore.ieee.org/author/37090080407](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12701/1270102/Development-optimization-and-deployment-of-thermal-forward-vision-systems-for/10.1117/12.2679749.short#_=_))
 
  - 
 
