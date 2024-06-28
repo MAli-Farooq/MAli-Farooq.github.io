@@ -1,4 +1,4 @@
-###Journal Publication
+### Journal Publication
   
 - <strong>Muhammad Ali Farooq* </strong>, Peter Corcoran, Cosmin Rotariu, and Waseem Shariff. "Object detection in thermal spectrum for advanced driver-assistance systems (ADAS)." IEEE Access 9 (2021): 156465-156481.</strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/9618926)
 
@@ -22,7 +22,7 @@
 
 - Faisal Khan, Waseem Shariff, <strong>Muhammad Ali Farooq* </strong>, Shubhajit Basak, and Peter Corcoran. "A robust light-weight fused-feature encoder-decoder model for monocular facial depth estimation from single images trained on synthetic data." IEEE Access 11 (2023): 41480-41491./strong> [Paper]
 
-###Submitted Journal Papers
+### Submitted Journal Papers
 
   - <strong>Muhammad Ali Farooq* </strong>, Wang Yao, and Peter Corcoran. "ChildDiffusion: Unlocking the Potential of Generative AI and Controllable Augmentations for Child Facial Data using Stable Diffusion and Large Language Models." arXiv preprint arXiv:2406.11592 (2024). [Paper] Paper submitted in IEEE TIP Journal
   
@@ -30,9 +30,9 @@
 
 ### Selected Conference Publications
 
-    Muhammad Ali Farooq* , Wang Yao, Michael Schukat, Mark A. Little, and Peter Corcoran. "Derm-t2im: Harnessing synthetic skin lesion data via stable diffusion models for enhanced skin disease classification using vit and cnn." arXiv preprint arXiv:2401.05159 (2024). [Paper] Paper accepted in IEEE EMBC 2024 Conference
+    - <strong>Muhammad Ali Farooq* </strong>, Wang Yao, Michael Schukat, Mark A. Little, and Peter Corcoran. "Derm-t2im: Harnessing synthetic skin lesion data via stable diffusion models for enhanced skin disease classification using vit and cnn." arXiv preprint arXiv:2401.05159 (2024). [Paper] Paper accepted in IEEE EMBC 2024 Conference
 
-    Abaid, Ayman, Muhammad Ali Farooq* , Niamh Hynes, Peter Corcoran, and Ihsan Ullah. "Synthesizing CTA Image Data for Type-B Aortic Dissection using Stable Diffusion Models." CoRR (2024). [Paper] Paper accepted in IEEE EMBC 2024 Conference
+     - Abaid, Ayman, <strong>Muhammad Ali Farooq* </strong> , Niamh Hynes, Peter Corcoran, and Ihsan Ullah. "Synthesizing CTA Image Data for Type-B Aortic Dissection using Stable Diffusion Models." CoRR (2024). [Paper] Paper accepted in IEEE EMBC 2024 Conference
 
     Muhammad Ali Farooq* , Muhammad Aatif Mobeen Azhar, and Rana Hammad Raza. "Automatic lesion detection system (ALDS) for skin cancer classification using SVM and neural classifiers." In 2016 IEEE 16th international conference on bioinformatics and bioengineering (BIBE), pp. 301-308. IEEE, 2016. [Paper]
 
