@@ -35,7 +35,7 @@
 - <strong>Muhammad Ali Farooq* </strong>, Wang Yao, Michael Schukat, Mark A. Little, and Peter Corcoran. "Derm-t2im: Harnessing synthetic skin lesion data via stable diffusion models for enhanced skin disease classification using vit and cnn." arXiv preprint arXiv:2401.05159 (2024). </strong> [[Paper]](https://arxiv.org/abs/2401.05159)
  <strong> *Paper accepted in IEEE EMBC 2024 Conference* </strong>
 
- Abaid, Ayman, <strong>Muhammad Ali Farooq* </strong>, Niamh Hynes, Peter Corcoran, and Ihsan Ullah. "Synthesizing CTA Image Data for Type-B Aortic Dissection using Stable Diffusion Models." CoRR (2024). </strong> [[Paper]](https://openreview.net/forum?id=njm4iUMfwk)
+ - Abaid, Ayman, <strong>Muhammad Ali Farooq* </strong>, Niamh Hynes, Peter Corcoran, and Ihsan Ullah. "Synthesizing CTA Image Data for Type-B Aortic Dissection using Stable Diffusion Models." CoRR (2024). </strong> [[Paper]](https://openreview.net/forum?id=njm4iUMfwk)
   <strong> *Paper accepted in IEEE EMBC 2024 Conference* </strong>
 
  - <strong>Muhammad Ali Farooq* </strong>, Muhammad Aatif Mobeen Azhar, and Rana Hammad Raza. "Automatic lesion detection system (ALDS) for skin cancer classification using SVM and neural classifiers." In 2016 IEEE 16th international conference on bioinformatics and bioengineering (BIBE), pp. 301-308. IEEE, 2016. </strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/7790001)
@@ -49,5 +49,4 @@
  - 
 
 
- - 
 
