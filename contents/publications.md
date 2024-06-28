@@ -18,7 +18,7 @@ Journal Publication
 
 - Mehdi Sefidgar Dilmaghani, , Waseem Shariff, <strong>Muhammad Ali Farooq* </strong>, Joe Lemley, and Peter Corcoran. "Optimization of Event Camera Bias Settings for a Neuromorphic Driver Monitoring System." IEEE Access (2024).</strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/10453572)
 
-- Waseem Shariff, Mehdi Sefidgar Dilmaghani, Paul Kielty, Joe Lemley, <strong>Muhammad Ali Farooq* </strong>, Faisal Khan, and Peter Corcoran. "Neuromorphic driver monitoring systems: A computationally efficient proof-of-concept for driver distraction detection." IEEE Open Journal of Vehicular Technology (2023).[[Paper]](https://ieeexplore.ieee.org/abstract/document/10287603)
+- Waseem Shariff, Mehdi Sefidgar Dilmaghani, Paul Kielty, Joe Lemley, <strong>Muhammad Ali Farooq* </strong>, Faisal Khan, and Peter Corcoran. "Neuromorphic driver monitoring systems: A computationally efficient proof-of-concept for driver distraction detection." IEEE Open Journal of Vehicular Technology (2023).</strong>[[Paper]](https://ieeexplore.ieee.org/abstract/document/10287603)
 
 
 
