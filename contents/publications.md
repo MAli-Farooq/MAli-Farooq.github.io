@@ -27,6 +27,9 @@ Submitted Journal Papers
 - <strong>Muhammad Ali Farooq* </strong>, Wang Yao, and Peter Corcoran. "ChildDiffusion: Unlocking the Potential of Generative AI and Controllable Augmentations for Child Facial Data using Stable Diffusion and Large Language Models." arXiv preprint arXiv:2406.11592 (2024). </strong> [[Paper]](https://arxiv.org/abs/2406.11592)
   <strong> *Paper submitted in IEEE TIP Journal* </strong>
 
+- Wang Yao, <strong>Muhammad Ali Farooq* </strong>, Joseph Lemley, and Peter Corcoran. "Synthetic Face Ageing: Evaluation, Analysis and Facilitation of Age-Robust Facial Recognition Algorithms." arXiv preprint arXiv:2406.06932 (2024).</strong> [[Paper]](https://arxiv.org/abs/2406.06932)
+  <strong> *Paper submitted in IEEE Trasactions Journal* </strong>
+
 
 
 Conference Publications 
