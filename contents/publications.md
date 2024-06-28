@@ -22,16 +22,15 @@
 
 - Faisal Khan, Waseem Shariff, <strong>Muhammad Ali Farooq* </strong>, Shubhajit Basak, and Peter Corcoran. "A robust light-weight fused-feature encoder-decoder model for monocular facial depth estimation from single images trained on synthetic data." IEEE Access 11 (2023): 41480-41491./strong> [[Paper]]([https://ieeexplore.ieee.org/abstract/document/10287603](https://ieeexplore.ieee.org/abstract/document/10103585))
 
-Submitted Journal Papers
+## Submitted Journal Papers
 
 - <strong>Muhammad Ali Farooq* </strong>, Wang Yao, and Peter Corcoran. "ChildDiffusion: Unlocking the Potential of Generative AI and Controllable Augmentations for Child Facial Data using Stable Diffusion and Large Language Models." arXiv preprint arXiv:2406.11592 (2024). </strong> [[Paper]](https://arxiv.org/abs/2406.11592)
   <strong> *Paper submitted in IEEE TIP Journal* </strong>
 
 - Wang Yao, <strong>Muhammad Ali Farooq* </strong>, Joseph Lemley, and Peter Corcoran. "Synthetic Face Ageing: Evaluation, Analysis and Facilitation of Age-Robust Facial Recognition Algorithms." arXiv preprint arXiv:2406.06932 (2024).</strong> [[Paper]](https://arxiv.org/abs/2406.06932)
-  <strong> *Paper submitted in IEEE Trasactions Journal* </strong>
+  <strong> *Paper submitted in IEEE Transactions Journal* </strong>
 
-
-Conference Publications 
+## Conference Publications 
 
  <strong>Muhammad Ali Farooq* </strong>, Wang Yao, Michael Schukat, Mark A. Little, and Peter Corcoran. "Derm-t2im: Harnessing synthetic skin lesion data via stable diffusion models for enhanced skin disease classification using vit and cnn." arXiv preprint arXiv:2401.05159 (2024). </strong> [[Paper]](https://arxiv.org/abs/2401.05159)
  <strong> *Paper accepted in IEEE EMBC 2024 Conference* </strong>
