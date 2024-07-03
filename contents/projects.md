@@ -1,8 +1,4 @@
 - <strong>Derm-T2IM </strong>
-<span style="color:blue">some *This is Blue italic.* text</span>
-
-<span style="color: red;">This text is red.</span>
-
 ![](/static/assets/img/Derm-T2IM.png)
 
 Project Description: Generating synthetic skin lesion images using Stable Diffusion models is an innovative approach to augmenting dermatological datasets for research and clinical purposes. By leveraging the advanced capabilities of Stable Diffusion, the tuned Derm-T2IM model creates high-quality, realistic skin lesion images that can be used to train and improve machine learning models for skin cancer detection and other dermatological conditions. This technique enhances data diversity, mitigates the challenges of limited access to medical data, and preserves patient privacy. Our GitHub repository provides detailed instructions, pre-trained models, and sample scripts to facilitate the generation of synthetic skin lesion images, enabling researchers and practitioners to advance their work with robust and varied datasets.
@@ -17,7 +13,7 @@ Links: </strong> [[Paper]](https://arxiv.org/abs/2401.05159), </strong> [[Github
 - <strong>ChildDiffusion </strong>
 ![](/static/assets/img/Child-Figure-Block-Diagram.png)
 
-Project Description: Rendering high quality synthetic child images using Stable Diffusion along with controlled augmentations models offers a novel and ethical approach to creating diverse and high-quality images for various applications, such as training machine learning models or developing child-oriented content. This project harnesses the power of Stable Diffusion to produce realistic images of children with variety of smart transformations such that distinct facial expressions, child aging, various lighting conditions, chld race data, face pose varitions, multiple subject etc. The overall system is tuned using synthetic data generated via ChildGAN without the need for real-world data, thereby addressing privacy concerns and ensuring the safety of minors. The GitHub repository provides comprehensive resources, including pre-trained models, detailed instructions, and sample scripts, to streamline the process of generating synthetic child images. By utilizing this technology, researchers and developers can access a vast array of images that enhance the performance and accuracy of their projects while adhering to ethical standards.
+Project Description: Rendering high quality synthetic child images using Stable Diffusion along with controlled augmentations and large langauge models offers a novel and ethical approach to creating diverse and high-quality images for various applications, such as training machine learning models or developing child-oriented content. This project harnesses the power of Stable Diffusion to produce realistic images of children with variety of smart transformations such that distinct facial expressions, child aging, various lighting conditions, chld race data, face pose varitions, multiple subject etc. The overall system is tuned using synthetic data generated via ChildGAN without the need for real-world data, thereby addressing privacy concerns and ensuring the safety of minors. The GitHub repository provides comprehensive resources, including pre-trained models, detailed instructions, and sample scripts, to streamline the process of generating synthetic child images. By utilizing this technology, researchers and developers can access a vast array of images that enhance the performance and accuracy of their projects while adhering to ethical standards.
  
 - ChildGAN
   
