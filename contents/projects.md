@@ -7,7 +7,7 @@ The complete project desciption, models and dataset can be found and cloned from
 
 </strong> [[Github-Page]](https://github.com/MAli-Farooq/Derm-T2IM)
 
-</strong> [[Derm-T2IM Model](https://huggingface.co/MAli-Farooq/Derm-T2IM)
+</strong> [[Derm-T2IM Model]](https://huggingface.co/MAli-Farooq/Derm-T2IM)
 
 </strong> [[Derm-T2IM Dataset]](https://huggingface.co/datasets/MAli-Farooq/Derm-T2IM-Dataset)
  
