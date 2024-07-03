@@ -1,6 +1,8 @@
 - <strong>Derm-T2IM </strong>
 <span style="color:blue">some *This is Blue italic.* text</span>
 
+<span style="color: red;">This text is red.</span>
+
 ![](/static/assets/img/Derm-T2IM.png)
 
 Project Description: Generating synthetic skin lesion images using Stable Diffusion models is an innovative approach to augmenting dermatological datasets for research and clinical purposes. By leveraging the advanced capabilities of Stable Diffusion, the tuned Derm-T2IM model creates high-quality, realistic skin lesion images that can be used to train and improve machine learning models for skin cancer detection and other dermatological conditions. This technique enhances data diversity, mitigates the challenges of limited access to medical data, and preserves patient privacy. Our GitHub repository provides detailed instructions, pre-trained models, and sample scripts to facilitate the generation of synthetic skin lesion images, enabling researchers and practitioners to advance their work with robust and varied datasets.
