@@ -12,7 +12,6 @@ Links: </strong> [[Paper]](https://arxiv.org/abs/2401.05159), </strong> [[Github
 <br>
 
 - <strong>ChildDiffusion </strong>
-
 ![](/static/assets/img/Child-Figure-Block-Diagram.png)
 
 Project Description: Rendering high quality synthetic child images using Stable Diffusion along with controlled augmentations models offers a novel and ethical approach to creating diverse and high-quality images for various applications, such as training machine learning models or developing child-oriented content. This project harnesses the power of Stable Diffusion to produce realistic images of children with variety of smart transformations such that distinct facial expressions, child aging, various lighting conditions, chld race data, face pose varitions, multiple subject etc. The overall system is tuned using synthetic data generated via ChildGAN without the need for real-world data, thereby addressing privacy concerns and ensuring the safety of minors. The GitHub repository provides comprehensive resources, including pre-trained models, detailed instructions, and sample scripts, to streamline the process of generating synthetic child images. By utilizing this technology, researchers and developers can access a vast array of images that enhance the performance and accuracy of their projects while adhering to ethical standards.
