@@ -1,4 +1,5 @@
 - <strong>Derm-T2IM </strong>
+<span style="color:blue">some *This is Blue italic.* text</span>
 
 ![](/static/assets/img/Derm-T2IM.png)
 
