@@ -16,6 +16,10 @@ Links: </strong> [[Paper]](https://www.spiedigitallibrary.org/conference-proceed
 
 Links: <strong> [[HELIAUS EU Project]](https://www.thermal-vision-augmented-awareness-project.eu/)
 
+<img src="/static/assets/img/H-1.jpeg" alt="drawing" width="600"/>
+<img src="/static/assets/img/H-2.jpeg" alt="drawing" width="600"/>
+<img src="/static/assets/img/H-3.jpeg" alt="drawing" width="600"/>
+
 <br>
 <br>
 
