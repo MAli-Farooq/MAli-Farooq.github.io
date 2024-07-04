@@ -43,7 +43,9 @@
   
   - <strong>Muhammad Ali Farooq* </strong> , Waseem Shariff, Faisal Khan, and Peter Corcoran. "Development, optimization, and deployment of thermal forward vision systems for advance vehicular applications on edge devices." In Fifteenth International Conference on Machine Vision (ICMV 2022), vol. 12701, p. 1270102. SPIE, 2023.</strong> [[Paper]](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12701/1270102/Development-optimization-and-deployment-of-thermal-forward-vision-systems-for/10.1117/12.2679749.short?webSyncID=2aed2ae2-d3d9-a151-5256-2751232bb40e&sessionGUID=e9d3d93e-ae03-6826-e290-d90dba86b124) 
     
-  - Shariff, Waseem, <strong>Muhammad Ali Farooq* </strong>, Joe Lemley, and Peter Corcoran. "Event-based YOLO object detection: Proof of concept for forward perception system." In Fifteenth International Conference on Machine Vision (ICMV 2022), vol. 12701, pp. 74-80. SPIE, 2023.</strong> [[Paper]](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12701/127010A/Event-based-YOLO-object-detection--proof-of-concept-for/10.1117/12.2679341.short#_=_) 
+  - Shariff, Waseem, <strong>Muhammad Ali Farooq* </strong>, Joe Lemley, and Peter Corcoran. "Event-based YOLO object detection: Proof of concept for forward perception system." In Fifteenth International Conference on Machine Vision (ICMV 2022), vol. 12701, pp. 74-80. SPIE, 2023.</strong> [[Paper]](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12701/127010A/Event-based-YOLO-object-detection--proof-of-concept-for/10.1117/12.2679341.short#_=_)
+
+### Datasets
 
 
 
