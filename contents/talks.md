@@ -24,6 +24,9 @@ Supervisor: Peter Corcoran
 . Chair: 
 @JohnBreslin
 
+Links: </strong> [[PhD Thesis Report]]() </strong> [[Post]](<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Congratulations Dr Muhammad Ali Farooq who successfully defended his PhD thesis today on Evaluations of Thermal Imaging Technology for Automotive Use Cases. Supervisor: Peter Corcoran <a href="https://twitter.com/pcor?ref_src=twsrc%5Etfw">@pcor</a>. Examiners: Saraju Mohanty <a href="https://twitter.com/UNTEngineering?ref_src=twsrc%5Etfw">@UNTEngineering</a>, Martin O&#39;Halloran <a href="https://twitter.com/TMDLab?ref_src=twsrc%5Etfw">@TMDLab</a>. Chair: <a href="https://twitter.com/johnbreslin?ref_src=twsrc%5Etfw">@JohnBreslin</a> <a href="https://t.co/2AhlubzXtk">pic.twitter.com/2AhlubzXtk</a></p>&mdash; EEE, University of Galway (@galwayeee) <a href="https://twitter.com/galwayeee/status/1521525622601920513?ref_src=twsrc%5Etfw">May 3, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>)
+@machine learning @ADAS @edge computing @thermal sensing.
+
 <img src="/static/assets/img/Phd-thesis-1.jpeg" alt="drawing" width="600"/>
 <img src="/static/assets/img/Phd-thesis-2.jpeg" alt="drawing" width="600"/>
 
