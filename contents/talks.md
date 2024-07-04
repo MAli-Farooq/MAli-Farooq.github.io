@@ -20,8 +20,8 @@ Links: <strong> [[HELIAUS EU Project]](https://www.thermal-vision-augmented-awar
 <img src="/static/assets/img/H2.jpeg" alt="drawing" width="600"/>
 <img src="/static/assets/img/H3.jpeg" alt="drawing" width="600"/>
 <img src="/static/assets/img/H4.jpeg" alt="drawing" width="600"/>
-<img src="/static/assets/img/H-IR.png" alt="drawing" width="600"/>
-<img src="/static/assets/img/H-RGB.jpg" alt="drawing" width="600"/>
+<img src="/static/assets/img/H-IR.PNG" alt="drawing" width="600"/>
+<img src="/static/assets/img/H-RGB.JPG" alt="drawing" width="600"/>
 
 <br>
 <br>
