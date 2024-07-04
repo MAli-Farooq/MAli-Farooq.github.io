@@ -14,7 +14,7 @@ Links: </strong> [[Paper]](https://www.spiedigitallibrary.org/conference-proceed
 
 - Presented my work and results for all the work packages (WP-4, WP-7 and WP-8) of Heliaus EU Project in Lindau-Germany to Europen Research Council (ERC) Scientific Council team. The project aims to deliver breakthrough smart thermal perception systems for in-cabin passengers monitoring, as well as for the car surrounding by developing advanced imaging pipelines using SoA Computer Vision and Machine Learning algorithms that extend the current systems to the LWIR bandwidth.
 
-Links: <strong> [[HELIAUS EU Project]](https://www.thermal-vision-augmented-awareness-project.eu/)
+Links: </strong> [[HELIAUS EU Project]](https://www.thermal-vision-augmented-awareness-project.eu/)
 
 <img src="/static/assets/img/H1.jpeg" alt="drawing" width="600"/>
 <img src="/static/assets/img/H2.jpeg" alt="drawing" width="600"/>
