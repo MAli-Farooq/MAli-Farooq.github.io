@@ -11,7 +11,7 @@ Links: </strong> [[Paper]](https://www.spiedigitallibrary.org/conference-proceed
 
 Presented my PhD thesis, which explores the use of Longe Wave Thermal Imaging (LWIR) for Driver Monitoring System (DMS) and Advanced Driver Assistance Systems (ADAS). This research delves into the development and integration of thermal imaging technologies to enhance occupant and vehicle safety and performance. By leveraging thermal sensors, the study aims to improve the detection of pedestrians, vehicles, and other obstacles in low-visibility conditions such as nighttime or adverse weather. The core aspects include the design of novel image processing algorithms, the evaluation of sensor fusion techniques, and the assessment of real-world application scenarios by deploying the tuned thermal models on low powered edge devices. Join me on this journey as I share my discoveries, challenges, and the future directions of my work.
 
-Thesis Title:Evaluations of Thermal Imaging Technology for Automotive Use Cases. 
+Thesis Title: Evaluations of Thermal Imaging Technology for Automotive Use Cases. 
 Supervisor: Peter Corcoran 
 @pcor
 . Examiners: Saraju Mohanty 
