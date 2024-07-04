@@ -24,7 +24,7 @@ Supervisor: Peter Corcoran
 . Chair: 
 @JohnBreslin
 
-Links: </strong> [[PhD Thesis Report]] (https://researchrepository.universityofgalway.ie/entities/publication/5f6e088b-3619-47cb-9e47-93d84bae4793)
+Links: </strong> [[PhD Thesis Report]](https://researchrepository.universityofgalway.ie/entities/publication/5f6e088b-3619-47cb-9e47-93d84bae4793)
 
 <img src="/static/assets/img/Phd-thesis-1.jpeg" alt="drawing" width="600"/>
 <img src="/static/assets/img/Phd-thesis-2.jpeg" alt="drawing" width="600"/>
