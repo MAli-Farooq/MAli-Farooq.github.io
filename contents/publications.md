@@ -47,7 +47,6 @@
 
 ### Datasets
 
-- <strong>Muhammad Ali Farooq* </strong> 2022. "C3I THERMAL AUTOMOTIVE DATASET." . Available at: https://dx.doi.org/10.21227/jf21-rt22..</strong> [[Dataset Link]](https://ieee-dataport.org/documents/c3i-thermal-automotive-dataset)
-
+- <strong>Muhammad Ali Farooq* </strong> 2022. "C3I THERMAL AUTOMOTIVE DATASET.". Available at: https://dx.doi.org/10.21227/jf21-rt22.
 
 
