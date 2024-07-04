@@ -24,8 +24,7 @@ Supervisor: Peter Corcoran
 . Chair: 
 @JohnBreslin
 
-Links: </strong> [[PhD Thesis Report]] /strong> [[Twitter Post]](https://researchrepository.universityofgalway.ie/entities/publication/5f6e088b-3619-47cb-9e47-93d84bae4793) 
-https://twitter.com/galwayeee/status/1521525622601920513?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1521525622601920513%7Ctwgr%5E98e73f7b43b4081e129be27c0d610f381e22da34%7Ctwcon%5Es1_c10&ref_url=https%3A%2F%2Fpublish.twitter.com%2F%3Furl%3Dhttps%3A%2F%2Ftwitter.com%2Fgalwayeee%2Fstatus%2F1521525622601920513
+Links: </strong> [[PhD Thesis Report]] (https://researchrepository.universityofgalway.ie/entities/publication/5f6e088b-3619-47cb-9e47-93d84bae4793) strong> [[Twitter Post]] (https://twitter.com/galwayeee/status/1521525622601920513?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1521525622601920513%7Ctwgr%5E98e73f7b43b4081e129be27c0d610f381e22da34%7Ctwcon%5Es1_c10&ref_url=https%3A%2F%2Fpublish.twitter.com%2F%3Furl%3Dhttps%3A%2F%2Ftwitter.com%2Fgalwayeee%2Fstatus%2F1521525622601920513)
 
 <img src="/static/assets/img/Phd-thesis-1.jpeg" alt="drawing" width="600"/>
 <img src="/static/assets/img/Phd-thesis-2.jpeg" alt="drawing" width="600"/>
