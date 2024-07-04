@@ -21,3 +21,6 @@ Supervisor: Peter Corcoran
 . Chair: 
 @JohnBreslin
 
+<img src="/static/assets/img/Phd-thesis-1.jpeg" alt="drawing" width="600"/>
+<img src="/static/assets/img/Phd-thesis-1.jpeg" alt="drawing" width="600"/>
+
