@@ -4,6 +4,6 @@ Links: </strong> [[Paper]](https://www.spiedigitallibrary.org/conference-proceed
 @machine learning @ADAS @edge computing @thermal sensing.
 
 <img src="/static/assets/img/ICMV-1.jpeg" alt="drawing" width="600"/>
-<img src="/static/assets/img/ICMV-2.jpeg" alt="drawing" width="600"/>
 <img src="/static/assets/img/ICMVPeter.jpg" alt="drawing" width="600"/>
+<img src="/static/assets/img/ICMV-3.jpeg" alt="drawing" width="600"/>
 
