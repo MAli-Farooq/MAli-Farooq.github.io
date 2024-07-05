@@ -1,3 +1,5 @@
+### 2023
+
 ### 2022
 
 - Attended and presented my confernece paper on thermal imaging for autonomous systems and edge computing in ICMV-2022 conference in Rome Italy. The work is fosused on optimization and deployment of thermal obejct detection system on Raspberry Pi 4 board. 
