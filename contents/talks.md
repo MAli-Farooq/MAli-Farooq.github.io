@@ -1,7 +1,7 @@
 ### 2023
 - Presented and won first place poster award Paper 'Will your Doorbell Camera still recognize you as you grow old' at NUIG College of Sceince and Engineering (CSE) Research and Innovation Day Program 2023. This work explores the effect of age and aging on the performance of facial authentication methods.
 
-  Links: </strong> [[Paper]](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12701/1270102/Development-optimization-and-deployment-of-thermal-forward-vision-systems-for/10.1117/12.2679749.short#_=_) </strong> [[Conference Page]](https://icmv.org/photo2022.html)
+  Links: </strong> [[Paper]](https://arxiv.org/abs/2308.04224) </strong> [[Twitter Post]](https://twitter.com/C3I_NUIG/status/1654440034760552448?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1654440034760552448%7Ctwgr%5Edfcbe1936e3fd8c0ff5407445718e9feda207669%7Ctwcon%5Es1_c10&ref_url=https%3A%2F%2Fpublish.twitter.com%2F%3Furl%3Dhttps%3A%2F%2Ftwitter.com%2FC3I_NUIG%2Fstatus%2F1654440034760552448)
 @machine learning @FR @computer vision @face biometrics.
 
 ### 2022
