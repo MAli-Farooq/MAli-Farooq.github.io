@@ -4,6 +4,10 @@
   Links: </strong> [[Paper]](https://arxiv.org/abs/2308.04224) </strong> [[Twitter Post]](https://twitter.com/C3I_NUIG/status/1654440034760552448?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1654440034760552448%7Ctwgr%5Edfcbe1936e3fd8c0ff5407445718e9feda207669%7Ctwcon%5Es1_c10&ref_url=https%3A%2F%2Fpublish.twitter.com%2F%3Furl%3Dhttps%3A%2F%2Ftwitter.com%2FC3I_NUIG%2Fstatus%2F1654440034760552448)
 @machine learning @FR @computer vision @face biometrics.
 
+<img src="/static/assets/img/CSE1.jpeg" alt="drawing" width="600"/>
+<img src="/static/assets/img/CSE3.jpeg" alt="drawing" width="600"/>
+<img src="/static/assets/img/Wang-Poster.png" alt="drawing" width="600"/>
+
 ### 2022
 
 - Attended and presented my confernece paper on thermal imaging for autonomous systems and edge computing in ICMV-2022 conference in Rome Italy. The work is fosused on optimization and deployment of thermal obejct detection system on Raspberry Pi 4 board. 
