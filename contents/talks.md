@@ -17,7 +17,6 @@
 <img src="/static/assets/img/Wang-Poster.png" alt="drawing" width="600"/>
 
 <br>
-<br>
 
 ### 2022
 
