@@ -6,6 +6,7 @@
 <img src="/static/assets/img/IMVIP23-2.jpg" alt="drawing" width="600"/>
 <img src="/static/assets/img/IMVIP23-3.jpg" alt="drawing" width="600"/>
 <img src="/static/assets/img/IMVIP23-4.jpg" alt="drawing" width="600"/>
+<br>
 
 - Presented and won first place poster award Paper 'Will your Doorbell Camera still recognize you as you grow old' at NUIG College of Sceince and Engineering (CSE) Research and Innovation Day Program 2023. This work explores the effect of age and aging on the performance of facial authentication methods.
 
