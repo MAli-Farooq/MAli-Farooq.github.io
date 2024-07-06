@@ -1,4 +1,7 @@
 ### 2023
+- I delivered a lecture/tutorial on "Domain Adaptation Using GANs and Other State-of-the-Art Generative Neural Technologies to Build Facial Data Samples at Scale" at the Irish Machine Vision and Image Processing Conference 2023 (IMVIP23). This event was held at the University of Galway, where I also served as Program Chair.
+   Links: </strong> [[Confernce Proceddings]](https://iprcs.github.io/IMVIP.html#2023) @machine learning @GEN-AI @computer vision @face biometrics.
+
 - Presented and won first place poster award Paper 'Will your Doorbell Camera still recognize you as you grow old' at NUIG College of Sceince and Engineering (CSE) Research and Innovation Day Program 2023. This work explores the effect of age and aging on the performance of facial authentication methods.
 
   Links: </strong> [[Paper]](https://arxiv.org/abs/2308.04224) </strong> [[Twitter Post]](https://twitter.com/C3I_NUIG/status/1654440034760552448?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1654440034760552448%7Ctwgr%5Edfcbe1936e3fd8c0ff5407445718e9feda207669%7Ctwcon%5Es1_c10&ref_url=https%3A%2F%2Fpublish.twitter.com%2F%3Furl%3Dhttps%3A%2F%2Ftwitter.com%2FC3I_NUIG%2Fstatus%2F1654440034760552448)
