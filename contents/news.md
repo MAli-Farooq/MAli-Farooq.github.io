@@ -7,6 +7,9 @@
 - Become IEEE Professional and further IEEE Engineering in Medicine and Biology Society (EMBS) Member.
   
 - Hosted and served as a Program Chair for <strong>Irish Machine Vision and Image Processing 2023 Conference (IMVIP23) </strong> at University of Galway.
+  <img src="/static/assets/img/IMVIP23-5.jpg" alt="drawing" width="300"/>
+  <img src="/static/assets/img/IMVIP23-6.jpg" alt="drawing" width="300"/>
+  <img src="/static/assets/img/IMVIP23-7.jpg" alt="drawing" width="300"/>
 
 
 
