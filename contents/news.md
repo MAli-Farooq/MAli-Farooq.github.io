@@ -2,6 +2,6 @@
 
   </strong> [[PROJECT ARIA]](https://www.projectaria.com/)
 
-  <img src="/static/assets/img/Aria.jpeg" alt="drawing" width="600"/>
+  <img src="/static/assets/img/Aria.jpeg" alt="drawing" width="300"/>
 
 
