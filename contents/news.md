@@ -6,6 +6,11 @@
 
   <br>
 
+- Hosting two special workshop sessions in <strong>Irish Machine Vision and Image Processing 2024 Conference (IMVIP23) </strong> on <strong>Synthetic Data </strong> and Sensing without Seeing. 
+
+  </strong> [[IMVIP24 Synthetic Data Workshop]](https://sites.google.com/view/imvip2024/special-sessions/workshop-synthetic-data)
+  </strong> [[IMVIP24 Sensing without Seeing Workshop]](https://sites.google.com/view/imvip2024/special-sessions/workshop-sensing-without-seeing)
+
 - Become <strong>IEEE Professional </strong> and further <strong>IEEE Engineering in Medicine and Biology Society (EMBS) Member </strong>.
   
 - Hosted and served as a Program Chair for <strong>Irish Machine Vision and Image Processing 2023 Conference (IMVIP23) </strong> at University of Galway.
