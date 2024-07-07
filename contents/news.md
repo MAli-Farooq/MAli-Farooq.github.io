@@ -4,4 +4,7 @@
 
   <img src="/static/assets/img/Aria.jpeg" alt="drawing" width="300"/>
 
+  - Become IEEE Professional and further IEEE Engineering in Medicine and Biology Society (EMBS) Member. 
+
+
 
