@@ -6,7 +6,7 @@
 
   <br>
 
-- Hosting two special workshop sessions in <strong>Irish Machine Vision and Image Processing 2024 Conference (IMVIP23) </strong> on <strong>Synthetic Data </strong> and Sensing without Seeing. 
+- Hosting two special workshop sessions in <strong>Irish Machine Vision and Image Processing 2024 Conference (IMVIP23) </strong> on <strong>Synthetic Data </strong> and <strong>Sensing without Seeing </strong>. 
 
   </strong> [[IMVIP24 Synthetic Data Workshop]](https://sites.google.com/view/imvip2024/special-sessions/workshop-synthetic-data)
   </strong> [[IMVIP24 Sensing without Seeing Workshop]](https://sites.google.com/view/imvip2024/special-sessions/workshop-sensing-without-seeing)
