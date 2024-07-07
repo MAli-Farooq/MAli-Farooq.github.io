@@ -12,6 +12,5 @@
   <img src="/static/assets/img/IMVIP23-6.jpg" alt="drawing" width="300"/>
   <img src="/static/assets/img/IMVIP23-7.jpg" alt="drawing" width="300"/>
   
-
-
+  
 
