@@ -13,6 +13,17 @@ Postdoctoral Researcher and Machine Learning Research Intern with expertise in C
 #### Email
 muhammadali.farooq[at]universityofgalway.ie
 
+#### Experiance
+- 2022.09 - Currently working as a Postdoctoral Researcher, Affiliation: School of Engineering, C3I Imaging Group (National University of Ireland Galway (NUIG) aka University of Galway.
+  
+- 2024.01 - Current - ML Intern, Affiliation: Tobii- Fotonation, Galway Ireland.
+
+- 2019.09 - 2023.12 - ML Intern, Affiliation: Xperi- Fotonation, Galway Ireland.
+
+- 2019.09 - 2022.09 - Ph.D Researcher, Affiliation: School of Engineering, C3I Imaging Group (National University of Ireland Galway (NUIG) aka University of Galway.
+
+- 2016.08 - 2019.07 - Research Officer (Computer Vision Researcher), Affiliation: School of Engineering, PN Engineering College, National University of Sciences and Technology (NUST) Pakistan.
+
 #### Education
 - 2022.09 - Ph.D, Electrical and Electronic Engineering, School of Engineering, National University of Ireland Galway (NUIG).
 
