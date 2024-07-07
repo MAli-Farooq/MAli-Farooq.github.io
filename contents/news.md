@@ -4,7 +4,7 @@
 
   <img src="/static/assets/img/Aria.jpeg" alt="drawing" width="300"/>
 
-- Become IEEE Professional and further IEEE Engineering in Medicine and Biology Society (EMBS) Member.
+- Become <strong>IEEE Professional </strong> and further <strong>IEEE Engineering in Medicine and Biology Society (EMBS) Member </strong>.
   
 - Hosted and served as a Program Chair for <strong>Irish Machine Vision and Image Processing 2023 Conference (IMVIP23) </strong> at University of Galway.
   
