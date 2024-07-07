@@ -24,6 +24,8 @@ muhammadali.farooq[at]universityofgalway.ie
 
 - 2016.08 - 2019.07 - Research Officer (Computer Vision Researcher), Affiliation: School of Engineering, PN Engineering College, National University of Sciences and Technology (NUST) Pakistan.
 
+- 2014.01 - 2015.02 - Trainee Engineer, Affiliation: Aga Khan University Hospital Pakistan.
+
 #### Education
 - 2022.09 - Ph.D, Electrical and Electronic Engineering, School of Engineering, National University of Ireland Galway (NUIG).
 
