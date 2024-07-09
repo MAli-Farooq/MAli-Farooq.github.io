@@ -1,11 +1,11 @@
-- :rocket: :rocket: :rocket: I will be attending IEEE EMBC 2024 Conference where I will be presenting two of my accepted papers focused on using few shot fine tuning approach in stable diffusion models for rendering high quality synthetic medical imaging data. The below links provide the archive paper links. :fire: :fire:
+- :rocket: :rocket: :rocket: I will be attending IEEE EMBC 2024 Conference where I will be presenting two of my accepted papers focused on using few shot fine tuning approach in stable diffusion models for rendering high quality synthetic medical imaging data. The below links provide the archive paper links.
 
    </strong> [[IEEE EMBC Paper 1]](https://arxiv.org/abs/2401.05159)
  
    </strong> [[IEEE EMBC Paper 2]](https://arxiv.org/abs/2402.06969)
   
   
-- Recently joined <strong>Project ARIA Glasses by META </strong> as research academic partner for advancing research in the domains of eye tracking and machine perception.
+- :fire: :fire: Recently joined <strong>Project ARIA Glasses by META </strong> as research academic partner for advancing research in the domains of eye tracking and machine perception.
 
   </strong> [[PROJECT ARIA]](https://www.projectaria.com/)
 
