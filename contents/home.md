@@ -8,7 +8,7 @@ Postdoctoral Researcher and Machine Learning Research Intern with expertise in C
 
   
 #### Lets Connect
-[![senli1073](https://img.shields.io/badge/Muhammad-Scholar-blue?logo=linkedin)](https://www.linkedin.com/in/muhammad-ali-farooq-876235a1/)
+[![senli1073](https://img.shields.io/badge/Muhammad-Linkedin-blue?logo=linkedin)](https://www.linkedin.com/in/muhammad-ali-farooq-876235a1/)
 
 
 #### Email
