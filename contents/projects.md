@@ -35,6 +35,8 @@ Links: </strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/1026840
 
 As part of my PhD research carried under carried under the HELIAUS EU Project, I am focused on enhancing situational awareness for drivers through the integration of thermal object detection technology. Keeping this in view I have wokred on thermal object detection and sensing for advanced vehicular systems. Here, I utilize YOLO-V5, and YOLO-V7 to detect seven different classes within the thermal spectrum, significantly enhancing the safety and performance of modern vehicles. This project focuses on developing and implementing robust detection algorithms tailored for thermal imaging, enabling reliable identification of pedestrians, animals, moving vehicles, and other obstacles in low-visibility conditions. By performing the robust fine-tuning of End-to-END CNN I was to acvive the maximum mean average precesion (mAP) of 91.29%.The below links will provide access to complete study, code samples, and tuned thermal models thus providing insights into how thermal sensing can revolutionize vehicular safety.
 
+Links: </strong> [[Paper]](https://ieeexplore.ieee.org/document/9618926)  </strong> [[Github Page]](https://github.com/MAli-Farooq/Thermal-YOLO)  </strong> [[Tuned Thermal Object Detection Models]](https://huggingface.co/MAli-Farooq/Thermal_Object_Detection)
+
 
 - Deployment of Smart Thermal Imaging Pipelines on Edge Computing Board
 - Autonomous Thermal Gender Classification System
