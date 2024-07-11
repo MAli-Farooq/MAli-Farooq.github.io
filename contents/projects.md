@@ -29,7 +29,7 @@ Links: </strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/1026840
 
 -  <strong>Thermal Sensing for ADAS </strong>
 
-<img src="/static/assets/img/OD-1.png" alt="drawing" width="600"/>
+<img src="/static/assets/img/OD-3.png" alt="drawing" width="600"/>
 <img src="/static/assets/img/OD-2.png" alt="drawing" width="600"/>
 
 
