@@ -28,6 +28,7 @@ Generating synthetic child images using Generative Adversarial Networks (GANs) r
 Links: </strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/10268402)  </strong> [[Project Website Page]](https://mali-farooq.github.io/childgan/)  </strong> [[Github-Page]](https://github.com/MAli-Farooq/ChildGAN) </strong> [[ChildGAN Model]](https://drive.google.com/drive/folders/1JtLsueTcNOXfmCv76Y78YRu-Q38NfTAL?usp=share_link)  </strong> [[ChildGAN Sample Dataset]](https://drive.google.com/drive/folders/1QPTI9Sd4TXTcQWbTEojv6pdWBxlVd1n1?usp=share_link) </strong> [[ChildGAN Full Dataset]](https://drive.google.com/drive/folders/1QPTI9Sd4TXTcQWbTEojv6pdWBxlVd1n1?usp=share_link)
 
 -  <strong>Thermal Sensing for ADAS </strong>
+
 Welcome to my GitHub project page dedicated to my PhD research on thermal object detection and sensing for advanced vehicular systems. This work was carried under the HELIAUS EU Project. Here, I utilize YOLO V5 to detect seven different classes within the thermal spectrum, significantly enhancing the safety and performance of modern vehicles. This project focuses on developing and implementing robust detection algorithms tailored for thermal imaging, enabling reliable identification of pedestrians, animals, moving vehicles, and other obstacles in low-visibility conditions. The below links will provide access to complete study, code samples, and tuned thermal models thus providing insights into how thermal sensing can revolutionize vehicular safety.
 
 
