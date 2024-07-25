@@ -2,6 +2,7 @@
 
 - Recently I presented my research work on Dermoscopic and CTA medical data synthesis: "Derm-T2IM" and "Type B Aortic Dissection CTA Synthesis using Few-shot Learning Approaches via Vision Language Models," at the IEEE EMBC 2024 conference in Orlando! It was an incredible opportunity to discuss innovative techniques in medical imaging and data synthesis with leading experts in the field.
 #IEEEEMBC hashtag#MedicalImaging hashtag#FewShotLearning hashtag#VisionLanguageModels
+
   Links: </strong> [[Paper-1]](https:https://lnkd.in/ghv3VuwK), </strong> [[Paper-2]](https://lnkd.in/eprrGRhG)
 
   <img src="/static/assets/img/EMBC4.jpeg" alt="drawing" width="600"/>
