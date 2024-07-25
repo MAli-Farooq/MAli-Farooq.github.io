@@ -53,5 +53,7 @@
 
 - <strong>Muhammad Ali Farooq* </strong> 2022. "Evaluations of Thermal Imaging Technology for Automotive Use Cases.". Available at: https:https://researchrepository.universityofgalway.ie/entities/publication/5f6e088b-3619-47cb-9e47-93d84bae4793.
 
+- </strong> [[Ph.D Thesis Report]](https://researchrepository.universityofgalway.ie/entities/publication/5f6e088b-3619-47cb-9e47-93d84bae4793)
+
 
 
