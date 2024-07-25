@@ -5,6 +5,9 @@
   Links: </strong> [[Paper-1]](https:https://lnkd.in/ghv3VuwK), </strong> [[Paper-2]](https://lnkd.in/eprrGRhG)
 
   <img src="/static/assets/img/EMBC4.jpeg" alt="drawing" width="600"/>
+  <img src="/static/assets/img/EMBC3.jpeg" alt="drawing" width="600"/>
+  <img src="/static/assets/img/EMBC5.jpeg" alt="drawing" width="600"/>
+  <img src="/static/assets/img/EMBC6.jpeg" alt="drawing" width="600"/>
 
 ### 2023
 - I delivered a lecture/tutorial on "Domain Adaptation Using GANs and Other State-of-the-Art Generative Neural Technologies to Build Facial Data Samples at Scale" at the Irish Machine Vision and Image Processing Conference 2023 (IMVIP23). This event was held at the University of Galway, where I also served as Program Chair.
