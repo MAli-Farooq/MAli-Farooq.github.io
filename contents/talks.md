@@ -1,3 +1,9 @@
+### 2024
+
+- Recently I presented my research work on Dermoscopic and CTA medical data synthesis: "Derm-T2IM" and "Type B Aortic Dissection CTA Synthesis using Few-shot Learning Approaches via Vision Language Models," at the IEEE EMBC 2024 conference in Orlando! It was an incredible opportunity to discuss innovative techniques in medical imaging and data synthesis with leading experts in the field.
+- hashtag#IEEEEMBC hashtag#MedicalImaging hashtag#FewShotLearning hashtag#VisionLanguageModels
+  Links: </strong> [[Paper]](https:https://lnkd.in/ghv3VuwK)
+
 ### 2023
 - I delivered a lecture/tutorial on "Domain Adaptation Using GANs and Other State-of-the-Art Generative Neural Technologies to Build Facial Data Samples at Scale" at the Irish Machine Vision and Image Processing Conference 2023 (IMVIP23). This event was held at the University of Galway, where I also served as Program Chair.
    Links: </strong> [[Confernce Proceddings]](https://iprcs.github.io/IMVIP.html#2023) @machine learning @GEN-AI @computer vision @face biometrics.
