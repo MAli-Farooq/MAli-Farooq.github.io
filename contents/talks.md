@@ -6,7 +6,7 @@
   Links: </strong> [[Paper-1]](https:https://lnkd.in/ghv3VuwK), </strong> [[Paper-2]](https://lnkd.in/eprrGRhG)
 
   <img src="/static/assets/img/EMBC4.jpeg" alt="drawing" width="600"/>
-  <img src="/static/assets/img/EMBC3.jpeg" alt="drawing" width="500"/>
+  <img src="/static/assets/img/EMBC3.jpeg" alt="drawing" width="600"/>
   <img src="/static/assets/img/EMBC5.jpeg" alt="drawing" width="600"/>
   <img src="/static/assets/img/EMBC6.jpeg" alt="drawing" width="600"/>
 
