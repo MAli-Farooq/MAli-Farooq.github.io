@@ -53,5 +53,9 @@
 
 - <strong>Muhammad Ali Farooq* </strong> 2022. "Evaluations of Thermal Imaging Technology for Automotive Use Cases.". Available at: </strong> [[Ph.D Thesis Report]](https://researchrepository.universityofgalway.ie/entities/publication/5f6e088b-3619-47cb-9e47-93d84bae4793)
 
+### Master's Thesis
+
+- <strong>Muhammad Ali Farooq* </strong> 2017. "Automatic Lesion Detection System (ALDS) for Skin Cancer Classification Using SVM and Neural Classifiers.". Available at: </strong> [[MS Thesis Report]](https://drive.google.com/file/d/1IULbqIML6YK2sFRtpyDuhta87sbhdoYT/view)
+
 
 
