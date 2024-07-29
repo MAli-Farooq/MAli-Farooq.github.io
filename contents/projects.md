@@ -42,6 +42,8 @@ Links: </strong> [[Paper]](https://ieeexplore.ieee.org/document/9618926)  </stro
  
 - Autonomous Thermal Gender Classification System
 
+<img src="/static/assets/img/Gender.png" alt="drawing" width="600"/>
+
 I proposed an autonomous thermal gender classification system using LWIR thermal imaging for in-cabin driver monitoring systems. This work was part of my Ph.D. research, where I employed transfer learning to fine-tune nine state-of-the-art end-to-end CNN models, including ResNet-50, ResNet-101, Inception-V3, MobileNet-V2, VGG-19, AlexNet, DenseNet-121, DenseNet-201, and EfficientNet-B4. Additionally, I developed a novel CNN architecture called GENNET, which was trained and validated for binary thermal gender classification, achieving an overall accuracy of 91.1% when compared with other pre-trained CNN models. 
 
 Links: </strong> [[Paper]](https://www.spiedigitallibrary.org/journals/journal-of-electronic-imaging/volume-29/issue-06/063004/Performance-estimation-of-the-state-of-the-art-convolution-neural/10.1117/1.JEI.29.6.063004.full#_=_) </strong> [[Github Repository]](https://github.com/MAli-Farooq/Gender-Classification-Using-Thermal-Data)
