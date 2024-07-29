@@ -40,6 +40,7 @@ Links: </strong> [[Paper]](https://ieeexplore.ieee.org/document/9618926)  </stro
 
 - <strong>Deployment of Smart Thermal Imaging Pipelines on Edge Computing Board </strong>
 
+<img src="/static/assets/img/Jetson.gif" alt="drawing" width="600"/>
 In this project I have deployed optimized thermal object detection networks using model quantization methods, TensorRT, and TensorFlow Lite inference accelerator tools on Nvidia Jetson Nano, Nvidia Jetson Xavier, and Raspberry Pi boards. The deployment on the Jetson Xavier achieved the fastest inference rate, reaching 60 FPS. Further the deployed optimzied model was validated on locally acquired C3I THERMAL AUTOMOTIVE DATASET with overall mAP of 71.9%. The complete details can be found in below links.
 
 Links: </strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/9732195) </strong> [[Paper]](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12701/1270102/Development-optimization-and-deployment-of-thermal-forward-vision-systems-for/10.1117/12.2679749.short?webSyncID=2aed2ae2-d3d9-a151-5256-2751232bb40e&sessionGUID=7a253586-9206-e7da-04ee-b52c86137086) [[Github Page]](https://github.com/MAli-Farooq/Thermal-YOLO-And-Model-Optimization-Using-TensorFlowLite?tab=readme-ov-file)
