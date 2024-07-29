@@ -38,9 +38,10 @@ As part of my PhD research carried under the HELIAUS EU Project, I focused on en
 Links: </strong> [[Paper]](https://ieeexplore.ieee.org/document/9618926)  </strong> [[Github Page]](https://github.com/MAli-Farooq/Thermal-YOLO)  </strong> [[Tuned Thermal Object Detection Models]](https://huggingface.co/MAli-Farooq/Thermal_Object_Detection)
 
 
-- <strong>Deployment of Smart Thermal Imaging Pipelines on Edge Computing Board </strong>
+- <strong>Deployment of Smart Thermal Imaging Pipelines on Edge Computing Boards </strong>
 
 <img src="/static/assets/img/jetson.gif" alt="drawing" width="600"/>
+<img src="/static/assets/img/thermalinf.gif" alt="drawing" width="600"/>
 
 In this project I have deployed optimized thermal object detection networks using model quantization methods, TensorRT, and TensorFlow Lite inference accelerator tools on Nvidia Jetson Nano, Nvidia Jetson Xavier, and Raspberry Pi boards. The deployment on the Jetson Xavier achieved the fastest inference rate, reaching 60 FPS. Further the deployed optimzied model was validated on locally acquired C3I THERMAL AUTOMOTIVE DATASET with overall mAP of 71.9%. The complete details can be found in below links.
 
