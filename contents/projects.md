@@ -58,8 +58,8 @@ Links: </strong> [[Paper]](https://www.spiedigitallibrary.org/journals/journal-o
 
 - <strong>Digital Incubator using Arduino Controller </strong>
 
-<img src="/static/assets/img/ar1.PNG" alt="drawing" width="600"/>
 <img src="/static/assets/img/ar2.PNG" alt="drawing" width="600"/>
+<img src="/static/assets/img/ar1.PNG" alt="drawing" width="600"/>
 
 Incubators are very important for many experimental works in the field of cell biology, microbiology as well as molecular biology and cultures are used for the bacteria and other Eukaryota cells. In this project I have designed an egg incubator that monitors and control the temperature as well as lightness in the desired or optimum range required for the proper hatching of eggs as a primary task. This research project was carried as part of my final year project where I used Arduino controller along with various sensors which includes temepraturer and light sensors. For automating the whole process I have utilized if-else and PID controller methodlogy.
 
