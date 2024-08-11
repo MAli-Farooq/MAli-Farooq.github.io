@@ -1,3 +1,7 @@
+- Date: 14th August 2024
+- 
+I am thrilled to announce that I will be delivering keynote talk in upcoming IMVIP 2024 conference workshop <strong>Synthetic Data </strong> which will cover the recent sucess of latent diffusion models and how we can effectively used these models for varoius computer vision appliations.
+
 - Date: 11th August 2024
 
 I have been recently appointed as the Mentor for IEEE Engineering Medicine and Biology Society Student Activities Committee where I will helping/ mentoring fellow members and young professional in there research work.
@@ -21,7 +25,7 @@ I will be attending IEEE EMBC 2024 Conference where I will be presenting two of 
 
   <br>
 
-- Hosting two special workshop sessions in <strong>Irish Machine Vision and Image Processing 2024 Conference (IMVIP23) </strong> on <strong>Synthetic Data </strong> and <strong>Sensing without Seeing </strong>. 
+- Hosting two special workshop sessions in <strong>Irish Machine Vision and Image Processing 2024 Conference (IMVIP24) </strong> on <strong>Synthetic Data </strong> and <strong>Sensing without Seeing </strong>. 
 
   </strong> [[IMVIP24 Synthetic Data Workshop]](https://sites.google.com/view/imvip2024/special-sessions/workshop-synthetic-data)
   
