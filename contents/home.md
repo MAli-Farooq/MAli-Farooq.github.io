@@ -12,7 +12,8 @@ Postdoctoral Researcher and Machine Learning Research Intern with expertise in C
 
 
 #### Email
-muhammadali.farooq[at]universityofgalway.ie
+University: muhammadali.farooq[at]universityofgalway.ie
+IEEE: muhammadali.farooq[at]ieee.org
 
 #### Experiance
 - 2022.09 - Currently working as a Postdoctoral Researcher, Affiliation: School of Engineering, C3I Imaging Group (National University of Ireland Galway (NUIG) aka University of Galway.
