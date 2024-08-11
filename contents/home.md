@@ -13,6 +13,7 @@ Postdoctoral Researcher and Machine Learning Research Intern with expertise in C
 
 #### Email
 University: muhammadali.farooq[at]universityofgalway.ie
+
 IEEE: muhammadali.farooq[at]ieee.org
 
 #### Experiance
