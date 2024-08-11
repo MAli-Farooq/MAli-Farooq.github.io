@@ -18,8 +18,9 @@ I will be attending IEEE EMBC 2024 Conference where I will be presenting two of 
  
    </strong> [[IEEE EMBC Paper 2]](https://arxiv.org/abs/2402.06969)
   
-  
-- Recently joined <strong>Project ARIA Glasses by META </strong> as research academic partner for advancing research in the domains of eye tracking and machine perception.
+- Date: 20th June 2024
+
+Recently joined <strong>Project ARIA Glasses by META </strong> as research academic partner for advancing research in the domains of eye tracking and machine perception.
 
   </strong> [[PROJECT ARIA]](https://www.projectaria.com/)
 
@@ -27,13 +28,17 @@ I will be attending IEEE EMBC 2024 Conference where I will be presenting two of 
 
   <br>
 
-- Hosting two special workshop sessions in <strong>Irish Machine Vision and Image Processing 2024 Conference (IMVIP24) </strong> on <strong>Synthetic Data </strong> and <strong>Sensing without Seeing </strong>. 
+- Date: 15th June 2024
+
+Hosting two special workshop sessions in <strong>Irish Machine Vision and Image Processing 2024 Conference (IMVIP24) </strong> on <strong>Synthetic Data </strong> and <strong>Sensing without Seeing </strong>. 
 
   </strong> [[IMVIP24 Synthetic Data Workshop]](https://sites.google.com/view/imvip2024/special-sessions/workshop-synthetic-data)
   
   </strong> [[IMVIP24 Sensing without Seeing Workshop]](https://sites.google.com/view/imvip2024/special-sessions/workshop-sensing-without-seeing)
 
-- Become <strong>IEEE Professional </strong> and further <strong>IEEE Engineering in Medicine and Biology Society (EMBS) Member </strong>.
+ - Date: 10th June 2024
+
+ Become <strong>IEEE Professional </strong> and further <strong>IEEE Engineering in Medicine and Biology Society (EMBS) Member </strong>.
   
 - Hosted and served as a Program Chair for <strong>Irish Machine Vision and Image Processing 2023 Conference (IMVIP23) </strong> at University of Galway.
   
