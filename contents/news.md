@@ -1,6 +1,8 @@
 - Date: 14th August 2024
 
-I am thrilled to announce that I will be delivering keynote talk in upcoming IMVIP 2024 conference workshop <strong>Synthetic Data </strong> which will cover the recent sucess of latent diffusion models and how we can effectively used these models for varoius computer vision appliations.
+I am excited to share that I will be delivering a keynote talk at the upcoming IMVIP 2024 conference workshop titled <strong>Synthetic Data </strong>. In this session, I will delve into the recent advancements in latent diffusion models and explore their successful applications in various computer vision tasks. My talk will highlight how these models can be effectively leveraged to enhance data generation, improve model performance, and address challenges in domains where annotated data is scarce. The conference, which promises to bring together leading experts in the field, will be hosted by the University of Limerick. I look forward to discussing these cutting-edge techniques and their transformative potential in computer vision with the research community.
+
+ </strong> [[IMVIP24 Synthetic Data Workshop]](https://sites.google.com/view/imvip2024/special-sessions/workshop-synthetic-data)
 
 - Date: 11th August 2024
 
