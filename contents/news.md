@@ -1,5 +1,5 @@
 - Date: 14th August 2024
-- 
+
 I am thrilled to announce that I will be delivering keynote talk in upcoming IMVIP 2024 conference workshop <strong>Synthetic Data </strong> which will cover the recent sucess of latent diffusion models and how we can effectively used these models for varoius computer vision appliations.
 
 - Date: 11th August 2024
