@@ -3,6 +3,7 @@
 -  Recently I had the honor of delivering a keynote talk at the Irish Machine Vision and Image Processing Conference, where I discussed the latest trends in generative AI. My presentation, titled "From GANs to Diffusion Models," explored the evolution and advancements in generative algorithms, highlighting how diffusion models are shaping the future of AI-driven image synthesis and their applications in various computer vision tasks.
 
    Links: </strong> [[IMVIP24 Special Session 'Synthetic Data: Innovation, Limitations and Practical Applications']](https://sites.google.com/view/imvip2024/program/day-1-special-sessions)
+   Links: </strong> [[X Post]](https://x.com/ImVIPconference)
 
   <img src="/static/assets/img/IMVIP24-1.PNG" alt="drawing" width="600"/>
   <img src="/static/assets/img/IMVIP24-2.PNG" alt="drawing" width="600"/>
