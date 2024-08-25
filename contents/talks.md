@@ -1,6 +1,10 @@
 ### 2024
 
-- Recently I presented my research work on Dermoscopic and CTA medical data synthesis: "Derm-T2IM" and "Type B Aortic Dissection CTA Synthesis using Few-shot Learning Approaches via Vision Language Models," at the IEEE EMBC 2024 conference in Orlando! It was an incredible opportunity to discuss innovative techniques in medical imaging and data synthesis with leading experts in the field.
+-  Recently I had the honor of delivering a keynote talk at the Irish Machine Vision and Image Processing Conference, where I discussed the latest trends in generative AI. My presentation, titled "From GANs to Diffusion Models," explored the evolution and advancements in generative algorithms, highlighting how diffusion models are shaping the future of AI-driven image synthesis and their applications in various computer vision tasks.
+
+ Links: </strong> [[IMVIP24 Special Session 'Synthetic Data: Innovation, Limitations and Practical Applications']](https://sites.google.com/view/imvip2024/program/day-1-special-sessions)
+
+- I presented my research work on Dermoscopic and CTA medical data synthesis: "Derm-T2IM" and "Type B Aortic Dissection CTA Synthesis using Few-shot Learning Approaches via Vision Language Models," at the IEEE EMBC 2024 conference in Orlando! It was an incredible opportunity to discuss innovative techniques in medical imaging and data synthesis with leading experts in the field.
 #IEEEEMBC hashtag#MedicalImaging hashtag#FewShotLearning hashtag#VisionLanguageModels
 
   Links: </strong> [[IEEE EMBC Paper 1]](https://arxiv.org/abs/2401.05159), </strong> [[IEEE EMBC Paper 2]](https://arxiv.org/abs/2402.06969)
