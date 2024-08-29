@@ -45,9 +45,6 @@
     
   - Shariff, Waseem, <strong>Muhammad Ali Farooq* </strong>, Joe Lemley, and Peter Corcoran. "Event-based YOLO object detection: Proof of concept for forward perception system." In Fifteenth International Conference on Machine Vision (ICMV 2022), vol. 12701, pp. 74-80. SPIE, 2023.</strong> [[Paper]](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12701/127010A/Event-based-YOLO-object-detection--proof-of-concept-for/10.1117/12.2679341.short#_=_)
 
-### Datasets
-
-- <strong>Muhammad Ali Farooq* </strong> 2022. "C3I THERMAL AUTOMOTIVE DATASET.". Available at: https://ieee-dataport.org/documents/c3i-thermal-automotive-dataset. </strong> [[Dataset Details]](https://ieee-dataport.s3.amazonaws.com/docs/111517/Complete%20Dataset%20Details%20-%20NUIG%20-2022.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJOHYI4KJCE6Q7MIQ%2F20240704%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240704T224013Z&X-Amz-SignedHeaders=Host&X-Amz-Expires=86400&X-Amz-Signature=da2797378c3c1868b5abfbe500e90bfcf038588be7406fc30a1ada078bef13bf)
 
 ### Ph.D Thesis
 
