@@ -9,7 +9,10 @@ Dataset Avaliable at:
 
 ### Real World Datasets
 
-In addition to synthetic datasets I have also acquired and open-sourced thermal imaging out cabin dataset recorded via LWIR 640X480 uncooled thermal imaging camera. The dataset details can be found in provided link.
+In addition to synthetic datasets I have also acquired and open-sourced real-world thermal imaging out cabin dataset recorded via LWIR 640X480 uncooled thermal imaging camera for Advanced Driver-Assistance Systems (ADAS). 
+
+#### C3I Thermal Automative Dataset
+The C3I Thermal Automotive Dataset provides > 35,000 distinct frames along with annotated thermal frames for the development of smart thermal perception system/ object detection system that will enable the automotive industry and researchers to develop safer and more efficient ADAS and self-driving car systems. The overall dataset is acquired, processed, and open-sourced in challenging weather and environmental scenarios. The dataset is recorded from a lost-cost yet effective 640x480 uncooled LWIR thermal camera. The dataset is gathered by mounting the camera stand-alone and on an electric vehicle to minimize mechanical vibrations.
 
 <img src="/static/assets/img/thermalobject.PNG" alt="drawing" width="600"/>
 
