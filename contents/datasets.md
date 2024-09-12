@@ -1,4 +1,5 @@
 ### Synthetic Datasets
+<h3 style="color:blue;">Synthetic Datasets</h3>
 I am working to explore new dimensions in the domain of generative AI, focusing on the creation and curation of datasets for medical imaging, face biometrics, and child data. My goal is to push the boundaries of AI's application in these sensitive and impactful areas, ensuring ethical, accurate, and innovative outcomes. I have created synthetic datasets for various computer vision applications using stable diffsuion and large langauge models (LLM's),  which include dermoscopic skin lesion dataset, Type B Aortic Dissection (TBAD), child race data, and child face data. These datasets are designed to advance research and development in critical areas which includes medical imaging, face biometrics and GDPR.
 
 #### DermT2IM Dataset
