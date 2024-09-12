@@ -4,6 +4,8 @@ I am working to explore new dimensions in the domain of generative AI, focusing 
 #### DermT2IM Dataset
 1. The Dataset6K folder consist of two sub folders which includes Benign and Malignant data samples each having 3k data samples.
 2. The Smart transformation folder consist of three subfolders which inlcudes tiny benign mole, large malignant moles and multiple moles each having advanced skin lesion augmentation results.
+3. 
+<img src="/static/assets/img/Cancer.PNG" alt="drawing" width="600"/>
 
 Available at: https://huggingface.co/datasets/MAli-Farooq/Derm-T2IM-Dataset 
 
