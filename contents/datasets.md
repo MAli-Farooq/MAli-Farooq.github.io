@@ -11,6 +11,8 @@ Available at: https://huggingface.co/datasets/MAli-Farooq/Derm-T2IM-Dataset
 
 #### ChildGAN Dataset
 
+<img src="/static/assets/img/3.png" alt="drawing" width="600"/>
+
 #### Child Race Dataset
 
 #### Type B Aortic Dissection (TBAD) CTA Dataset
