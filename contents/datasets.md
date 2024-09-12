@@ -2,9 +2,9 @@
 I am working to explore new dimensions in the domain of generative AI, focusing on the creation and curation of datasets for medical imaging, face biometrics, and child data. My goal is to push the boundaries of AI's application in these sensitive and impactful areas, ensuring ethical, accurate, and innovative outcomes. I have created synthetic datasets for various computer vision applications using stable diffsuion and large langauge models (LLM's),  which include dermoscopic skin lesion dataset, Type B Aortic Dissection (TBAD), child race data, and child face data. These datasets are designed to advance research and development in critical areas which includes medical imaging, face biometrics and GDPR.
 
 #### DermT2IM Dataset
-1. The Dataset6K folder consist of two sub folders which includes Benign and Malignant data samples each having 3k data samples.
+1. The Dataset6K folder consist of two main classes which includes Benign and Malignant data samples each having 3k data samples.
 2. The Smart transformation folder consist of three subfolders which inlcudes tiny benign mole, large malignant moles and multiple moles each having advanced skin lesion augmentation results.
-3. 
+
 <img src="/static/assets/img/Cancer.png" alt="drawing" width="600"/>
 
 Available at: https://huggingface.co/datasets/MAli-Farooq/Derm-T2IM-Dataset 
