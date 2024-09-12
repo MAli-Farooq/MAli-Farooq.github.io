@@ -35,7 +35,7 @@ The C3I Thermal Automotive Dataset provides > 35,000 distinct frames along with 
 <h3 style="color:brown;">Datasets Services</h3>
   If you're looking for a custom synthetic dataset tailored to your specific application, including annotations and other requirements, you're in the right place! You can explore my complete portfolio of curated synthetic datasets, created using advanced computer vision techniques, under the "Datasets" section on my website. To request a dataset, simply fill out the Google form linked below, and I'll get in touch with you shortly.
 
-Note: Pricing will be determined based on the specific dataset requirements for your project.
+Google Form: https://forms.gle/EoJX6QybHRYfZ9J26
   
 
 
