@@ -21,7 +21,7 @@ Links: </strong> [[Paper]](https://arxiv.org/abs/2406.11592)  </strong> [[Projec
  
 -  <strong>ChildGAN </strong>
 
-<img src="/static/assets/img/3.png" alt="drawing" width="600"/>
+<img src="/static/assets/img/ChildGANBD.png" alt="drawing" width="600"/>
 
 Generating synthetic child images using Generative Adversarial Networks (GANs) represents a cutting-edge solution for creating diverse and high-quality datasets for research and application development. This project leverages advanced GAN models which mainly includes StyleGAN2 to produce realistic images of children, which can be instrumental in training and evaluating machine learning algorithms, especially in scenarios where obtaining real-world data is challenging due to privacy and ethical concerns. This approach ensures the protection of minors' identities while providing robust data for enhancing model performance. The generated data comprises over 300,000 distinct samples, featuring a wide range of variations such as facial expressions, age progression, eye blink effects, head poses, skin and hair color differences, and varying lighting conditions. Our GitHub repository includes pre-trained GAN models, detailed usage instructions, and further provide access to complete dataset as a resource to use our synthetic child images efficiently. By utilizing these resources, developers and researchers can access a wide variety of images that meet ethical standards and significantly contribute to the advancement of their projects.
 
