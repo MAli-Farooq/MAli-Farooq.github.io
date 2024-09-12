@@ -1,11 +1,11 @@
 ### Synthetic Datasets
-Work under progress.
+I am working to explore new dimensions in the domain of generative AI, focusing on the creation and curation of datasets for medical imaging, face biometrics, and child data. My goal is to push the boundaries of AI's application in these sensitive and impactful areas, ensuring ethical, accurate, and innovative outcomes. I have created synthetic datasets for various computer vision applications,  which include dermoscopic skin lesion dataset, Type B Aortic Dissection (TBAD), child race data, and child face data. These datasets are designed to advance research and development in critical areas which includes medical imaging, face biometrics and GDPR.
   
 
 
 ### Real World Datasets
 
-Thermal Imaging out cabin dataset recorded via LWIR 640X480 uncooled thermal imaging camera.
+In addition to synthetic datasets I have also acquired and open-sourced thermal imaging out cabin dataset recorded via LWIR 640X480 uncooled thermal imaging camera. The dataset details can be found in provided link.
 
 <img src="/static/assets/img/thermalobject.PNG" alt="drawing" width="600"/>
 
