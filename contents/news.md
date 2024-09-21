@@ -1,3 +1,6 @@
+- Date: 21st September 2024
+I am happy to share that I have been Research Fellow postion with University of Galway. I will be working on Irish Research Council (IRC) Privacy-Responsive Integrated computer Vision for Intelligent Safe sENsing and Situational Enhancement (Prive-Sense) project. This project will investigate novel combinations of multimodal imaging – near-Infrared (NIR), thermal-Infrared (LWIR) and neuro-morphic (event) camera technologies processed by AI networks, to infer actions or detect subtle thermal or biometric events related to a human subject. 
+
 - Date: 28th August 2024
 
 I recently delivered a keynote talk at the IMVIP 2024 conference workshop titled <strong>Synthetic Data </strong>. In this session, where I delve into the recent advancements in latent diffusion models and explore their successful applications in various computer vision tasks. My talk highlighted how these models can be effectively leveraged to enhance data generation, improve model performance, and address challenges in domains where annotated data is scarce. The conference, which promises to bring together leading experts in the field, was hosted by the University of Limerick. I look forward to discussing these cutting-edge techniques and their transformative potential in computer vision with the research community.
