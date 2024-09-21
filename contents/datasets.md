@@ -1,5 +1,5 @@
 <h3 style="color:brown;">Synthetic Datasets</h3>
-I am working to explore new dimensions in the domain of generative AI, focusing on the creation and curation of datasets for medical imaging, face biometrics, and child data. My goal is to push the boundaries of AI's application in these sensitive and impactful areas, ensuring ethical, accurate, and innovative outcomes. I have created synthetic datasets for various computer vision applications using stable diffsuion and large langauge models (LLM's),  which include dermoscopic skin lesion dataset, Type B Aortic Dissection (TBAD), child race data, and child face data. These datasets are designed to advance research and development in critical areas which includes medical imaging, face biometrics and GDPR.
+I am working to explore new dimensions in the domain of generative Vision AI, focusing on the creation and curation of datasets for medical imaging, face biometrics, and child data. My goal is to push the boundaries of AI's application in these sensitive and impactful areas, ensuring ethical, accurate, and innovative outcomes. I have created synthetic datasets for various computer vision applications using stable diffsuion and large langauge models (LLM's),  which include dermoscopic skin lesion dataset, Type B Aortic Dissection (TBAD), child race data, and child face data. These datasets are designed to advance research and development in critical areas which includes medical imaging, face biometrics and GDPR.
 
 #### DermT2IM Dataset
 1. The Dataset6K folder consist of two main classes which includes Benign and Malignant data samples each having 3k data samples.
@@ -18,6 +18,10 @@ The complete details of this dataset and project are avaliable on my project pag
 
 
 #### Child Race Dataset
+
+<img src="/static/assets/img/ChildRace.png" alt="drawing" width="600"/>
+
+The complete details of this dataset and project are avaliable on my project page https://mali-farooq.github.io/childdiffusion/
 
 
 #### Type B Aortic Dissection (TBAD) CTA Dataset
