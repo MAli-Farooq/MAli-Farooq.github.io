@@ -19,7 +19,7 @@ The complete details of this dataset and project are avaliable on my project pag
 
 #### Child Race Dataset
 
-<img src="/static/assets/img/ChildRace.png" alt="drawing" width="600"/> 
+<img src="/static/assets/img/ChildRace.PNG" alt="drawing" width="600"/> 
 
 The complete details of this dataset and project are avaliable on my project page https://mali-farooq.github.io/childdiffusion/
 
