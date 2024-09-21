@@ -1,5 +1,6 @@
 - Date: 21st September 2024
-I am happy to share that I have been Research Fellow postion with University of Galway. I will be working on Irish Research Council (IRC) Privacy-Responsive Integrated computer Vision for Intelligent Safe sENsing and Situational Enhancement (Prive-Sense) project. This project will investigate novel combinations of multimodal imaging – near-Infrared (NIR), thermal-Infrared (LWIR) and neuro-morphic (event) camera technologies processed by AI networks, to infer actions or detect subtle thermal or biometric events related to a human subject. 
+
+I am happy to share that I will be starting my new job postion as Research Fellow with University of Galway. I will be working on Irish Research Council (IRC) Privacy-Responsive Integrated computer Vision for Intelligent Safe sENsing and Situational Enhancement (Prive-Sense) project. This project will investigate novel combinations of multimodal imaging – near-Infrared (NIR), thermal-Infrared (LWIR) and neuro-morphic (event) camera technologies processed by AI networks, to infer actions or detect subtle thermal or biometric events related to a human subject. 
 
 - Date: 28th August 2024
 
