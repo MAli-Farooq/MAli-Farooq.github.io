@@ -14,6 +14,8 @@ Available at: https://huggingface.co/datasets/MAli-Farooq/Derm-T2IM-Dataset
 
 <img src="/static/assets/img/3.png" alt="drawing" width="600"/>
 
+The complete details of this dataset and project are avaliable on my project page https://mali-farooq.github.io/childgan/
+
 
 #### Child Race Dataset
 
