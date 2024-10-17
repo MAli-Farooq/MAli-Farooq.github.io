@@ -19,7 +19,7 @@ University: muhammadali.farooq[at]universityofgalway.ie
 IEEE: muhammadali.farooq[at]ieee.org
 
 #### Experiance
-- 2022.09 - 2024.09 - Currently working as Researche Feloow, Affiliation: School of Engineering, C3I Imaging Group (National University of Ireland Galway (NUIG) aka University of Galway.
+- 2024.10 - Currently working as Researche Feloow, Affiliation: School of Engineering, C3I Imaging Group (National University of Ireland Galway (NUIG) aka University of Galway.
 
 - 2022.09 - 2024.09 - Postdoctoral Researcher, Affiliation: School of Engineering, C3I Imaging Group (National University of Ireland Galway (NUIG) aka University of Galway.
   
