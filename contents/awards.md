@@ -1,3 +1,5 @@
+- Senior Member IEEE, 2024
+
 - EU Horizon H2020 Schlorship, 2019.
 
 - NUIG Employability Award, 2021.
