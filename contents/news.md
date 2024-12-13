@@ -1,7 +1,7 @@
 - Date: 07th December 2024
 
 I am happy to share that my recent work on diffsuion sampling for medical imaging has been accepted at #ACCV2024! 🎉. In this research, we explored the effects of various diffusion-based sampling methods in generating three distinct types of medical imaging data (Dermoscopic, XRAY and CTA data). A huge thanks to all the co-authors for their hard work, collaboration, and guidance throughout this journey. 🙌
-</strong> [[A Comparative Study on Diffusion Sampling Methods Across Diverse Medical Imaging Modalities]] (https://openaccess.thecvf.com/content/ACCV2024W/GAISynMeD/html/Farooq_A_Comparative_Study_on_Diffusion_Sampling_Methods_Across_Diverse_Medical_ACCVW_2024_paper.html)
+</strong> [[A Comparative Study on Diffusion Sampling Methods Across Diverse Medical Imaging Modalities]](https://openaccess.thecvf.com/content/ACCV2024W/GAISynMeD/html/Farooq_A_Comparative_Study_on_Diffusion_Sampling_Methods_Across_Diverse_Medical_ACCVW_2024_paper.html)
 
 - Date: 07th October 2024
 
