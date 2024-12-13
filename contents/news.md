@@ -5,7 +5,7 @@ I am happy to share that my recent work on diffsuion sampling for medical imagin
 
 - Date: 07th October 2024
 
-I am glad to announse that I am being selected as Senior Member IEEE. Thanks to my supervisor, fellow researchers and all the referees for making my application successful.
+I am glad to announse that I am being selected as Senior Member IEEE 🎉 🎉 🎉. Thanks to my supervisor, fellow researchers and all the referees for making my application successful.
   
 - Date: 21st September 2024
 
