@@ -24,8 +24,7 @@ The complete details of this dataset and project are avaliable on my project pag
 The complete details of this dataset and project are avaliable on my project page https://mali-farooq.github.io/childdiffusion/
 
 
-#### Type B Aortic Dissection (TBAD) CTA Dataset
-
+%#### Type B Aortic Dissection (TBAD) CTA Dataset
 
 #### Novel PPE Synthetic Dataset
 
