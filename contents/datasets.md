@@ -26,6 +26,16 @@ The complete details of this dataset and project are avaliable on my project pag
 
 #### Type B Aortic Dissection (TBAD) CTA Dataset
 
+
+#### Novel PPE Synthetic Dataset
+
+<img src="/static/assets/img/PPE.PNG" alt="drawing" width="600"/>
+
+This work showcases a comprehensive synthetic dataset of personal protective equipment (PPE) images, generated using advanced **Stable Diffusion (SD)** models. The dataset includes high-quality rendered images created with various sampling methods to ensure diversity and realism.
+
+Available at: https://github.com/MAli-Farooq/Synthetic-PPE
+Dataset Contribtuions: Vaishali Lalit
+
 <h3 style="color:brown;">Real World Datasets</h3>
 
 In addition to synthetic datasets I have also acquired and open-sourced real-world thermal imaging out cabin dataset recorded via LWIR 640X480 uncooled thermal imaging camera for Advanced Driver-Assistance Systems (ADAS). 
