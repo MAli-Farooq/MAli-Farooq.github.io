@@ -2,7 +2,7 @@
   
 As a token of appreciation for becoming a Senior Member of IEEE, I have now joined and become an active member of 🚀🚀🚀 IEEE Computer Society 🚀🚀🚀!. Looking forward to contributing to the vibrant community of professionals and researchers, collaborating on innovative projects, and staying at the forefront of advancements in computer science and engineering. Excited to leverage this opportunity for professional growth and to make a meaningful impact in the field!
 
- <img src="/static/assets/img/IEEE-Comp.png" alt="drawing" width="300"/>
+ <img src="/static/assets/img/IEEE-Comp.PNG" alt="drawing" width="300"/>
 
 - Date: 07th December 2024
 
