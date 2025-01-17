@@ -1,3 +1,9 @@
+- Date: 17th January 2025
+  
+As a token of appreciation for becoming a Senior Member of IEEE, I have now joined and become an active member of 🚀🚀🚀 IEEE Computer Society 🚀🚀🚀!. Looking forward to contributing to the vibrant community of professionals and researchers, collaborating on innovative projects, and staying at the forefront of advancements in computer science and engineering. Excited to leverage this opportunity for professional growth and to make a meaningful impact in the field!
+
+ <img src="/static/assets/img/IEEE-Comp.png" alt="drawing" width="300"/>
+
 - Date: 07th December 2024
 
 I am happy to share that my recent work on diffsuion sampling for medical imaging has been accepted at #ACCV2024! 🎉. In this research, we explored the effects of various diffusion-based sampling methods in generating three distinct types of medical imaging data (Dermoscopic, XRAY and CTA data). A huge thanks to all the co-authors for their hard work, collaboration, and guidance throughout this journey. 🙌
