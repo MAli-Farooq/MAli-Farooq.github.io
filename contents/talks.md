@@ -1,6 +1,6 @@
 ### 2025
 
--  Recently I particpated in Health Discovery and Innovation seminar held at Univerisity of Galway, where I discussed the latest trends in generative AI. My presentation, titled "Development of Computational Tools for Clinical Diagnosis in Dermatology" explored the evolution and advancements in dermoscopy, highlighting how diffusion models can be effectively used for rendering data for varoius medical imaging modalites.
+-  Recently I particpated in Health Discovery and Innovation seminar held at Univerisity of Galway, where I discussed the latest trends in generative AI for medical imaging. My presentation, titled "Development of Computational Tools for Clinical Diagnosis in Dermatology" explored the evolution and advancements in dermoscopy, highlighting how diffusion models can be effectively used for rendering data for varoius medical imaging modalites including dermoscopy, CTA and X-Ray data.
 
    Links: </strong> [[Health Discovery and Innovation 'Development of Computational Tools for Clinical Diagnosis in Dermatology']](https://stories.universityofgalway.ie/ihdi-seminar-series-session-5/index.html)
 
