@@ -1,6 +1,17 @@
+### 2025
+
+-  Recently I particpated in Health Discovery and Innovation seminar held at Univerisity of Galway, where I discussed the latest trends in generative AI. My presentation, titled "Development of Computational Tools for Clinical Diagnosis in Dermatology" explored the evolution and advancements in dermoscopy, highlighting how diffusion models can be effectively used for rendering data for varoius medical imaging modalites.
+
+   Links: </strong> [[Health Discovery and Innovation 'Development of Computational Tools for Clinical Diagnosis in Dermatology']](https://stories.universityofgalway.ie/ihdi-seminar-series-session-5/index.html)
+
+  <img src="/static/assets/img/IHDI-1" alt="drawing" width="600"/>
+  <img src="/static/assets/img/IHDI-2.PNG" alt="drawing" width="600"/>
+  <img src="/static/assets/img/IHDI-3.PNG" alt="drawing" width="600"/>
+  <img src="/static/assets/img/IHDI-4.PNG" alt="drawing" width="600"/>
+
 ### 2024
 
--  Recently I had the honor of delivering a keynote talk at the Irish Machine Vision and Image Processing Conference, where I discussed the latest trends in generative AI. My presentation, titled "From GANs to Diffusion Models," explored the evolution and advancements in generative algorithms, highlighting how diffusion models are shaping the future of AI-driven image synthesis and their applications in various computer vision tasks.
+-  I had the honor of delivering a keynote talk at the Irish Machine Vision and Image Processing Conference, where I discussed the latest trends in generative AI. My presentation, titled "From GANs to Diffusion Models," explored the evolution and advancements in generative algorithms, highlighting how diffusion models are shaping the future of AI-driven image synthesis and their applications in various computer vision tasks.
 
    Links: </strong> [[IMVIP24 Special Session 'Synthetic Data: Innovation, Limitations and Practical Applications']](https://sites.google.com/view/imvip2024/program/day-1-special-sessions)
    Links: </strong> [[X Post]](https://x.com/ImVIPconference)
