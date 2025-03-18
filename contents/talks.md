@@ -4,7 +4,7 @@
 
    Links: </strong> [[Health Discovery and Innovation 'Development of Computational Tools for Clinical Diagnosis in Dermatology']](https://stories.universityofgalway.ie/ihdi-seminar-series-session-5/index.html)
 
-  <img src="/static/assets/img/IHDI-1" alt="drawing" width="600"/>
+  <img src="/static/assets/img/IHDI-1.PNG" alt="drawing" width="600"/>
   <img src="/static/assets/img/IHDI-2.PNG" alt="drawing" width="600"/>
   <img src="/static/assets/img/IHDI-3.PNG" alt="drawing" width="600"/>
   <img src="/static/assets/img/IHDI-4.PNG" alt="drawing" width="600"/>
