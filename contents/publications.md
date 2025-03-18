@@ -10,6 +10,8 @@
 
 - <strong>Muhammad Ali Farooq* </strong>, Waseem Shariff, David O’callaghan, Arcangelo Merla, and Peter Corcoran. "On the role of thermal imaging in automotive applications: A critical review." IEEE Access 11 (2023): 25152-25173.</strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/10064306)
 
+- Wang Yao, <strong>Muhammad Ali Farooq* </strong>, Joseph Lemley, and Peter Corcoran. "Synthetic Face Ageing: Evaluation, Analysis and Facilitation of Age-Robust Facial Recognition Algorithms." IEEE Transactions on Biometrics, Behavior, and Identity Science (2025). </strong> [[Paper]](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8423754)
+
 - Julio Zanon Diaz, <strong>Muhammad Ali Farooq* </strong>, and Peter Corcoran. "Automatic Inspection of Seal Integrity in Sterile Barrier Packaging: A Deep Learning Approach." IEEE Access (2024).</strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/10378691)
 
 - Faisal Khan,<strong>Muhammad Ali Farooq* </strong>, Waseem Shariff, Shubhajit Basak, and Peter Corcoran. "Towards monocular neural facial depth estimation: Past, present, and future." IEEE Access 10 (2022): 29589-29611. </strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/10378691)
