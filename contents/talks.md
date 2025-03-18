@@ -7,7 +7,7 @@
   <img src="/static/assets/img/IHDI-1.PNG" alt="drawing" width="600"/>
   <img src="/static/assets/img/IHDI-2.PNG" alt="drawing" width="600"/>
   <img src="/static/assets/img/IHDI-3.PNG" alt="drawing" width="600"/>
-  <img src="/static/assets/img/IHDI-4.PNG" alt="drawing" width="600"/>
+  <img src="/static/assets/img/IHDI-4.png" alt="drawing" width="600"/>
 
 ### 2024
 
