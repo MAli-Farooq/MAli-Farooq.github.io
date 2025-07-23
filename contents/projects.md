@@ -1,4 +1,4 @@
-- <strong>ThermVision: ThermVision: Exploring FLUX for Synthesizing Hyper-Realistic Thermal Face Data and Animations via Image to Video Translation </strong>
+- <strong>ThermVision: Exploring FLUX for Synthesizing Hyper-Realistic Thermal Face Data and Animations via Image to Video Translation </strong>
 
 <img src="/static/assets/img/DermT2IM.png" alt="drawing" width="600"/>
 
