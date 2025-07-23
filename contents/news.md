@@ -1,4 +1,4 @@
-**- Date: 21st June 2025**
+- **Date: 21st June 2025**
   
 🚀 Rethinking Synthetic Data Generation with Fully Synthetic Pipelines
 In our recntly accepted article in IEEE Access, we demonstrate a novel approach: using synthetic seed data to generate high-fidelity, controllable synthetic datasets. Starting from child facial images generated via ChildGAN (ChildGAN: Large-Scale Synthetic Child Facial Data Using Domain Adaptation in StyleGAN), we fine-tuned a text-to-image diffusion model capable of producing numerous advanced transformations, all driven by user-defined textual prompts. To further enhance realism and structure, we integrated ControlNet and large language models (LLMs), enabling semantic-level prompt control, structural guidance, and fine-grained transformation encoding (e.g., expression, pose, lighting, etc.).
