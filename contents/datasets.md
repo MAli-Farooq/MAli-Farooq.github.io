@@ -28,15 +28,6 @@ The complete details of this dataset and project are avaliable on my project pag
 
 Will be made avalible soon.
 
-#### Novel PPE Synthetic Dataset
-
-<img src="/static/assets/img/PPE.png" alt="drawing" width="600"/>
-
-This work showcases a comprehensive synthetic dataset of personal protective equipment (PPE) images, generated using advanced **Stable Diffusion (SD)** models. The dataset includes high-quality rendered images created with various sampling methods to ensure diversity and realism.
-
-Available at: https://github.com/MAli-Farooq/Synthetic-PPE
-
-Dataset Contribtuions: Vaishali Lalit
 
 <h3 style="color:brown;">Real World Datasets</h3>
 
