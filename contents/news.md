@@ -1,7 +1,11 @@
+- **Date: 11th July 2025**
+
+I am thrilled to share that my recent work titled "ThermVision: Exploring FLUX for Synthesizing Hyper-Realistic Thermal Face Data and Animations via Image to Video Translation" has been accepted at ACM Multimedia 2025 (https://acmmm2025.org/) and will be presented at the conference this year! 🔥🧠. Further details about this project can be found in projects section.
+
 - **Date: 21st June 2025**
   
 🚀 Rethinking Synthetic Data Generation with Fully Synthetic Pipelines
-In our recntly accepted article in IEEE Access, we demonstrate a novel approach: using synthetic seed data to generate high-fidelity, controllable synthetic datasets. Starting from child facial images generated via ChildGAN (ChildGAN: Large-Scale Synthetic Child Facial Data Using Domain Adaptation in StyleGAN), we fine-tuned a text-to-image diffusion model capable of producing numerous advanced transformations, all driven by user-defined textual prompts. To further enhance realism and structure, we integrated ControlNet and large language models (LLMs), enabling semantic-level prompt control, structural guidance, and fine-grained transformation encoding (e.g., expression, pose, lighting, etc.).
+In our recently accepted article in IEEE Access, we demonstrate a novel approach: using synthetic seed data to generate high-fidelity, controllable synthetic datasets. Starting from child facial images generated via ChildGAN (ChildGAN: Large-Scale Synthetic Child Facial Data Using Domain Adaptation in StyleGAN), we fine-tuned a text-to-image diffusion model capable of producing numerous advanced transformations, all driven by user-defined textual prompts. To further enhance realism and structure, we integrated ControlNet and large language models (LLMs), enabling semantic-level prompt control, structural guidance, and fine-grained transformation encoding (e.g., expression, pose, lighting, etc.).
 ✨ As part of this work, we have also open-sourced a new child race and ethnicity dataset, designed to support fair, inclusive, and privacy-preserving research in face analytics and biometrics.
 This pipeline opens a new chapter in scalable, ethical synthetic data generation, particularly for sensitive domains like biometrics and medical imaging. 
 1. Project Website: [https://lnkd.in/eSkGuR4P](https://lnkd.in/eSkGuR4P)  
