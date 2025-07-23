@@ -41,4 +41,4 @@ IEEE: muhammadali.farooq[at]ieee.org
 - 2012.12 - Bachelors of Engineering (BE), Electronic Engineering, FEST Department, IQRA Univeristy (IU) Pakistan.
 
 #### Research Interests
-Deep Learning, Artificial Intelligence, Machine Learning, Sensor Fusion, Medical Imaging, Thermal Imaging, Edge Computing, Generative AI
+Deep Learning, Machine Learning, Large Language Models (LLM's), Sensor Fusion, Medical Imaging, Thermal Imaging, Edge Computing, Generative AI
