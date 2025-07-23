@@ -1,3 +1,17 @@
+- Date: 21st June 2025
+  
+🚀 Rethinking Synthetic Data Generation with Fully Synthetic Pipelines
+In our recntly accepted article in IEEE Access, we demonstrate a novel approach: using synthetic seed data to generate high-fidelity, controllable synthetic datasets. Starting from child facial images generated via ChildGAN (ChildGAN: Large-Scale Synthetic Child Facial Data Using Domain Adaptation in StyleGAN), we fine-tuned a text-to-image diffusion model capable of producing numerous advanced transformations, all driven by user-defined textual prompts. To further enhance realism and structure, we integrated ControlNet and large language models (LLMs), enabling semantic-level prompt control, structural guidance, and fine-grained transformation encoding (e.g., expression, pose, lighting, etc.).
+✨ As part of this work, we have also open-sourced a new child race and ethnicity dataset, designed to support fair, inclusive, and privacy-preserving research in face analytics and biometrics.
+This pipeline opens a new chapter in scalable, ethical synthetic data generation, particularly for sensitive domains like biometrics and medical imaging. 
+- **Project Website**: [https://lnkd.in/eSkGuR4P](https://lnkd.in/eSkGuR4P)  
+- **Paper Link**: [https://lnkd.in/eiVy-n-J](https://lnkd.in/eiVy-n-J)  
+- **Open Source Tuned ChildDiffusion Model**: [https://lnkd.in/eVUqqHvK](https://lnkd.in/eVUqqHvK)  
+- **Open Source Child Race Dataset**: [https://lnkd.in/e-tXtx5Y](https://lnkd.in/e-tXtx5Y)
+
+
+ <img src="/static/assets/img/IEEE-Comp.PNG" alt="drawing" width="300"/>
+
 - Date: 17th January 2025
   
 As a token of appreciation for becoming a Senior Member of IEEE, I have now joined and become an active member of 🚀🚀🚀 IEEE Computer Society 🚀🚀🚀!. Looking forward to contributing to the vibrant community of professionals and researchers, collaborating on innovative projects, and staying at the forefront of advancements in computer science and engineering. Excited to leverage this opportunity for professional growth and to make a meaningful impact in the field!
