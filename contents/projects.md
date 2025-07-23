@@ -1,3 +1,18 @@
+- <strong>ThermVision: ThermVision: Exploring FLUX for Synthesizing Hyper-Realistic Thermal Face Data and Animations via Image to Video Translation </strong>
+
+<img src="/static/assets/img/DermT2IM.png" alt="drawing" width="600"/>
+
+Project Description: In this project, we introduce a fully synthetic thermal facial dataset “ThermVision”, created using a custom FLUX-based diffusion pipeline combined with a video retargeting module that accurately transfers dynamic expressions and head pose variations into the thermal domain. This approach eliminates the need for costly and privacy-sensitive thermal video collection while maintaining realism and structural consistency.
+The dataset includes high-resolution thermal sequences of synthetic male and female subjects, with extreme headpose and expressions, and annotated facial landmarks, making it highly useful for benchmarking and training in tasks like thermal face detection, expression recognition, and privacy-preserving biometrics. 
+
+- **[Project Website](https://lnkd.in/eH-5u2qd)**
+- **[ThermVision FLUX LoRA Weights](https://lnkd.in/eJEeaeC7)**
+- **[ThermVision Dataset](https://lnkd.in/e-WRZNmk)**
+- **[GitHub Repository](https://github.com/MAli-Farooq/ThermVision)**
+
+<br>
+<br>
+
 - <strong>Derm-T2IM </strong>
 
 <img src="/static/assets/img/DermT2IM.png" alt="drawing" width="600"/>
