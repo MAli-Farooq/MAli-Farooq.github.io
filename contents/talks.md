@@ -1,6 +1,16 @@
 ### 2025
 
--  Recently I particpated in Health Discovery and Innovation seminar held at Univerisity of Galway, where I discussed the latest trends in generative AI for medical imaging. My presentation, titled "Development of Computational Tools for Clinical Diagnosis in Dermatology" explored the evolution and advancements in dermoscopy, highlighting how diffusion models can be effectively used for rendering data for varoius medical imaging modalites including dermoscopy, CTA and X-Ray data.
+-  I am pleased to share our recent paper presented at ACM Multimedia 2025, focusing on thermal image synthesis using diffusion models. The work introduces a novel framework for generating realistic thermal facial data under privacy-preserving constraints, addressing challenges in domain adaptation and multimodal alignment. Our approach demonstrates strong potential for improving robustness and data diversity in thermal vision systems without requiring access to sensitive real-world imagery.
+
+Presented at ACM Multimedia 2025, Dublin.
+
+   Links: </strong> [[Paper is avaliable Open Access at ACM Repository']](https://dl.acm.org/doi/10.1145/3746027.3755448)
+
+  <img src="/static/assets/img/ACM-1.PNG" alt="drawing" width="600"/>
+  <img src="/static/assets/img/ACM-2.PNG" alt="drawing" width="600"/>
+  <img src="/static/assets/img/ACM-3.PNG" alt="drawing" width="600"/>
+
+-  I particpated in Health Discovery and Innovation seminar held at Univerisity of Galway, where I discussed the latest trends in generative AI for medical imaging. My presentation, titled "Development of Computational Tools for Clinical Diagnosis in Dermatology" explored the evolution and advancements in dermoscopy, highlighting how diffusion models can be effectively used for rendering data for varoius medical imaging modalites including dermoscopy, CTA and X-Ray data.
 
    Links: </strong> [[Health Discovery and Innovation 'Development of Computational Tools for Clinical Diagnosis in Dermatology']](https://stories.universityofgalway.ie/ihdi-seminar-series-session-5/index.html)
 
