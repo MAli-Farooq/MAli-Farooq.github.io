@@ -6,9 +6,9 @@ Presented at ACM Multimedia 2025, Dublin.
 
    Links: </strong> [[Paper is avaliable Open Access at ACM Repository']](https://dl.acm.org/doi/10.1145/3746027.3755448)
 
-  <img src="/static/assets/img/ACM-1.PNG" alt="drawing" width="600"/>
-  <img src="/static/assets/img/ACM-2.PNG" alt="drawing" width="600"/>
-  <img src="/static/assets/img/ACM-3.PNG" alt="drawing" width="600"/>
+  <img src="/static/assets/img/ACM-1.jpeg" alt="drawing" width="600"/>
+  <img src="/static/assets/img/ACM-2.jpeg" alt="drawing" width="600"/>
+  <img src="/static/assets/img/ACM-3.jpeg" alt="drawing" width="600"/>
 
 -  I particpated in Health Discovery and Innovation seminar held at Univerisity of Galway, where I discussed the latest trends in generative AI for medical imaging. My presentation, titled "Development of Computational Tools for Clinical Diagnosis in Dermatology" explored the evolution and advancements in dermoscopy, highlighting how diffusion models can be effectively used for rendering data for varoius medical imaging modalites including dermoscopy, CTA and X-Ray data.
 
