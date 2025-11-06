@@ -9,7 +9,7 @@ I am currently working as a Research Fellow at the University of Galway and Mach
 [![senli1073](https://img.shields.io/badge/Muhammad-Scholar-blue?logo=google)](https://scholar.google.com.pk/citations?user=Km-BcFoAAAAJ&hl=en)
 
 #### Orcid
-[![senli1073](https://img.shields.io/badge/Muhammad-Scholar-blue?logo=orcid)](https://orcid.org/0000-0003-4116-8021)
+[![senli1073](https://img.shields.io/badge/Muhammad-Orcid-blue?logo=orcid)](https://orcid.org/0000-0003-4116-8021)
 
   
 #### Lets Connect
