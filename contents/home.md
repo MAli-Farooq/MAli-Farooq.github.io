@@ -15,6 +15,7 @@ I am currently working as a Research Fellow at the University of Galway and Mach
 #### Lets Connect
 [![senli1073](https://img.shields.io/badge/Muhammad-Linkedin-blue?logo=linkedin)](https://www.linkedin.com/in/muhammad-ali-farooq-876235a1/)
 
+[![senli1073](https://img.shields.io/badge/Muhammad-%40mali__farooq-blue?logo=x)](https://x.com/Muhamma59397356)
 
 #### Email
 University: muhammadali.farooq[at]universityofgalway.ie
