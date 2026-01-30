@@ -34,15 +34,8 @@
 ## 2021 
 - <strong>Muhammad Ali Farooq* </strong>, Peter Corcoran, Cosmin Rotariu, and Waseem Shariff. "Object detection in thermal spectrum for advanced driver-assistance systems (ADAS)." IEEE Access 9 (2021): 156465-156481.</strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/9618926)
 
-
-
+## 2020
 - <strong>Muhammad Ali Farooq* </strong>, Hossein Javidnia, and Peter Corcoran. "Performance estimation of the state-of-the-art convolution neural networks for thermal images-based gender classification system." Journal of Electronic Imaging 29, no. 6 (2020): 063004-063004.</strong> [[Paper]](https://www.spiedigitallibrary.org/journals/journal-of-electronic-imaging/volume-29/issue-6/063004/Performance-estimation-of-the-state-of-the-art-convolution-neural/10.1117/1.JEI.29.6.063004.full)
-
-
-
-
-
-
 
 
 ### Selected Conference Publications
