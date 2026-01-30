@@ -1,7 +1,7 @@
 ### Journal Publication
 
 ## 2026
-- <strong>Muhammad Ali Farooq* </strong>, Waseem Shariff and P. Corcoran, "ThermVision-DB: A Synthetic LWIR Thermal Face Dataset for Privacy-Preserving Thermal Vision Research." in Elsevier Data in Brief, 2026, doi: https://doi.org/10.1016/j.dib.2026.112506. </strong> [[Paper]](https://www.sciencedirect.com/science/article/pii/S2352340926000594)
+- <strong>Muhammad Ali Farooq* </strong>, Waseem Shariff and P. Corcoran, "ThermVision-DB: A Synthetic LWIR Thermal Face Dataset for Privacy-Preserving Thermal Vision Research." in Elsevier Data in Brief, 2026, doi: 10.1016/j.dib.2026.112506. </strong> [[Paper]](https://www.sciencedirect.com/science/article/pii/S2352340926000594)
 
 ## 2025
 
