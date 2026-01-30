@@ -1,5 +1,7 @@
 ### Journal Publication
 
+## 2025
+
 - <strong>Muhammad Ali Farooq* </strong>, Paul Kielty, W. Yao and P. Corcoran, "SynAdult: Multimodal Synthetic Adult Dataset Generation via Diffusion Models and Neuromorphic Event Simulation for Critical Biometric Applications." in IEEE Access, vol. 13, pp. 137327 - 137347, 2025, doi: 10.1109/ACCESS.2025.3594875. </strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/11106428)
 
 - <strong>Muhammad Ali Farooq* </strong>, W. Yao and P. Corcoran, "ChildDiffusion: Unlocking the Potential of Generative AI and Controllable Augmentations for Child Facial Data Using Stable Diffusion and Large Language Models." in IEEE Access, vol. 13, pp. 96616-96634, 2025, doi: 10.1109/ACCESS.2025.3575964. </strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/11021410)
