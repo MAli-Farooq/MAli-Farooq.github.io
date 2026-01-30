@@ -12,9 +12,12 @@
 - Wang Yao, <strong>Muhammad Ali Farooq* </strong>, J. Lemley and P. Corcoran, "Synthetic Face Ageing: Evaluation, Analysis and Facilitation of Age-Robust Facial Recognition Algorithms," in IEEE Transactions on Biometrics, Behavior, and Identity Science, vol. 7, no. 3, pp. 471-483, July 2025, doi: 10.1109/TBIOM.2025.3536622.[[Paper]](https://ieeexplore.ieee.org/abstract/document/10858190)
   
 ## 2024
-- Mehdi Sefidgar Dilmaghani, , Waseem Shariff, <strong>Muhammad Ali Farooq* </strong>, Joe Lemley, and Peter Corcoran. "Optimization of Event Camera Bias Settings for a Neuromorphic Driver Monitoring System." IEEE Access (2024). </strong> [[Paper]](https://ieeexplore.ieee.org/document/10453572)
 
 - Julio Zanon Diaz, <strong>Muhammad Ali Farooq* </strong>, and Peter Corcoran. "Automatic Inspection of Seal Integrity in Sterile Barrier Packaging: A Deep Learning Approach." IEEE Access (2024).</strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/10378691)
+
+- Mohamed Moustafa, <strong>Muhammad Ali Farooq* </strong>, Amr Elrasad, Joseph Lemley, and Peter Corcoran. "Visual Cardiac Signal Classifiers: A Deep Learning Classification Approach for Heart Signal Estimation From Video." IEEE Access (2024).</strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/10703044)
+- 
+- Mehdi Sefidgar Dilmaghani, , Waseem Shariff, <strong>Muhammad Ali Farooq* </strong>, Joe Lemley, and Peter Corcoran. "Optimization of Event Camera Bias Settings for a Neuromorphic Driver Monitoring System." IEEE Access (2024). </strong> [[Paper]](https://ieeexplore.ieee.org/document/10453572)
 
 ## 2023
 
