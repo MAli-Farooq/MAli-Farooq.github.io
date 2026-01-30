@@ -1,5 +1,8 @@
 ### Journal Publication
 
+## 2026
+- <strong>Muhammad Ali Farooq* </strong>, Waseem Shariff and P. Corcoran, "ThermVision-DB: A Synthetic LWIR Thermal Face Dataset for Privacy-Preserving Thermal Vision Research." in Elsevier Data in Brief, 2026, doi: https://doi.org/10.1016/j.dib.2026.112506. </strong> [[Paper]](https://www.sciencedirect.com/science/article/pii/S2352340926000594)
+
 ## 2025
 
 - <strong>Muhammad Ali Farooq* </strong>, Paul Kielty, W. Yao and P. Corcoran, "SynAdult: Multimodal Synthetic Adult Dataset Generation via Diffusion Models and Neuromorphic Event Simulation for Critical Biometric Applications." in IEEE Access, vol. 13, pp. 137327 - 137347, 2025, doi: 10.1109/ACCESS.2025.3594875. </strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/11106428)
