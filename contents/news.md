@@ -1,3 +1,9 @@
+- **Date: 30 January 2026**
+
+Im excited to share that our new dataset paper “ThermVision-DB: A Synthetic LWIR Facial Dataset for Privacy-Preserving Thermal Vision” is now published on ScienceDirect! 🔥🧠. ThermVision-DB introduces a diffusion-based synthetic LWIR facial dataset with controllable facial expressions and head-pose variations, provided in both image and video formats with annotations. The dataset is fully synthetic, privacy-safe, and designed for thermal face analysis, synthetic-to-real transfer learning, and multimodal research.
+
+📄 Read more here: https://www.sciencedirect.com/science/article/pii/S2352340926000594
+
 - **Date: 11th July 2025**
 
 I am thrilled to share that my recent work titled "ThermVision: Exploring FLUX for Synthesizing Hyper-Realistic Thermal Face Data and Animations via Image to Video Translation" has been accepted at ACM Multimedia 2025 (https://acmmm2025.org/) and will be presented at the conference this year! 🔥🧠. Further details about this project can be found in projects section.
