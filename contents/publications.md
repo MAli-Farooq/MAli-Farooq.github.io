@@ -23,7 +23,7 @@
 
 - Wang Yao, <strong>Muhammad Ali Farooq* </strong>, Joseph Lemley, and Peter Corcoran. "A study on the effect of ageing in facial authentication and the utility of data augmentation to reduce performance bias across age groups." IEEE Access (2023). </strong> [[Paper]](https://ieeexplore.ieee.org/document/10242105)
  
-  - Waseem Shariff, Mehdi Sefidgar Dilmaghani, Paul Kielty, Joe Lemley,<strong>Muhammad Ali Farooq* </strong>, Faisal Khan, and Peter Corcoran. "Neuromorphic driver monitoring systems: A computationally efficient proof-of-concept for driver distraction detection." IEEE Open Journal of Vehicular Technology (2023). </strong> [[Paper]](https://ieeexplore.ieee.org/document/10287603)
+- Waseem Shariff, Mehdi Sefidgar Dilmaghani, Paul Kielty, Joe Lemley,<strong>Muhammad Ali Farooq* </strong>, Faisal Khan, and Peter Corcoran. "Neuromorphic driver monitoring systems: A computationally efficient proof-of-concept for driver distraction detection." IEEE Open Journal of Vehicular Technology (2023). </strong> [[Paper]](https://ieeexplore.ieee.org/document/10287603)
 
 ## 2022
 
