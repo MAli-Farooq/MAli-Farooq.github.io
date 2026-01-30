@@ -16,7 +16,7 @@
 - Julio Zanon Diaz, <strong>Muhammad Ali Farooq* </strong>, and Peter Corcoran. "Automatic Inspection of Seal Integrity in Sterile Barrier Packaging: A Deep Learning Approach." IEEE Access (2024).</strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/10378691)
 
 - Mohamed Moustafa, <strong>Muhammad Ali Farooq* </strong>, Amr Elrasad, Joseph Lemley, and Peter Corcoran. "Visual Cardiac Signal Classifiers: A Deep Learning Classification Approach for Heart Signal Estimation From Video." IEEE Access (2024).</strong> [[Paper]](https://ieeexplore.ieee.org/abstract/document/10703044)
-- 
+  
 - Mehdi Sefidgar Dilmaghani, , Waseem Shariff, <strong>Muhammad Ali Farooq* </strong>, Joe Lemley, and Peter Corcoran. "Optimization of Event Camera Bias Settings for a Neuromorphic Driver Monitoring System." IEEE Access (2024). </strong> [[Paper]](https://ieeexplore.ieee.org/document/10453572)
 
 ## 2023
