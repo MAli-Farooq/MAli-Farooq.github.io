@@ -1,3 +1,18 @@
+- **Date: 31st March 2026**
+
+I am excited to share that I am organizing a Special Issue titled “Advances in Computer Vision and Smart Imaging Technologies” for the Electronics MDPI Journal (Impact Factor: 2.6).
+This Special Issue aims to bring together recent developments in areas such as:
+• Computer vision and deep learning
+• Event-based vision and neuromorphic sensing
+• Smart imaging systems
+• Real-time and edge-based perception
+• Multi-object tracking and activity recognition
+We welcome high-quality contributions that address both theoretical advancements and practical applications in modern vision systems.
+If you are working in this space, I would be happy to see your work considered for this Special Issue.
+
+📄Paper Submission Link: https://lnkd.in/dAxh7-2c
+
+
 - **Date: 30 January 2026**
 
 Im excited to share that our new dataset paper “ThermVision-DB: A Synthetic LWIR Facial Dataset for Privacy-Preserving Thermal Vision” is now published on ScienceDirect! 🔥🧠. ThermVision-DB introduces a diffusion-based synthetic LWIR facial dataset with controllable facial expressions and head-pose variations, provided in both image and video formats with annotations. The dataset is fully synthetic, privacy-safe, and designed for thermal face analysis, synthetic-to-real transfer learning, and multimodal research.
