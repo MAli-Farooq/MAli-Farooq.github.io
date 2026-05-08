@@ -1,6 +1,6 @@
 <strong>NeuroEdge Vision: Real-Time Neuromorphic Perception for Edge AI on Raspberry Pi 5 using Event-Based Cameras</strong> </strong>
 
-<img src="/static/assets/img/ThermVision.gif" alt="drawing" width="600"/>
+<img src="/static/assets/img/Neuro-Edge.gif" alt="drawing" width="600"/>
 
 Project Description:
 In this project, we develop a real-time neuromorphic vision framework for edge AI deployment on Raspberry Pi 5 using event-based cameras (Prophesee GenX series). The system is designed for low-latency, power-efficient perception in unconstrained environments, enabling continuous human-centric scene understanding directly on embedded hardware.
