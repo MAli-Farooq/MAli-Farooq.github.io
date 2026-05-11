@@ -9,6 +9,8 @@ The pipeline combines event-driven sensing with lightweight deep learning models
 
 The framework is optimized for deployment on Raspberry Pi 5 using ONNX/TensorRT-style lightweight inference paths and demonstrates robust performance for real-time tracking, motion analysis, and activity recognition in dynamic indoor environments. The system highlights the potential of neuromorphic sensing for privacy-preserving, low-power, and adaptive intelligent perception systems suitable for robotics, smart surveillance, and human–machine interaction.- 
 
+- **[Project Website]([https://lnkd.in/eH-5u2qd](https://mali-farooq.github.io/NeuroVision/))**
+
 <strong>ThermVision: Exploring FLUX for Synthesizing Hyper-Realistic Thermal Face Data and Animations via Image to Video Translation </strong>
 
 <img src="/static/assets/img/ThermVision.gif" alt="drawing" width="600"/>
