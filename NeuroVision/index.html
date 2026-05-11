@@ -142,28 +142,49 @@
 
 <!-- HERO GIF -->
 
+<style>
+.demo-box {
+  flex: 1;
+  text-align: center;
+  overflow: hidden;
+}
+
+.demo-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  cursor: pointer;
+}
+
+.demo-box img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+</style>
+
 <section class="hero teaser">
   <div class="container is-max-desktop">
 
     <div class="hero-body">
 
-      <div class="gif-row">
+      <div style="display:flex; justify-content:space-between; gap:20px; align-items:flex-start; flex-wrap:nowrap;">
 
-        <div style="width:32%; text-align:center;">
+        <div class="demo-box">
           <img src="static/GIFs/Detection-1-YoloV8.gif"
           alt="Detection Demo"/>
 
           <p><b>Detection</b></p>
         </div>
 
-        <div style="width:32%; text-align:center;">
+        <div class="demo-box">
           <img src="static/GIFs/Tracking-output-1.gif"
           alt="Tracking Demo"/>
 
           <p><b>Tracking</b></p>
         </div>
 
-        <div style="width:32%; text-align:center;">
+        <div class="demo-box">
           <img src="static/GIFs/Motion-Neuro-Edge-Demo-1-With-Bias.gif"
           alt="Motion Demo"/>
 
