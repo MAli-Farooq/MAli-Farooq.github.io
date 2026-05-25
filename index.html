@@ -21,40 +21,90 @@
     <link type="text/css" href="static/css/main.css" rel="stylesheet" />
 
     <style>
-        .terminal-container {
-            margin-top: 80px; /* Offset for fixed navbar */
-            background-color: #1e1e1e;
-            color: #39ff14; /* Matrix Green color */
-            font-family: 'Courier New', Courier, monospace;
-            padding: 10px 15px;
-            border-radius: 4px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        /* Ensure the top cover section acts as the positioning anchor */
+        .top-section {
+            position: relative;
+            min-height: 55vh; 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-bottom: 90px; /* Leaves clean room for the bar at the bottom */
+            background-size: cover;
+            background-position: center;
         }
+
+        /* Position the terminal wrapper perfectly at the bottom of the image */
+        .terminal-overlay-wrapper {
+            position: absolute;
+            bottom: 25px; 
+            width: 100%;
+            left: 0;
+            z-index: 10;
+        }
+
+        /* Premium, semi-transparent terminal window */
+        .terminal-container {
+            background-color: rgba(20, 20, 20, 0.75); 
+            backdrop-filter: blur(10px); /* Frosted glass effect */
+            -webkit-backdrop-filter: blur(10px);
+            color: #39ff14; 
+            font-family: 'Courier New', Courier, monospace;
+            padding: 14px 20px;
+            border-radius: 8px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.1); 
+            max-width: 800px; /* Prevents it from stretching too wide */
+            margin: 0 auto; /* Centers it within the Bootstrap container */
+        }
+
+        .terminal-line {
+            display: flex;
+            align-items: center;
+        }
+
         .terminal-prefix {
             font-weight: bold;
-            margin-right: 5px;
+            margin-right: 8px;
             color: #00a8ff;
+            white-space: nowrap;
         }
+
         .terminal-input {
             background: transparent;
             border: none;
             color: #ffffff;
             font-family: inherit;
             font-size: 1rem;
-            width: 70%;
+            flex-grow: 1;
             outline: none;
+            caret-color: #39ff14; 
         }
+
         .terminal-hint {
-            font-size: 0.8rem;
-            color: #888;
-            margin-top: 2px;
+            font-size: 0.78rem;
+            color: #b5b5b5; 
+            margin-top: 6px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 4px;
+        }
+        
+        .terminal-hint code {
+            color: #ff9f43;
+            background: rgba(255, 159, 67, 0.15);
+            padding: 1px 5px;
+            border-radius: 3px;
+        }
+
+        /* Prevents avatar collision with the new layout */
+        #avatar {
+            margin-top: -35px;
+            position: relative;
+            z-index: 20;
         }
     </style>
 
     <script type="text/javascript" src="static/js/bootstrap.bundle.min.js"></script>
-
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    
     <script type="text/javascript" src="static/js/marked.min.js"></script>
 
     <script>
@@ -108,18 +158,22 @@
         </div>
     </nav>
 
-    <div class="container">
-        <div class="terminal-container">
-            <span class="terminal-prefix">guest@mali-farooq:~#</span>
-            <input type="text" id="terminalInput" class="terminal-input" placeholder="type ./publications or ./projects..." autocomplete="off" autofocus />
-            <div class="terminal-hint">Try: <code>./publications</code>, <code>./projects</code>, <code>./cv</code>, or <code>clear</code></div>
-        </div>
-    </div>
-
     <section class="top-section" style="background-image: url('static/assets/img/background.jpeg');">
         <div class="top-section-content">
             <div class="container px-5">
                 <h2 id="top-section-bg-text" class="text-white display-3 lh-1 font-alt"></h2>
+            </div>
+        </div>
+
+        <div class="terminal-overlay-wrapper">
+            <div class="container px-5">
+                <div class="terminal-container">
+                    <div class="terminal-line">
+                        <span class="terminal-prefix">guest@mali-farooq:~#</span>
+                        <input type="text" id="terminalInput" class="terminal-input" placeholder="type ./publications or ./projects..." autocomplete="off" autofocus />
+                    </div>
+                    <div class="terminal-hint">Try: <code>./publications</code>, <code>./projects</code>, <code>./cv</code>, or <code>clear</code></div>
+                </div>
             </div>
         </div>
     </section>
@@ -202,13 +256,11 @@
             if (event.key === 'Enter') {
                 const command = this.value.trim().toLowerCase();
                 
-                // Clear command cleans the input block prompt line
                 if (command === 'clear') {
                     this.value = '';
                     return;
                 }
 
-                // Map your commands to matching sections
                 const targetMap = {
                     './publications': 'publications',
                     './projects': 'projects',
@@ -224,10 +276,8 @@
                     const targetSection = document.getElementById(sectionId);
                     
                     if (targetSection) {
-                        // Smoothly scroll the screen to the target section
                         targetSection.scrollIntoView({ behavior: 'smooth' });
                         
-                        // Flash visual treatment onto the active terminal selection area if desired
                         targetSection.style.outline = "2px solid #39ff14";
                         setTimeout(() => {
                             targetSection.style.outline = "none";
@@ -237,7 +287,6 @@
                     alert("Command not found. Please try standard terminal path variables like './publications' or './projects'");
                 }
                 
-                // Reset terminal input value ready for next execute loop
                 this.value = '';
             }
         });
