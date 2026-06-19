@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Academic Webpage - Computer Vision & Generative AI Portfolio">
+    <meta name="author" content="Dr. Muhammad Ali Farooq">
+    <title id="title">Dr. Muhammad Ali Farooq | Academic Portfolio</title>
+    
+    <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: false,
+                processEnvironments: true,
+                tags: 'all'
+            }
+        };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+    
+    <script type="text/javascript" src="static/js/marked.min.js"></script>
+    <script type="text/javascript" src="static/js/js-yaml.min.js"></script>
+    <script type="text/javascript" src="static/js/scripts.js"></script>
+</head>
+<body>
+    <canvas id="canvas-bg"></canvas>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#page-top" id="page-top-title" class="nav-logo">MAF./&gt;</a>
+            
+            <nav class="nav-links">
+                <a href="#home" class="nav-link">HOME</a>
+                <a href="#news" class="nav-link">NEWS</a>
+                <a href="#talks" class="nav-link">TALKS</a>
+                <a href="#publications" class="nav-link">PUBLICATIONS</a>
+                <a href="#projects" class="nav-link">PROJECTS</a>
+                <a href="#datasets" class="nav-link">DATASETS</a>
+                <a href="#CV" class="nav-link">CV</a>
+                <a href="#awards" class="nav-link">AWARDS</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle visual theme">
+                    <i data-lucide="sun" class="sun-icon"></i>
+                    <i data-lucide="moon" class="moon-icon"></i>
+                </button>
+                <button id="mobile-menu-btn" class="icon-btn mobile-only" aria-label="Open menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div id="mobile-nav" class="mobile-nav-overlay">
+        <button id="mobile-close-btn" class="icon-btn" aria-label="Close menu">
+            <i data-lucide="x"></i>
+        </button>
+        <div class="mobile-links">
+            <a href="#home" class="mobile-link">HOME</a>
+            <a href="#news" class="mobile-link">NEWS</a>
+            <a href="#talks" class="mobile-link">TALKS</a>
+            <a href="#publications" class="mobile-link">PUBLICATIONS</a>
+            <a href="#projects" class="mobile-link">PROJECTS</a>
+            <a href="#datasets" class="mobile-link">DATASETS</a>
+            <a href="#CV" class="mobile-link">CV</a>
+            <a href="#awards" class="mobile-link">AWARDS</a>
+        </div>
+    </div>
+
+    <main class="main-content">
+        
+        <section id="page-top" class="section hero-section">
+            <div class="hero-grid">
+                <div class="hero-info">
+                    <div class="badge-container">
+                        <span class="pulse-dot"></span>
+                        <span id="home-subtitle" class="badge-text">Research Fellow</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Muhammad Ali <span class="gradient-text">Farooq</span>, PhD
+                    </h1>
+                    <h2 id="top-section-bg-text" class="hero-subtitle text-white"></h2>
+                    <p class="hero-desc">
+                        Welcome to my academic space. Use the navigation matrix or run the system command console below to query recent publications, projects, and datasets directly.
+                    </p>
+                    <div class="hero-btns">
+                        <a href="#publications" class="btn btn-primary">
+                            <span>View My Research</span>
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                        <a href="#CV" class="btn btn-secondary">Review CV</a>
+                    </div>
+                </div>
+
+                <div class="hero-visual-wrapper">
+                    <div class="profile-card glass-panel glow-card">
+                        <div class="card-glare"></div>
+                        <div id="avatar" class="avatar-holder">
+                            <video autoplay loop muted playsinline class="profile-avatar-img" style="object-fit: cover; width: 100%; height: 100%;">
+                                <source src="static/assets/videos/profile-video-1.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="terminal" class="section terminal-section">
+            <div class="terminal-container glass-panel">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="terminal-title">guest@mali-farooq:~# (bash)</div>
+                </div>
+                
+                <div class="terminal-body" id="terminal-body">
+                    <div class="terminal-line">System Initialization: Completed safely.</div>
+                    <div class="terminal-line">Type <span class="terminal-highlight">./publications</span> or use quick query links to view sections.</div>
+                </div>
+                
+                <div class="terminal-input-line">
+                    <span class="terminal-prompt">guest@mali-farooq:~#</span>
+                    <input type="text" id="terminalInput" autocomplete="off" placeholder="type ./publications or ./projects..." aria-label="Terminal command input">
+                </div>
+
+                <div class="terminal-quick-actions">
+                    <span class="quick-label">Quick Links:</span>
+                    <button class="quick-cmd-btn" data-cmd="./publications">./publications</button>
+                    <button class="quick-cmd-btn" data-cmd="./projects">./projects</button>
+                    <button class="quick-cmd-btn" data-cmd="./cv">./cv</button>
+                    <button class="quick-cmd-btn" data-cmd="clear">clear</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section border-top-glow" id="home">
+            <div class="container">
+                <div class="main-body markdown-body" id="home-md"></div>
+            </div>
+        </section>
+
+        <section class="section border-top-glow" id="news">
+            <div class="container">
+                <h2 class="section-heading">NEWS</h2>
+                <div class="main-body markdown-body" id="news-md"></div>
+            </div>
+        </section>
+
+        <section class="section border-top-glow" id="talks">
+            <div class="container">
+                <h2 class="section-heading">TALKS</h2>
+                <div class="main-body markdown-body" id="talks-md"></div>
+            </div>
+        </section>
+
+        <section class="section border-top-glow" id="publications">
+            <div class="container">
+                <h2 class="section-heading">PUBLICATIONS</h2>
+                <div class="main-body markdown-body" id="publications-md"></div>
+            </div>
+        </section>
+
+        <section class="section border-top-glow" id="projects">
+            <div class="container">
+                <h2 class="section-heading">PROJECTS</h2>
+                <div class="main-body markdown-body" id="projects-md"></div>
+            </div>
+        </section>
+
+        <section class="section border-top-glow" id="datasets">
+            <div class="container">
+                <h2 class="section-heading">DATASETS</h2>
+                <div class="main-body markdown-body" id="datasets-md"></div>
+            </div>
+        </section>
+
+        <section class="section border-top-glow" id="CV">
+            <div class="container">
+                <h2 class="section-heading">CURRICULUM VITAE</h2>
+                <div class="main-body markdown-body" id="CV-md"></div>
+            </div>
+        </section>
+
+        <section class="section border-top-glow" id="awards">
+            <div class="container">
+                <h2 class="section-heading">HONORS & CONTRIBUTIONS</h2>
+                <div class="main-body markdown-body" id="awards-md"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div id="copyright-text" class="footer-copy"></div>
+            <p class="footer-sub">
+                <a id="github-link" href="https://github.com/MAli-Farooq/" target="_blank" rel="noopener">Github Workspace</a>
+                <span class="mx-1">&middot;</span>
+                <a id="license-link" href="#" target="_blank" rel="noopener">License Spec</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
