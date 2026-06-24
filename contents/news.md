@@ -1,3 +1,9 @@
+- **Date: 24th June 2026**
+
+I am excited to share that our paper, "Synthetic Face Ageing: Evaluation, Analysis and Facilitation of Age-Robust Facial Recognition Algorithms," has been selected as the winner of the prestigous 2026 IEEE Biometrics Council Transactions on Biometrics, Behavior, and Identity Science (T-BIOM) Journal Best Paper Award. 
+A massive thank you to the IEEE Awards (Biometrics Council) committee for this incredible recognition. Thanks to all the authors for putting all the efforts in driving the experiments, paper drafting and making this breakthrough work a reality.
+Paper Link: https://lnkd.in/d-MtueB3
+
 - **Date: 31st March 2026**
 
 I am excited to share that I am organizing a Special Issue titled “Advances in Computer Vision and Smart Imaging Technologies” for the Electronics MDPI Journal (Impact Factor: 2.6).
