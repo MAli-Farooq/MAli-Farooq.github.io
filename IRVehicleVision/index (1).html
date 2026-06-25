@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <meta name="description" content="NeuroEdge Vision: Real-Time Neuromorphic Perception for Edge AI on Raspberry Pi 5 using Event-Based Cameras">
+
+  <meta property="og:title" content="NeuroEdge Vision"/>
+  <meta property="og:description" content="Real-Time Neuromorphic Perception for Edge AI on Raspberry Pi 5 using Event-Based Cameras"/>
+  <meta property="og:url" content="https://mali-farooq.github.io/NeuroVision/"/>
+  <meta property="og:image" content="static/images/Block-Diagram.png"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+  <meta name="twitter:title" content="NeuroEdge Vision">
+  <meta name="twitter:description" content="Real-Time Neuromorphic Perception for Edge AI on Raspberry Pi 5 using Event-Based Cameras">
+  <meta name="twitter:image" content="static/images/Block-Diagram.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta name="keywords" content="Neuromorphic Vision, Event Cameras, Raspberry Pi 5, Edge AI, YOLOv8, YOLOv26, Tracking, Neuromorphic Perception">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    NeuroEdge Vision: Real-Time Neuromorphic Perception for Edge AI on Raspberry Pi 5 using Event-Based Cameras
+  </title>
+
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+
+<style>
+
+.gif-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.gif-row img {
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+  max-width: 100%;
+  height: auto;
+}
+
+.section-image {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+
+          <h1 class="title is-1 publication-title">
+            NeuroEdge Vision: Real-Time Neuromorphic Perception for Edge AI on Raspberry Pi 5 using Event-Based Cameras
+          </h1>
+
+          <div class="is-size-5 publication-authors">
+
+            <span class="author-block">
+              <a href="https://scholar.google.com.pk/citations?user=Km-BcFoAAAAJ&hl=en">
+                Muhammad Ali Farooq
+              </a><sup>1</sup>,
+            </span>
+
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=z3JoHJYAAAAJ&hl=en">
+                Gabriel Costache
+              </a><sup>1</sup>,
+            </span>
+
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=J6YWBB4AAAAJ&hl=en">
+                Peter Corcoran
+              </a><sup>1</sup>
+            </span>
+
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="eql-cntrb">
+              <small><br><sup>1</sup>University of Galway</small>
+            </span>
+          </div>
+
+          <div class="column has-text-centered">
+
+            <div class="publication-links">
+
+              <span class="link-block">
+                <a href="https://github.com/MAli-Farooq"
+                target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+
+                <span>Code</span>
+                </a>
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- HERO GIF -->
+
+<style>
+.demo-box {
+  flex: 1;
+  text-align: center;
+  overflow: hidden;
+}
+
+.demo-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  cursor: pointer;
+}
+
+.demo-box img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+</style>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+
+      <div style="display:flex; justify-content:space-between; gap:20px; align-items:flex-start; flex-wrap:nowrap;">
+
+        <div class="demo-box">
+          <img src="static/GIFs/Detection-1-YoloV8.gif" alt="Detection Demo"/>
+          <p><b>Detection</b></p>
+        </div>
+
+        <div class="demo-box">
+          <img src="static/GIFs/Tracking-output-1.gif" alt="Tracking Demo"/>
+          <p><b>Tracking</b></p>
+        </div>
+
+        <div class="demo-box">
+          <img src="static/GIFs/Motion-Neuro-Edge-Demo-1-With-Bias.gif" alt="Motion Demo"/>
+          <p><b>Motion Analysis</b></p>
+        </div>
+
+      </div>
+
+      <h2 class="subtitle has-text-centered">
+        Real-time event-based detection, tracking, and motion understanding on Raspberry Pi 5 using neuromorphic vision.
+      </h2>
+
+    </div>
+  </div>
+</section>
+
+<!-- INTRODUCTION -->
+
+<section class="section hero is-light">
+
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered has-text-centered">
+
+      <div class="column is-four-fifths">
+
+        <h2 class="title is-3">Introduction</h2>
+
+        <div class="content has-text-justified">
+
+          <p>
+          In this project, we develop a real-time neuromorphic vision framework for edge AI deployment on Raspberry Pi 5 using event-based cameras (Prophesee GenX series). The system is designed for low-latency, power-efficient perception in unconstrained environments, enabling continuous human-centric scene understanding directly on embedded hardware.
+          </p>
+
+          <p>
+          The pipeline combines event-driven sensing with lightweight deep learning models for detection and tracking, integrated with motion-aware analysis for activity understanding. A CMOS RGB stream is optionally fused for auxiliary pose estimation, enabling hybrid event–frame perception without increasing system latency significantly.
+          </p>
+
+          <p>
+          The framework is optimized for deployment on Raspberry Pi 5 using ONNX-320 lightweight inference paths and demonstrates robust performance for real-time tracking, motion analysis, and activity recognition in dynamic indoor environments.
+          </p>
+
+          <p>
+          The system highlights the potential of neuromorphic sensing for privacy-preserving, low-power, and adaptive intelligent perception systems suitable for robotics, smart surveillance, and human–machine interaction.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- BLOCK DIAGRAM -->
+
+<section class="section">
+
+  <div class="container is-max-desktop">
+
+    <h2 class="title is-3 has-text-centered">
+      System Pipeline
+    </h2>
+
+    <div class="content has-text-centered">
+
+      <img src="static/images/Block-Diagram.png"
+      class="section-image">
+
+      <h2 class="subtitle has-text-centered">
+        Overall NeuroEdge Vision neuromorphic perception pipeline.
+      </h2>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- EVENT CAMERA SECTION -->
+
+<section class="section hero is-light">
+
+  <div class="container is-max-desktop">
+
+    <h2 class="title is-3 has-text-centered">
+      Event-Based Neuromorphic Vision
+    </h2>
+
+    <div class="content has-text-justified">
+
+      <p>
+      The proposed framework utilizes dual Prophesee GenX320p event camera sensors with 76 and 104 degree field of veiw for ultra-low latency visual perception. Unlike traditional RGB cameras, event sensors asynchronously respond to brightness changes, enabling efficient motion-centric processing with reduced power consumption and improved temporal precision.
+      </p>
+
+      <p>
+      The data was acquired with default bias settings as well as optimized bias setup to evaluate the impact of sensor bias tuning on event stream quality, motion sensitivity, background noise suppression, and downstream perception performance for real-time neuromorphic vision tasks.
+      </p>
+
+    </div>
+
+    <div class="gif-row">
+
+      <img src="static/images/Event-Cameras.png" width="48%">
+      <img src="static/images/Event Streams.png" width="48%">
+
+    </div>
+
+    <h2 class="subtitle has-text-centered">
+      Event camera hardware and asynchronous event stream visualization.
+    </h2>
+
+  </div>
+
+</section>
+
+<!-- DATA COLLECTION -->
+
+<section class="section">
+
+  <div class="container is-max-desktop">
+
+    <h2 class="title is-3 has-text-centered">
+      Event Data Collection
+    </h2>
+
+    <div class="gif-row">
+
+      <img src="static/GIFs/Data-Collection-1-Without-Bias.gif" width="48%">
+      <img src="static/GIFs/Data-Collection-2-With-Bias.gif" width="48%">
+
+    </div>
+
+    <h2 class="subtitle has-text-centered">
+      Real-time event stream acquisition under different motion conditions.
+    </h2>
+
+  </div>
+
+</section>
+
+<!-- DETECTION -->
+
+<section class="section hero is-light">
+
+  <div class="container is-max-desktop">
+
+    <h2 class="title is-3 has-text-centered">
+      Event-Based Detection Results
+    </h2>
+
+    <div class="gif-row">
+
+      <img src="static/GIFs/Detection-1-YoloV8.gif" width="48%">
+      <img src="static/GIFs/Detection-2-YoloV26.gif" width="48%">
+
+    </div>
+
+    <div class="gif-row">
+
+      <img src="static/images/val_batch2_pred-YoloV8.jpg" width="48%">
+      <img src="static/images/val_batch2_pred-YoloV26.jpg" width="48%">
+
+    </div>
+
+    <div class="gif-row">
+
+      <img src="static/images/YOLOV8-Nano Results.png" width="48%">
+      <img src="static/images/YOLOV26-Nano Results.png" width="48%">
+
+    </div>
+
+    <div class="gif-row">
+
+      <img src="static/images/YOLOV8-Prediction-Results.png" width="48%">
+      <img src="static/images/YOLOV26-Prediction-Results.png" width="48%">
+
+    </div>
+
+    <h2 class="subtitle has-text-centered">
+      YOLOv8 and YOLOv26 event-based detection performance and inference analysis.
+    </h2>
+
+  </div>
+
+</section>
+
+<!-- TRACKING -->
+
+<section class="section">
+
+  <div class="container is-max-desktop">
+
+    <h2 class="title is-3 has-text-centered">
+      Real-Time Subject Tracking using Dual Sensor Configurations and With Default and Optimized Bias Settings 
+    </h2>
+
+    <div class="gif-row">
+
+      <img src="static/GIFs/Tracking-output-1.gif" width="32%">
+      <img src="static/GIFs/Tracking-output-2.gif" width="32%">
+      <img src="static/GIFs/Tracking-output-3.gif" width="32%">
+
+    </div>
+
+    <h2 class="subtitle has-text-centered">
+      Real-time low-latency event-based object tracking on Raspberry Pi 5.
+    </h2>
+
+  </div>
+
+</section>
+
+<!-- MOTION ANALYSIS -->
+
+<section class="section hero is-light">
+
+  <div class="container is-max-desktop">
+
+    <h2 class="title is-3 has-text-centered">
+      Motion and Activity Understanding
+    </h2>
+
+    <div class="gif-row">
+
+      <img src="static/GIFs/Motion-Neuro-Edge-Demo-1-With-Bias.gif" width="48%">
+      <img src="static/GIFs/Motion-Neuro-Edge-Demo-2-Without-Bias.gif" width="48%">
+
+    </div>
+
+    <div class="gif-row">
+
+      <img src="static/images/Motion-Activity.png" width="48%">
+      <img src="static/images/Dashboard.png" width="48%">
+
+    </div>
+
+    <h2 class="subtitle has-text-centered">
+      Motion-aware perception and real-time activity analytics dashboard.
+    </h2>
+
+  </div>
+
+</section>
+
+<!-- EVENT Face Localization -->
+
+<section class="section">
+
+  <div class="container is-max-desktop">
+
+    <h2 class="title is-3 has-text-centered">
+       Event Face Localization
+    </h2>
+
+    <div class="gif-row">
+
+      <img src="static/images/Face-Localization-Results.png" width="70%">
+
+    </div>
+
+    <h2 class="subtitle has-text-centered">
+      Auxiliary face localization and pose analysis.
+    </h2>
+
+  </div>
+
+</section>
+
+<!-- BIBTEX -->
+
+<section class="section" id="BibTeX">
+
+  <div class="container is-max-desktop content">
+
+    <h2 class="title">BibTeX</h2>
+
+<pre><code>
+The paper is submitted in IEEE Access Journal .
+@misc{neuroedgevision2026,
+title={NeuroEdge Vision: Real-Time Neuromorphic Perception for Edge AI on Raspberry Pi 5 using Event-Based Cameras},
+author={Muhammad Ali Farooq and Gabriel Costache and Peter Corcoran},
+year={2026},
+institution={University of Galway}
+}
+</code></pre>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+  <div class="container">
+
+    <div class="columns is-centered">
+
+      <div class="column is-8">
+
+        <div class="content">
+
+          <p>
+            This page was built using the
+            <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+            target="_blank">
+            Academic Project Page Template
+            </a>.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+</body>
+</html>
