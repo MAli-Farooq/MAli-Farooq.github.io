@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="IRVehicleVision: Effective Use of Long-wave Infrared Technology for Deep Learning based Intelligent Thermal Vision Systems for Smart Vehicular Applications">
+  <meta name="keywords" content="Thermal Vision, ADAS, Long-wave Infrared, LWIR, Edge AI, TensorRT, Nvidia Jetson, Object Detection, Tracking">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IRVehicleVision: Intelligent Thermal Vision Systems for Smart Vehicular Applications</title>
+
+  <!-- Bulma Toolkit and Styles via Standard Fonts/Icons Simulation -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background-color: #fcfdfd;
+      color: #333333;
+    }
+    .hero {
+      background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
+      color: #ffffff;
+      padding: 4rem 1.5rem;
+    }
+    .hero .title {
+      color: #ffffff !important;
+      font-weight: 800;
+      font-size: 2.5rem;
+      line-height: 1.2;
+    }
+    .hero .subtitle {
+      color: #9ca3af !important;
+      font-weight: 400;
+      margin-top: 1.5rem !important;
+    }
+    .publication-authors a {
+      color: #38bdf8 !important;
+      font-weight: 600;
+    }
+    .publication-authors a:hover {
+      text-decoration: underline;
+    }
+    .author-block {
+      display: inline-block;
+      margin-right: 15px;
+    }
+    .institution-block {
+      color: #9ca3af;
+      font-size: 0.95rem;
+      margin-top: 0.5rem;
+    }
+    .link-block a {
+      background-color: #374151;
+      color: #ffffff !important;
+      border-radius: 20px;
+      padding: 0.5rem 1.2rem;
+      font-weight: 500;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .link-block a:hover {
+      background-color: #4b5563;
+      transform: translateY(-1px);
+    }
+    .section {
+      padding: 3rem 1.5rem;
+    }
+    .section-title {
+      font-size: 1.85rem;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 1.5rem;
+      border-left: 5px solid #38bdf8;
+      padding-left: 12px;
+    }
+    .box-custom {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    .tag-custom {
+      background-color: #e0f2fe;
+      color: #0369a1;
+      font-weight: 600;
+      padding: 0.25rem 0.75rem;
+      border-radius: 12px;
+      font-size: 0.85rem;
+    }
+    .metric-card {
+      background-color: #f8fafc;
+      border-top: 4px solid #38bdf8;
+      border-radius: 6px;
+      padding: 1.25rem;
+      text-align: center;
+    }
+    .metric-value {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .metric-label {
+      font-size: 0.85rem;
+      color: #64748b;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .footer {
+      background-color: #111827;
+      color: #9ca3af;
+      padding: 3rem 1.5rem;
+    }
+    .footer a {
+      color: #38bdf8;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+    pre {
+      background-color: #f1f5f9;
+      border-radius: 6px;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<!-- HERO HEADER -->
+<section class="hero has-text-centered">
+  <div class="container is-max-desktop">
+    <h1 class="title">
+      Effective Use of Long-wave Infrared Technology for the Development and Optimization of Deep Learning based Intelligent Thermal Vision Systems for Smart Vehicular Applications
+    </h1>
+    
+    <div class="publication-authors is-size-5 mt-4">
+      <span class="author-block">
+        <a href="https://github.com/mali-farooq" target="_blank">Muhammad Ali Farooq</a><sup>1,2</sup>
+      </span>
+    </div>
+
+    <div class="institution-block">
+      <sup>1</sup>College of Informatics and Engineering, University of Galway, Ireland<br>
+      <sup>2</sup>Xperi Corporation
+    </div>
+    
+    <div class="mt-2">
+      <span class="tag-custom">HELIAUS EU Project</span>
+    </div>
+
+    <!-- PROJECT LINKS -->
+    <div class="column has-text-centered mt-5">
+      <div class="publication-links field is-grouped is-grouped-centered" style="flex-wrap: wrap; gap: 10px;">
+        
+        <span class="link-block">
+          <a href="https://ieeexplore.ieee.org/document/9732195" target="_blank">
+            <i class="fa-solid fa-file-pdf"></i>
+            <span>IEEE T-IV Paper</span>
+          </a>
+        </span>
+        
+        <span class="link-block">
+          <a href="https://ieee-dataport.org/documents/c3i-thermal-automotive-dataset" target="_blank">
+            <i class="fa-solid fa-database"></i>
+            <span>C3I Dataset</span>
+          </a>
+        </span>
+
+        <span class="link-block">
+          <a href="https://github.com/mali-farooq/IRVehicleVision" target="_blank">
+            <i class="fa-brands fa-github"></i>
+            <span>Code Repo</span>
+          </a>
+        </span>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAIN CONTENT CONTAINER -->
+<section class="section">
+  <div class="container is-max-desktop">
+    
+    <!-- PROJECT OVERVIEW -->
+    <div class="columns is-centered mt-4">
+      <div class="column is-full-width">
+        <h2 class="section-title">Project Overview</h2>
+        <div class="content box-custom">
+          <p>
+            Modern Advanced Driver Assistance Systems (ADAS) heavily rely on robust sensing capabilities. This research explores the potential usage of <strong>Long-wave Infrared (LWIR) thermal imaging technology</strong> for comprehensive vehicular safety application suites—spanning both <strong>out-cabin external perception</strong> and <strong>in-cabin driver/occupant monitoring</strong>.
+          </p>
+          <p>
+            By prototyping smart thermal systems utilizing custom 640x480 thermal cameras (developed by LYNRED France), we enable robust detection and classification of objects surrounding and within the vehicle. This project emphasizes the efficient real-time optimization and onboard deployment of deep neural network architectures onto resource-constrained embedded platforms.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHALLENGES & PRE-PROCESSING -->
+    <div class="columns is-centered mt-5">
+      <div class="column is-full-width">
+        <h2 class="section-title">Thermal Imaging Challenges & Pipeline</h2>
+        <div class="content box-custom">
+          <p>
+            Training deep models on thermal spectrum frames presents unique constraints compared to conventional visible RGB datasets (e.g., lower resolution, fewer public annotations, non-uniform sensor artifacts). To address these limits, our end-to-end pipeline implements advanced hardware and software preprocessing:
+          </p>
+          <ul>
+            <li><strong>Automatic Gain Control (AGC):</strong> Corrects irregular gains caused by non-uniform thermal amplifiers using custom-designed gain maps.</li>
+            <li><strong>Bad Pixel Replacement:</strong> Identifies and dynamically maps faulty pixels using nearest-neighbor methods.</li>
+            <li><strong>Temporal & Spatial Denoising:</strong> Cancels random quantum noise across uncooled thermal sensors via frame averaging post-shutterless calibration.</li>
+            <li><strong>Mosaic Augmentation:</strong> Combines four diverse frames into one to enhance cross-scale convergence during deep network fine-tuning.</li>
+          </ul>
+          <div class="has-text-centered my-4">
+            <img src="static/images/Block-Diagram.png" alt="Data Processing Pipeline" style="max-width: 100%; border-radius: 6px;">
+            <p class="is-size-7 has-text-grey mt-1">Figure 1: Complete data acquisition and processing architecture pipeline.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- OUT-CABIN DATASET -->
+    <div class="columns is-centered mt-5">
+      <div class="column is-full-width">
+        <h2 class="section-title">The C3I Thermal Automotive Dataset</h2>
+        <div class="content box-custom">
+          <p>
+            To address the lack of diverse public thermal data, we open-sourced the <strong>C3I Thermal Automotive Dataset</strong> on IEEE Dataport. It features rigorous dual-stream data annotation containing stationary and moving objects in adverse environmental setups.
+          </p>
+          
+          <div class="columns mt-4">
+            <div class="column">
+              <div class="metric-card">
+                <div class="metric-value">39,000+</div>
+                <div class="metric-label">Distinct Frames</div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="metric-card">
+                <div class="metric-value">6</div>
+                <div class="metric-label">Diverse Video Sets</div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="metric-card">
+                <div class="metric-value">2.2K</div>
+                <div class="metric-label">Ground Truth Box Labels</div>
+              </div>
+            </div>
+          </div>
+
+          <p class="mt-4">
+            The multi-class dataset covers high-contrast targets across challenging visibility scenarios including <strong>Daytime Light Cloudy</strong>, <strong>Daytime Foggy/Windy</strong>, and <strong>Complete Night-time</strong> environments.
+          </p>
+          
+          <div class="columns is-multiline mt-2">
+            <div class="column is-6">
+              <img src="static/images/Sample-Thermal-1.png" alt="Sample Thermal Frame 1" style="width: 100%; border-radius: 4px;">
+            </div>
+            <div class="column is-6">
+              <img src="static/images/Sample-Thermal-2.png" alt="Sample Thermal Frame 2" style="width: 100%; border-radius: 4px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- METHODOLOGY & ENSEMBLING -->
+    <div class="columns is-centered mt-5">
+      <div class="column is-full-width">
+        <h2 class="section-title">Deep Learning Detection & Path Trajectory Tracking</h2>
+        <div class="content box-custom">
+          <p>
+            We successfully optimized state-of-the-art pretrained convolutional architectures (YOLO networks initially converged on COCO/ImageNet maps) using customized final layers and a One-Cycle learning rate scheduler.
+          </p>
+          
+          <h3>Model Ensembling Inference Engine</h3>
+          <p>
+            To push performance boundaries on noisy test streams, we designed an ensemble-based inference architecture that merges outputs from multiple optimal models (YOLO X-Large, Large, and Small configurations).
+          </p>
+          
+          <div class="columns has-text-centered my-4">
+            <div class="column">
+              <div class="box p-3" style="border: 1px solid #e2e8f0;">
+                <h4 class="title is-5 mb-1">91.29%</h4>
+                <p class="is-size-7">mAP (X-Large Model)</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="box p-3" style="border: 1px solid #e2e8f0;">
+                <h4 class="title is-5 mb-1">90.53%</h4>
+                <p class="is-size-7">mAP (Large Model)</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="box p-3" style="border: 1px solid #e2e8f0;">
+                <h4 class="title is-5 mb-1">90.43%</h4>
+                <p class="is-size-7">mAP (Small Model)</p>
+              </div>
+            </div>
+          </div>
+
+          <h3>Multi-Object Path Trajectory Tracking</h3>
+          <p>
+            The fine-tuned detection variants are natively coupled with robust tracking algorithms (<strong>DeepSORT, FAIRMOT, StrongSORT</strong>) to maintain object identity vectors and map target paths under extreme low-light and occlusion conditions.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- EDGE DEPLOYMENT & TENSORRT -->
+    <div class="columns is-centered mt-5">
+      <div class="column is-full-width">
+        <h2 class="section-title">Edge AI Optimization & TensorRT Deployment</h2>
+        <div class="content box-custom">
+          <p>
+            For practical onboard vehicular viability, models were deployed on resource-constrained computing hardware: <strong>NVIDIA Jetson Nano</strong> and <strong>NVIDIA Jetson Xavier NX</strong>.
+          </p>
+          <p>
+            Using NVIDIA's <strong>TensorRT Inference Accelerator</strong>, neural network layer graphs were restructured to maximize execution efficiency. Horizontal layer aggregation combined matching operational streams, while unused branches were trimmed.
+          </p>
+          
+          <div class="notification is-light">
+            <strong>Key Performance Uplift:</strong> TensorRT optimization achieved an approximate throughput increase of <strong>3.5× FPS</strong> compared to non-optimized baseline configurations on the edge boards.
+          </div>
+
+          <div class="has-text-centered my-4">
+            <img src="static/images/TensorRT-Results.png" alt="Inference Results" style="max-width: 80%; border-radius: 6px;">
+            <p class="is-size-7 has-text-grey mt-1">Figure 2: Real-time detection and target tracking on embedded development stacks.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BIBTEX CITATION -->
+    <div class="columns is-centered mt-5">
+      <div class="column is-full-width">
+        <h2 class="section-title">BibTeX Citation</h2>
+        <div class="content box-custom">
+          <p>If you use our dataset or models in your research, please cite our open-access IEEE Transactions on Intelligent Vehicles (T-IV) paper:</p>
+          <pre><code>@article{farooq2022effective,
+  title={Effective Use of Long-Wave Infrared Technology for the Development and Optimization of Deep Learning Based Intelligent Thermal Vision Systems for Smart Vehicular Applications},
+  author={Farooq, Muhammad Ali and Costache, Gabriel and Corcoran, Peter},
+  journal={IEEE Transactions on Intelligent Vehicles},
+  year={2022},
+  publisher={IEEE}
+}</code></pre>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer has-text-centered">
+  <div class="container">
+    <p>
+      <strong>IRVehicleVision Project Page</strong> by <a href="https://github.com/mali-farooq">Muhammad Ali Farooq</a>.
+    </p>
+    <p class="is-size-7 mt-2">
+      Built with the Academic Project Page Template. All rights reserved &copy; 2026.
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
