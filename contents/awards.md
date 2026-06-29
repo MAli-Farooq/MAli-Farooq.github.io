@@ -1,13 +1,25 @@
-- Senior Member IEEE, 2024
+### 🏅 Honors & Professional Recognition
+*   **💎 Senior Member** | *IEEE (Institute of Electrical and Electronics Engineers)* — **2024**
+*   **🇪🇺 EU Horizon H2020 Research Scholarship** — **2019**
+*   **🥇 First-Prize Academic Scholarship** — **2019**
+*   **🏆 Lifts Leadership Award** — **2022**
+*   **💼 NUIG Employability Award** — **2021**
 
-- Actively serving as a peer reviewer for esteemed conferences, including the International Joint Conference on Neural Networks (IJCNN) , ACM Multimedia (ACM-MM) , the IEEE International Conference on Bioinformatics and Bioengineering (BIBE) , and the Irish Machine Vision and Image Processing Conference (IMVIP).
+---
 
-- Additionally, contributing to the peer-review process of reputable journals such as IEEE Transactions on Image Processing (TIP), IEEE Access , The Journal of Electronic Imaging (JEI) , The Journal of Applied Remote Sensing (JARS) , Nature's Scientific Reports , and IEEE Transactions on Geoscience and Remote Sensing (TGRS)
+### 🔍 Editorial & Peer Review Contributions
+Actively contributing to the technical rigor of leading international research forums across machine learning, computer vision, and biosensing:
 
-- EU Horizon H2020 Schlorship, 2019.
+#### 🏛️ International Conferences
+*   **IJCNN** — *International Joint Conference on Neural Networks*
+*   **ACM-MM** — *ACM International Conference on Multimedia*
+*   **BIBE** — *IEEE International Conference on Bioinformatics and Bioengineering*
+*   **IMVIP** — *Irish Machine Vision and Image Processing Conference*
 
-- NUIG Employability Award, 2021.
-
-- Lifts Leadership Award, 2022.
-
-- First-prize Academic Scholarship, 2019.
+#### 📖 Reputable Journals
+*   **Nature** — *Scientific Reports*
+*   **IEEE TIP** — *IEEE Transactions on Image Processing*
+*   **IEEE TGRS** — *IEEE Transactions on Geoscience and Remote Sensing*
+*   **IEEE Access** — *The Multidisciplinary Open Access Journal*
+*   **JEI** — *The Journal of Electronic Imaging*
+*   **JARS** — *The Journal of Applied Remote Sensing*
