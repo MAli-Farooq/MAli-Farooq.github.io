@@ -1,7 +1,7 @@
 ### 🏅 Honors & Professional Recognition
 *   **Senior Member** | *IEEE (Institute of Electrical and Electronics Engineers)* — **2024**
 *   **EU Horizon H2020 Research Scholarship** — **2019**
-*   **Registered Engineer Pakistan Engineering Coucil** — **2012**
+*   **Registered Engineer Pakistan Engineering Council** — **2012**
 *   **Lifts Leadership Award** — **2022**
 *   **NUIG Employability Award** — **2021**
 
