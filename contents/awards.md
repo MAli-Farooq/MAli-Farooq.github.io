@@ -1,9 +1,9 @@
 ### 🏅 Honors & Professional Recognition
-*   **💎 Senior Member** | *IEEE (Institute of Electrical and Electronics Engineers)* — **2024**
-*   **🇪🇺 EU Horizon H2020 Research Scholarship** — **2019**
-*   **🥇 First-Prize Academic Scholarship** — **2019**
-*   **🏆 Lifts Leadership Award** — **2022**
-*   **💼 NUIG Employability Award** — **2021**
+*   **Senior Member** | *IEEE (Institute of Electrical and Electronics Engineers)* — **2024**
+*   **EU Horizon H2020 Research Scholarship** — **2019**
+*   **Registered Engineer Pakistan Engineering Coucil** — **2012**
+*   **Lifts Leadership Award** — **2022**
+*   **NUIG Employability Award** — **2021**
 
 ---
 
@@ -14,7 +14,8 @@ Actively contributing to the technical rigor of leading international research f
 *   **IJCNN** — *International Joint Conference on Neural Networks*
 *   **ACM-MM** — *ACM International Conference on Multimedia*
 *   **BIBE** — *IEEE International Conference on Bioinformatics and Bioengineering*
-*   **IMVIP** — *Irish Machine Vision and Image Processing Conference*
+*   **MICCAI** — *International Conference on Medical Image Computing and Computer Assisted Intervention*
+*   **BMVC** — *British Machine Vision and Image Processing Conference*
 
 #### 📖 Reputable Journals
 *   **Nature** — *Scientific Reports*
