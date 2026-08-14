@@ -9,6 +9,14 @@ Here is a quick look at the accepted paper:
 Focus: Next-generation multi-subject tracking utilizing intelligent perception agents for robust, contextual scene understanding.
 Technicle Highlights: Edge-optimized event perception pipelines running in real time on Raspberry Pi 5 for low-latency multi-subject trajectory recovery while ensuring user privacy by design.
 
+2️⃣ IEEE Access — Comprehensive Edge-Based Human Motion Analysis
+
+📄 Paper: https://lnkd.in/dAHirh5k
+Focus: End-to-end human motion profiling executed live on embedded edge hardware.
+Technicle Highlights: Real-time tracking and localization using YOLO, Byte Track, Kalman Filters deployed on Raspberry Pi 5 with low-latency benchmarks featuring: Speed estimation & angular direction analysis, distance estimation & face localization
+
+💡 Explore full research project: https://lnkd.in/d7iyq8bN
+
 
 - **Date: 24th June 2026**
 
