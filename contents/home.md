@@ -25,8 +25,8 @@ I am a **Research Fellow** at the University of Galway and a **Machine Learning 
 I specialize in multi-modal vision systems—with a strong core focus on **Long-Wave Infrared (LWIR) thermal imaging** and complementary **neuromorphic event-based cameras**—to construct privacy-aware, robust, real-time sensing pipelines.
 
 * **Ph.D. Acceleration:** Completed my Ph.D. in Electrical and Electronic Engineering in 3 years at the University of Galway.
-* **EU Research Impact:** Contributed to the EU-funded *tHErmaL vIsion AUgmented awarenesS* project, pioneering driver monitoring systems (DMS), ADAS applications, synthetic LWIR data generation, and autonomous thermal perception.
-* **Edge Deployment:** Extensive experience optimizing deep learning architectures via TensorRT and TensorFlow Lite for real-time edge execution on NVIDIA Jetson (Nano, Xavier) and embedded platforms.
+* **Research Impact:** Contributed to the EU-funded *tHErmaL vIsion AUgmented awarenesS* project, pioneering driver monitoring systems (DMS), ADAS applications, synthetic LWIR data generation, and autonomous thermal perception.
+* **Edge Deployment:** Extensive experience optimizing deep learning architectures via TensorRT and TensorFlow Lite for real-time edge execution on NVIDIA Jetson (Nano, Xavier), Raspiberry Pi, OpenMV, Hailo and embedded platforms.
 * **Industry & International Collaboration:** Active collaborative research with leading global enterprises including **Xperi Corporation** (US), **Lynred** (France), **Next2U** (Italy), **Denso** (Germany), and **Boston Scientific** (Ireland).
 * **Peer Reviewer:** Serving as an active reviewer for top-tier venues including *IEEE Access*, *SPIE Journal of Electronic Imaging*, *SPIE Journal of Remote Sensing*, and *Springer Nature Scientific Reports*.
 
