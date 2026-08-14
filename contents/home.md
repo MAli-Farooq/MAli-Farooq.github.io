@@ -1,57 +1,73 @@
-Hi, I'm Dr. Muhammad Ali Farooq 👋
+# Hi, I'm Dr. Muhammad Ali Farooq 👋
 
-Senior Member IEEE | Research Fellow @ University of Galway | ML Researcher @ FotoNation
+**Senior Member IEEE** | **Research Fellow @ University of Galway** | **ML Researcher @ FotoNation (Tobii)**
 
-I specialize in Computer Vision, Machine Learning, Large and Vision Langauge Models, Edge AI Optimization, and Multimodal Perception Frameworks
+> **Specialization:** Computer Vision, Machine Learning, Vision-Language Models (VLMs), Edge AI Optimization, Multimodal Perception Frameworks, and Privacy-Aware Smart Imaging Pipelines.
 
-🏛️ Venues & Publications
+---
 
-Work published in premier venues including ACM Multimedia, ECCV, ACCV, IJCNN, IEEE T-BIOM and IEEE TIV.
+### 🌐 Connect & Profiles
 
-I am currently working as a Research Fellow at the University of Galway and Machine Learning Research Intern at Fotonation. My research focuses on Generative AI, Large Language Models, Machine Learning, Computer Vision, Sensor Fusion, and Edge Computing. I have extensive experience working with various image modalities, including thermal, RGBD, and event-based neuromorphic imaging, integrating them with machine learning algorithms to develop smart imaging pipelines for different computer vision applications. I began my Ph.D. in September 2019 and completed it within three years at the University of Galway. My research was part of the EU-funded 'tHErmaL vIsion AUgmented awarenesS' project, focusing on in-cabin driver monitoring systems (DMS), advanced driver assistance systems (ADAS), and on-chip edge deployment for real-time testing. My contributions included the development and deployment of various in-cabin and out-cabin applications, such as autonomous thermal gender classification, large-scale synthetic thermal data generation, and object detection in the thermal spectrum using state-of-the-art YOLO frameworks. I also optimized neural networks using TensorRT and TensorFlow-Lite and deployed them on edge-GPU devices like Nvidia Jetson Nano and Xavier. Further I am actively collaborating with research engineers and professionals from European and American companies, including Xperi Corporation (U.S.), Lynred (France), Next2U (Italy), Denso (Germany), and Boston Scientific (Ireland). These collaborations led to several joint publications in journals and conference proceedings. Since 2019, I have served as an active reviewer for prestigious engineering journals, including IEEE Access, SPIE Journal of Electronic Imaging, SPIE Journal of Remote Sensing, and Springer Nature Scientific Reports. 
+[![GitHub](https://img.shields.io/badge/GitHub-MAli--Farooq-181717?style=flat-square&logo=github)](https://github.com/MAli-Farooq)
+[![Google Scholar](https://img.shields.io/badge/Google_Scholar-Muhammad_Ali_Farooq-4285F4?style=flat-square&logo=google-scholar&logoColor=white)](https://scholar.google.com.pk/citations?user=Km-BcFoAAAAJ&hl=en)
+[![ORCID](https://img.shields.io/badge/ORCID-0000--0003--4116--8021-A6CE39?style=flat-square&logo=orcid&logoColor=white)](https://orcid.org/0000-0003-4116-8021)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Muhammad_Ali_Farooq-0A66C2?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/muhammad-ali-farooq-876235a1/)
+[![X / Twitter](https://img.shields.io/badge/X-@mali__farooq-000000?style=flat-square&logo=x)](https://x.com/Muhamma59397356)
 
+**Email:** `muhammadali.farooq[at]universityofgalway.ie` | `muhammadali.farooq[at]ieee.org`
 
-#### GitHub
-[![senli1073](https://img.shields.io/badge/Muhammad-github-blue?logo=github)](https://github.com/MAli-Farooq)
+---
 
-#### Google Scholar Profile
-[![senli1073](https://img.shields.io/badge/Muhammad-Scholar-blue?logo=google)](https://scholar.google.com.pk/citations?user=Km-BcFoAAAAJ&hl=en)
+## 🔬 About Me
 
-#### Orcid
-[![senli1073](https://img.shields.io/badge/Muhammad-Orcid-blue?logo=orcid)](https://orcid.org/0000-0003-4116-8021)
+I am a **Research Fellow** at the University of Galway and a **Machine Learning Researcher** at FotoNation (Tobii). My research operates at the intersection of **Generative AI, Vision-Language Models (VLMs), Multimodal Sensor Fusion, and Edge AI**. 
 
-  
-#### Lets Connect
-[![senli1073](https://img.shields.io/badge/Muhammad-Linkedin-blue?logo=linkedin)](https://www.linkedin.com/in/muhammad-ali-farooq-876235a1/)
+I specialize in multi-modal vision systems—with a strong core focus on **Long-Wave Infrared (LWIR) thermal imaging** and complementary **neuromorphic event-based cameras**—to construct privacy-aware, robust, real-time sensing pipelines.
 
-[![senli1073](https://img.shields.io/badge/Muhammad-%40mali__farooq-blue?logo=x)](https://x.com/Muhamma59397356)
+* **Ph.D. Acceleration:** Completed my Ph.D. in Electrical and Electronic Engineering in 3 years at the University of Galway.
+* **EU Research Impact:** Contributed to the EU-funded *tHErmaL vIsion AUgmented awarenesS* project, pioneering driver monitoring systems (DMS), ADAS applications, synthetic LWIR data generation, and autonomous thermal perception.
+* **Edge Deployment:** Extensive experience optimizing deep learning architectures via TensorRT and TensorFlow Lite for real-time edge execution on NVIDIA Jetson (Nano, Xavier) and embedded platforms.
+* **Industry & International Collaboration:** Active collaborative research with leading global enterprises including **Xperi Corporation** (US), **Lynred** (France), **Next2U** (Italy), **Denso** (Germany), and **Boston Scientific** (Ireland).
+* **Peer Reviewer:** Serving as an active reviewer for top-tier venues including *IEEE Access*, *SPIE Journal of Electronic Imaging*, *SPIE Journal of Remote Sensing*, and *Springer Nature Scientific Reports*.
 
-#### Email
-University: muhammadali.farooq[at]universityofgalway.ie
+---
 
-IEEE: muhammadali.farooq[at]ieee.org
+## 🏛️ Selected Venues & Publications
 
-#### Experiance
-- 2024.10 - Currently working as Research Fellow, Affiliation: School of Engineering, C3I Imaging Group (National University of Ireland Galway (NUIG) aka University of Galway.
+Work published in premier international journals and conferences, including:
+* **Conferences:** ACM Multimedia, ECCV, ACCV, IJCNN
+* **Journals:** IEEE Transactions on Biometrics, Behavior, and Identity Science (T-BIOM), IEEE Transactions on Intelligent Vehicles (TIV)
 
-- 2022.09 - 2024.09 - Postdoctoral Researcher, Affiliation: School of Engineering, C3I Imaging Group (National University of Ireland Galway (NUIG) aka University of Galway.
-  
-- 2024.01 - Current - ML Intern, Affiliation: Tobii- Fotonation, Galway Ireland.
+---
 
-- 2019.09 - 2023.12 - ML Intern, Affiliation: Xperi- Fotonation, Galway Ireland.
+## 💼 Experience
 
-- 2019.09 - 2022.09 - Ph.D Researcher, Affiliation: School of Engineering, C3I Imaging Group (National University of Ireland Galway (NUIG) aka University of Galway.
+| Timeline | Role | Organization |
+| :--- | :--- | :--- |
+| **10/2024 – Present** | **Research Fellow** | C3I Imaging Group, School of Engineering, University of Galway |
+| **01/2024 – Present** | **ML Researcher / Intern** | Tobii – FotoNation, Galway, Ireland |
+| **09/2022 – 09/2024** | **Postdoctoral Researcher** | C3I Imaging Group, School of Engineering, University of Galway |
+| **09/2019 – 12/2023** | **ML Intern** | Xperi – FotoNation, Galway, Ireland |
+| **09/2019 – 09/2022** | **Ph.D. Researcher** | School of Engineering, University of Galway |
+| **08/2016 – 07/2019** | **Computer Vision Research Officer** | PNEC, National University of Sciences and Technology (NUST), Pakistan |
+| **01/2014 – 02/2015** | **Trainee Engineer** | Aga Khan University Hospital, Pakistan |
 
-- 2016.08 - 2019.07 - Research Officer (Computer Vision Researcher), Affiliation: School of Engineering, PN Engineering College, National University of Sciences and Technology (NUST) Pakistan.
+---
 
-- 2014.01 - 2015.02 - Trainee Engineer, Affiliation: Aga Khan University Hospital Pakistan.
+## 🎓 Education
 
-#### Education
-- 2022.09 - Ph.D, Electrical and Electronic Engineering, School of Engineering, National University of Ireland Galway (NUIG).
+* **Ph.D. in Electrical & Electronic Engineering** (2019 – 2022)  
+  *University of Galway, Ireland*
+* **M.S. in Electrical Control Engineering** (2015 – 2017)  
+  *National University of Sciences and Technology (NUST), Pakistan*
+* **B.E. in Electronic Engineering** (2008 – 2012)  
+  *IQRA University (IU), Pakistan*
 
-- 2017.05 - Masters of Science (MS), Electrical Control Engineering, School of Electrical Engineering, National University of Sciences and Technology (NUST) Pakistan.
+---
 
-- 2012.12 - Bachelors of Engineering (BE), Electronic Engineering, FEST Department, IQRA Univeristy (IU) Pakistan.
+## 🎯 Primary Research Interests
 
-#### Research Interests
-Deep Learning, Machine Learning, Large Language Models (LLM's), Sensor Fusion, Medical Imaging, Thermal Imaging, Edge Computing, Generative AI
+* **Core Imaging Modalities:** LWIR Thermal Imaging, Neuromorphic Event Cameras, Multi-Spectral Fusion
+* **AI Architecture:** Vision-Language Models (VLMs), Large Language Models (LLMs), Generative AI
+* **Optimization & Hardware:** Edge AI Deployment (TensorRT, TFLite, NVIDIA Jetson Platforms)
+* **Applications:** Smart In-Cabin Perception (DMS/ADAS), Privacy-Aware Perception, Medical Imaging Pipeline Optimization
