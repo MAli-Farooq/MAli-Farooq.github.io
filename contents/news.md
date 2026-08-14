@@ -1,4 +1,5 @@
 - **Date: 11 August 2026**
+
 🚀 Excited to share new publications advancing Edge AI, Event-Based Sensing, Senor Fusion and Privacy-Aware Human Motion Analysis! 🧠⚡
 
 Deploying real-time human motion perception on resource-constrained edge hardware requires balancing low latency, low power consumption, and data privacy. In our latest research, we demonstrate that full end-to-end perception pipelines can achieve real-time inference directly on the Raspberry Pi 5, leveraging neuromorphic event-based vision and multimodal sensor fusion.
