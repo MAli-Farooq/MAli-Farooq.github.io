@@ -35,8 +35,8 @@ I specialize in multi-modal vision systems—with a strong core focus on **Long-
 ## 🏛️ Selected Venues & Publications
 
 Work published in premier international journals and conferences, including:
-* **Conferences:** ACM Multimedia, ECCV, ACCV, IJCNN
-* **Journals:** IEEE Transactions on Biometrics, Behavior, and Identity Science (T-BIOM), IEEE Transactions on Intelligent Vehicles (TIV)
+* **Conferences:** ACM Multimedia, ECCV, ACCV, IJCNN, EMBC
+* **Journals:** IEEE Transactions on Biometrics, Behavior, and Identity Science (T-BIOM), IEEE Transactions on Intelligent Vehicles (TIV), IEEE Access, IEEE Open Journal of Vehicular Technology
 
 ---
 
