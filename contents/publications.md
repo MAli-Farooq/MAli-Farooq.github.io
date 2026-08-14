@@ -1,6 +1,10 @@
 ### Journal Publication
 
 ## 2026
+
+- <Muhammad Ali Farooq* </strong>, Gabriel Costache and Peter Corcoran, "Lightweight Neuromorphic Perception: Porting Low-Latency Privacy-Responsive Human Motion Analysis to Constrained Edge Architectures." in IEEE Access, vol. 14, pp. 121314–121338, 2026, doi: 10.1109/ACCESS.2026.3721622. [Paper]
+(https://ieeexplore.ieee.org/document/11644450)
+
 - <strong>Muhammad Ali Farooq* </strong>, Waseem Shariff and P. Corcoran, "ThermVision-DB: A Synthetic LWIR Thermal Face Dataset for Privacy-Preserving Thermal Vision Research." in Elsevier Data in Brief, 2026, doi: 10.1016/j.dib.2026.112506. </strong> [[Paper]](https://www.sciencedirect.com/science/article/pii/S2352340926000594)
 
 - Abaid A, <strong>Muhammad Ali Farooq* </strong>, Hynes N, Corcoran P, Ullah I. "DiffusionTBAD: Rendering CTA images for type B aortic dissection diagnosis". in Elsevier Computerized Medical Imaging and Graphics, 2026, doi: 10.1016/j.compmedimag.2026.102740. [[Paper]](https://www.sciencedirect.com/science/article/pii/S0895611126000431)
