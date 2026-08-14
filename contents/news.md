@@ -9,10 +9,6 @@ Here is a quick look at the accepted paper:
 Focus: Next-generation multi-subject tracking utilizing intelligent perception agents for robust, contextual scene understanding.
 Technicle Highlights: Edge-optimized event perception pipelines running in real time on Raspberry Pi 5 for low-latency multi-subject trajectory recovery while ensuring user privacy by design.
 
-I am excited to share that our paper, "Synthetic Face Ageing: Evaluation, Analysis and Facilitation of Age-Robust Facial Recognition Algorithms," has been selected as the winner of the prestigous 2026 IEEE Biometrics Council Transactions on Biometrics, Behavior, and Identity Science (T-BIOM) Journal Best Paper Award. 
-A massive thank you to the IEEE Awards (Biometrics Council) committee for this incredible recognition. Thanks to all the authors for putting all the efforts in driving the experiments, paper drafting and making this breakthrough work a reality.
-
-📄Paper Link: https://ieeexplore.ieee.org/document/10858190
 
 - **Date: 24th June 2026**
 
