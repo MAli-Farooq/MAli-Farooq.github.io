@@ -2,7 +2,8 @@
 
 ## 2026
 
-- <strong>Muhammad Ali Farooq* </strong>, Gabriel Costache and Peter Corcoran, "Lightweight Neuromorphic Perception: Porting Low-Latency Privacy-Responsive Human Motion Analysis to Constrained Edge Architectures." in IEEE Access, vol. 14, pp. 121314–121338, 2026, doi: 10.1109/ACCESS.2026.3721622. </strong> [[Paper]](https://ieeexplore.ieee.org/document/11644450)
+- <strong>Muhammad Ali Farooq* </strong>, Gabriel Costache and Peter Corcoran, "Lightweight Neuromorphic Perception: Porting Low-Latency Privacy-Responsive Human Motion Analysis to Constrained Edge Architectures." in IEEE Access, vol. 14, pp. 121314–121338, 2026, doi: 10.1109/ACCESS.2026.3721622. </strong> [[Paper]](https://ieeexplore.ieee.org/document/11644450) </strong> [[Paper]](https://www.sciencedirect.com/science/article/pii/S2352340926000594)
+
 
 - <strong>Muhammad Ali Farooq* </strong>, Waseem Shariff and P. Corcoran, "ThermVision-DB: A Synthetic LWIR Thermal Face Dataset for Privacy-Preserving Thermal Vision Research." in Elsevier Data in Brief, 2026, doi: 10.1016/j.dib.2026.112506. </strong> [[Paper]](https://www.sciencedirect.com/science/article/pii/S2352340926000594)
 
