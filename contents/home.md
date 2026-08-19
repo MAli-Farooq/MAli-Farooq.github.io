@@ -10,6 +10,7 @@
 
 [![GitHub](https://img.shields.io/badge/GitHub-MAli--Farooq-181717?style=flat-square&logo=github)](https://github.com/MAli-Farooq)
 [![Google Scholar](https://img.shields.io/badge/Google_Scholar-Muhammad_Ali_Farooq-4285F4?style=flat-square&logo=google-scholar&logoColor=white)](https://scholar.google.com.pk/citations?user=Km-BcFoAAAAJ&hl=en)
+[![Hugging Face](https://img.shields.io/badge/Hugging%20Face-Muhammad%20Ali%20Farooq-FFD21E?style=flat-square&logo=huggingface&logoColor=black)](https://huggingface.co/MAli-Farooq)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0003--4116--8021-A6CE39?style=flat-square&logo=orcid&logoColor=white)](https://orcid.org/0000-0003-4116-8021)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Muhammad_Ali_Farooq-0A66C2?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/muhammad-ali-farooq-876235a1/)
 [![X / Twitter](https://img.shields.io/badge/X-@mali__farooq-000000?style=flat-square&logo=x)](https://x.com/Muhamma59397356)
