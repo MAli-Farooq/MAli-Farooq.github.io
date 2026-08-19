@@ -71,4 +71,4 @@ Work published in premier international journals and conferences, including:
 * **Core Imaging Modalities:** LWIR Thermal Imaging, Neuromorphic Event Cameras, Multi-Spectral Fusion
 * **AI Architecture:** Vision-Language Models (VLMs), Large Language Models (LLMs), Generative AI
 * **Optimization & Hardware:** Edge AI Deployment (TensorRT, TFLite, NVIDIA Jetson Platforms)
-* **Applications:** Smart In-Cabin Perception (DMS/ADAS), Privacy-Aware Perception, Medical Imaging Pipeline Optimization
+* **Applications:** Smart In-Cabin and Out-Cabin Perception (DMS/ADAS), Privacy-Aware Perception, Thermal Imaging, Neuromorphic Imaging, Medical   Imaging Pipeline Optimization
