@@ -29,7 +29,7 @@ I specialize in multi-modal vision systems—with a strong core focus on **Long-
 * **Research Impact:** Contributed to the EU-funded *tHErmaL vIsion AUgmented awarenesS* project, pioneering driver monitoring systems (DMS), ADAS applications, synthetic LWIR data generation, and autonomous thermal perception.
 * **Edge Deployment:** Extensive experience optimizing deep learning architectures via TensorRT and TensorFlow Lite for real-time edge execution on NVIDIA Jetson (Nano, Xavier), Raspiberry Pi, OpenMV, Hailo and embedded platforms.
 * **Industry & International Collaboration:** Active collaborative research with leading global enterprises including **Xperi Corporation** (US), **Lynred** (France), **Next2U** (Italy), **Denso** (Germany), and **Boston Scientific** (Ireland).
-* **Peer Reviewer:** Serving as an active reviewer for top-tier venues including *IEEE Access*, *SPIE Journal of Electronic Imaging*, *SPIE Journal of Remote Sensing*, and *Springer Nature Scientific Reports*.
+* **Peer Reviewer:** Serving as an active reviewer for top-tier venues including *IEEE Transactions on Pattern Analysis and Machine Intelligence*, *IEEE Access*, *SPIE Journal of Electronic Imaging*, *SPIE Journal of Remote Sensing*, and *Springer Nature Scientific Reports*.
 
 ---
 
