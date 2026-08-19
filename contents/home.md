@@ -1,6 +1,6 @@
 # Hi, I'm Dr. Muhammad Ali Farooq 👋
 
-**Senior Member IEEE** | **Research Fellow @ University of Galway** | **ML Researcher @ FotoNation (Tobii)**
+**Senior Member IEEE** | **Research Fellow @ University of Galway** | **ML Researcher @ FotoNation**
 
 > **Specialization:** Computer Vision, Machine Learning, Vision-Language Models (VLMs), Edge AI Optimization, Multimodal Perception Frameworks, and Privacy-Aware Smart Imaging Pipelines.
 
