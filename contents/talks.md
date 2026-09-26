@@ -6,6 +6,7 @@
 Presented at ECCV 2026, Malmö, Sweden.
 
   Links: [[Paper]](#) [[Code]](#)
+  Links: </strong> [[Paper is avaliable Open Access at Open Review']](https://openreview.net/forum?id=3mn7vrjmXp)
 
   <img src="/static/assets/img/ECCV-1.jpeg" alt="drawing" width="600"/>
   <img src="/static/assets/img/ECCV-2.jpeg" alt="drawing" width="600"/>
