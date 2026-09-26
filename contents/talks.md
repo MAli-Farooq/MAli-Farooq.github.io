@@ -1,3 +1,17 @@
+
+### 2026
+
+- I am pleased to share our recent paper presented at ECCV 2026, focusing on neuromorphic event-based vision and high-speed target tracking. The work introduces a novel framework integrating low-latency event cameras with quantized YOLO detectors to achieve real-time, high-precision closed-loop control under challenging dynamic lighting conditions. Our approach demonstrates significant performance gains in processing speed and power efficiency for Agentic edge AI and robotic vision applications.
+
+Presented at ECCV 2026, Malmö, Sweden.
+
+  Links: [[Paper]](#) [[Code]](#)
+
+  <img src="/static/assets/img/ECCV-1.jpeg" alt="drawing" width="600"/>
+  <img src="/static/assets/img/ECCV-2.jpeg" alt="drawing" width="600"/>
+  
+
+
 ### 2025
 
 -  I am pleased to share our recent paper presented at ACM Multimedia 2025, focusing on thermal image synthesis using diffusion models. The work introduces a novel framework for generating realistic thermal facial data under privacy-preserving constraints, addressing challenges in domain adaptation and multimodal alignment. Our approach demonstrates strong potential for improving robustness and data diversity in thermal vision systems without requiring access to sensitive real-world imagery.
