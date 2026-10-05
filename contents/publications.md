@@ -51,6 +51,9 @@
 
 
 ### Selected Conference Publications
+
+ - <strong>Muhammad Ali Farooq* </strong>, Gabriel Costache, and Peter Corcoran. "Sensing Without Seeing: Attention-Guided Model Fusion for Multi-Subject Tracking on the Edge Using Event-Based Sensors and Agentic AI." In European Conference on Computer Vision (ECCV), 2026. </strong> [[Paper]](https://openreview.net/forum?id=3mn7vrjmXp) </strong> *Paper accepted and presented as a poster at ECCV 2026 Conference held in Malmö, Sweden*
+
  - <strong>Muhammad Ali Farooq* </strong>, Waseem Shariff, and Peter Corcoran. "ThermVision: Exploring FLUX for Synthesizing Hyper-Realistic Thermal Face Data and Animations via Image to Video Translation." In 2025 ACM-Multimedia (ACM-MM) Proceedings. </strong> [[Paper]](https://dl.acm.org/doi/10.1145/3746027.3755448) </strong> *Paper published and presented in ACM Multimedia 2025 Conference held in Dublin-Ireland*
 
  - <strong>Muhammad Ali Farooq* </strong>, Wang Yao, Michael Schukat, Mark A. Little, and Peter Corcoran. "Derm-t2im: Harnessing synthetic skin lesion data via stable diffusion models for enhanced skin disease classification using vit and cnn." arXiv preprint arXiv:2401.05159 (2024). </strong> [[Paper]](https://openreview.net/forum?id=797JJRqd3N) </strong> *Paper published and presented in IEEE EMBC 2024 Conference*
