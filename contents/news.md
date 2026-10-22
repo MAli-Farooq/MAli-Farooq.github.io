@@ -4,6 +4,9 @@
 
 Access to frontier models and compute environments is essential for advancing state-of-the-art AI. Over the next 12 months, this grant will directly support my research initiatives in multimodal perception, privacy-aware vision-language models, edge AI, and synthetic data generation. Deeply grateful to @OpenAI for supporting academic research and the scientific community! Stay tuned for upcoming updates, open-source releases, and publications.
 
+<img src="/static/assets/img/ChatGPT-1.png" alt="drawing" width="300"/>
+<img src="/static/assets/img/ChatGPT-2.png" alt="drawing" width="300"/>
+
 
 - **Date: 11 August 2026**
 
