@@ -90,7 +90,6 @@
                     <span>Live Studio</span>
                 </a>
                 <a href="#simulators" class="text-gray-300 hover:text-brand-400 transition hidden sm:inline">Interactive Demos</a>
-                <a href="#architecture" class="text-gray-300 hover:text-brand-400 transition hidden md:inline">Multi-GPU Architecture</a>
                 <a href="#aus" class="text-gray-300 hover:text-brand-400 transition hidden md:inline">FACS Vocabulary</a>
                 <a href="#code" class="text-gray-300 hover:text-brand-400 transition">Code Reference</a>
                 <a href="https://github.com/MAli-Farooq/FACSBridge" target="_blank" class="bg-brand-panel hover:bg-brand-border text-white px-4 py-2 rounded-lg border border-brand-border transition flex items-center space-x-2">
@@ -128,7 +127,7 @@
 
                 <!-- Action Buttons Grid -->
                 <div class="pt-2 flex flex-wrap gap-3 sm:gap-4 items-center">
-                    <a href="https://5dd2d5d368b07febcc.gradio.live/" target="_blank" class="bg-gradient-to-r from-brand-500 to-amber-600 hover:from-brand-600 hover:to-amber-700 text-white font-semibold px-5 py-3 rounded-xl shadow-lg shadow-brand-500/25 transition flex items-center space-x-2">
+                    <a href="https://68ba067a69732572d6.gradio.live/" target="_blank" class="bg-gradient-to-r from-brand-500 to-amber-600 hover:from-brand-600 hover:to-amber-700 text-white font-semibold px-5 py-3 rounded-xl shadow-lg shadow-brand-500/25 transition flex items-center space-x-2">
                         <i class="fa-solid fa-rocket text-sm"></i>
                         <span>Live Studio Demo</span>
                         <span class="relative flex h-2 w-2 ml-1">
@@ -892,11 +891,3 @@ def stage_lock(stage):
     </script>
 </body>
 </html>
-```
-
-### Key Additions & Updates Included:
-1. **Interactive Parametric Face Renderer (Demo 1)**: Live HTML5 canvas where users move Action Unit sliders (AU1, AU4, AU12, AU26) to see real-time vector mesh movement and generated prompt string updates.
-2. **Dual-GPU Pipeline Blueprint (Demo 2)**: Visual architecture map of GPU 0 (Qwen LLM + FLUX.1 FP8) and GPU 1 (FLUX.2 Turbo + Qwen2.5-VL Evaluator).
-3. **Interactive Visual Comparison Slider (Demo 3)**: Draggable split-view canvas showing before/after facial lighting post-edits.
-4. **Webcam Personalization & Face Crop Workflow (Demo 4)**: Step-by-step canvas illustration of automated Qwen2.5-VL face detection, square crop, and expression transfer.
-5. **Code & FACS Explorer**: Excerpts highlighting FP8 weight casting, multi-GPU stage locking, and Questionnaire v5.0 verification guidelines.
