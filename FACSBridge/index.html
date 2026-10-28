@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micro-Expression Studio | AU-Aware Facial Synthesis & Evaluation</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#fff7ed',
+                            100: '#ffedd5',
+                            400: '#fb923c',
+                            500: '#f97316',
+                            600: '#ea580c',
+                            dark: '#050506',
+                            card: '#0b0c10',
+                            panel: '#0f1015',
+                            border: '#23252d'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #050506;
+            color: #f4f5f7;
+            background-image: 
+                radial-gradient(circle at 12% 0%, rgba(109,40,217,0.08), transparent 28%),
+                radial-gradient(circle at 90% 0%, rgba(249,115,22,0.07), transparent 26%);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #fb923c 0%, #f43f5e 50%, #c026d3 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .code-scroll::-webkit-scrollbar {
+            height: 6px;
+            width: 6px;
+        }
+        .code-scroll::-webkit-scrollbar-track {
+            background: #07080b;
+        }
+        .code-scroll::-webkit-scrollbar-thumb {
+            background: #23252d;
+            border-radius: 4px;
+        }
+        canvas {
+            touch-action: none;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Header Navigation -->
+    <nav class="sticky top-0 z-50 backdrop-blur-md bg-[#050506]/85 border-b border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-500 to-purple-600 flex items-center justify-center shadow-lg shadow-brand-500/20">
+                    <i class="fa-solid fa-face-smile text-white text-xl"></i>
+                </div>
+                <div>
+                    <span class="font-bold text-lg text-white tracking-tight">Micro-Expression <span class="text-brand-500">Studio</span></span>
+                    <span class="hidden sm:inline-block text-xs text-gray-400 ml-2 px-2 py-0.5 rounded border border-brand-border bg-brand-panel">PRIVE-SENSE</span>
+                </div>
+            </div>
+            <div class="flex items-center space-x-5 text-sm font-medium">
+                <a href="https://5dd2d5d368b07febcc.gradio.live/" target="_blank" class="text-brand-400 font-semibold hover:text-brand-500 transition flex items-center space-x-2">
+                    <span class="relative flex h-2 w-2">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                    </span>
+                    <span>Live Studio</span>
+                </a>
+                <a href="#simulators" class="text-gray-300 hover:text-brand-400 transition hidden sm:inline">Interactive Demos</a>
+                <a href="#architecture" class="text-gray-300 hover:text-brand-400 transition hidden md:inline">Multi-GPU Architecture</a>
+                <a href="#aus" class="text-gray-300 hover:text-brand-400 transition hidden md:inline">FACS Vocabulary</a>
+                <a href="#code" class="text-gray-300 hover:text-brand-400 transition">Code Reference</a>
+                <a href="https://github.com/MAli-Farooq/FACSBridge" target="_blank" class="bg-brand-panel hover:bg-brand-border text-white px-4 py-2 rounded-lg border border-brand-border transition flex items-center space-x-2">
+                    <i class="fa-brands fa-github text-lg"></i>
+                    <span class="hidden sm:inline">Repository</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+            <div class="lg:col-span-7 space-y-6">
+                <!-- Badges -->
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 flex items-center gap-1.5">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Live Demo Active
+                    </span>
+                    <span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-brand-500/10 text-brand-400 border border-brand-500/30">PyTorch 2.x</span>
+                    <span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-purple-500/10 text-purple-400 border border-purple-500/30">HuggingFace Diffusers</span>
+                    <span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-orange-500/10 text-orange-400 border border-orange-500/30">Gradio Web App</span>
+                    <span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/30">Qwen2.5-VL Evaluation</span>
+                    <span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-rose-500/10 text-rose-400 border border-rose-500/30">FLUX.1 / FLUX.2 Turbo</span>
+                </div>
+
+                <h1 class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight">
+                    AU-Aware Facial <br>
+                    <span class="gradient-text">Micro-Expression</span> Studio
+                </h1>
+
+                <p class="text-base sm:text-lg text-gray-300 leading-relaxed">
+                    A collaborative research framework for fine-grained micro-expression synthesis, personalized webcam transfer, and objective FACS verification using LLM prompt optimization and multi-GPU pipeline orchestration.
+                </p>
+
+                <!-- Action Buttons Grid -->
+                <div class="pt-2 flex flex-wrap gap-3 sm:gap-4 items-center">
+                    <a href="https://5dd2d5d368b07febcc.gradio.live/" target="_blank" class="bg-gradient-to-r from-brand-500 to-amber-600 hover:from-brand-600 hover:to-amber-700 text-white font-semibold px-5 py-3 rounded-xl shadow-lg shadow-brand-500/25 transition flex items-center space-x-2">
+                        <i class="fa-solid fa-rocket text-sm"></i>
+                        <span>Live Studio Demo</span>
+                        <span class="relative flex h-2 w-2 ml-1">
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-200 opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-400"></span>
+                        </span>
+                    </a>
+
+                    <a href="https://github.com/MAli-Farooq/FACSBridge" target="_blank" class="bg-brand-panel hover:bg-brand-border text-gray-200 font-semibold px-5 py-3 rounded-xl border border-brand-border transition flex items-center space-x-2">
+                        <i class="fa-brands fa-github text-lg"></i>
+                        <span>View Code on GitHub</span>
+                    </a>
+
+                    <a href="#simulators" class="bg-brand-panel/60 hover:bg-brand-panel text-gray-300 hover:text-brand-400 font-medium px-5 py-3 rounded-xl border border-brand-border/60 transition flex items-center space-x-2">
+                        <i class="fa-solid fa-sliders text-sm"></i>
+                        <span>Explore Canvas Demos</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Institution & Credits Card -->
+            <div class="lg:col-span-5">
+                <div class="bg-brand-card border border-brand-border rounded-2xl p-6 shadow-2xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-36 h-36 bg-brand-500/5 rounded-full filter blur-3xl"></div>
+                    <div class="flex items-center space-x-3 mb-4 pb-4 border-b border-brand-border">
+                        <i class="fa-solid fa-building-columns text-brand-500 text-2xl"></i>
+                        <div>
+                            <h3 class="text-sm font-bold text-white uppercase tracking-wider">Research Institution</h3>
+                            <p class="text-xs text-gray-400">School of Engineering, C3I Group</p>
+                            <p class="text-xs text-gray-400">University of Galway, Ireland</p>
+                        </div>
+                    </div>
+                    <div class="space-y-3 text-sm">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Project Brand</span>
+                            <span class="text-brand-400 font-mono font-semibold">PRIVE-SENSE</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Developer</span>
+                            <span class="text-white font-medium">Fatima Khalid</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Co-Designer</span>
+                            <span class="text-white font-medium">Muhammad Ali Farooq</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Supervisor</span>
+                            <span class="text-white font-medium">Peter Corcoran</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECTION 1: INTERACTIVE CANVAS SIMULATORS -->
+    <section id="simulators" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12">
+        <div class="border-b border-brand-border pb-4">
+            <h2 class="text-2xl font-bold text-white">Platform Capabilities & Interactive Visual Canvas Demos</h2>
+            <p class="text-gray-400 text-sm mt-1">Real-time parametric simulators demonstrating the internal mechanics of `app23.py`.</p>
+        </div>
+
+        <!-- DEMO 1: AU Micro-Expression Synthesizer -->
+        <div class="bg-brand-card border border-brand-border rounded-2xl p-6 shadow-2xl">
+            <div class="flex flex-col md:flex-row md:items-center justify-between pb-4 border-b border-brand-border gap-4 mb-6">
+                <div>
+                    <span class="text-xs font-bold text-brand-500 uppercase tracking-widest bg-brand-500/10 px-2.5 py-1 rounded border border-brand-500/20">Demo 1</span>
+                    <h3 class="text-xl font-bold text-white mt-2">Parametric Action Unit Synthesizer</h3>
+                    <p class="text-xs text-gray-400">Adjust the intensity sliders to simulate micro-expression muscle movements on the canvas vector face mesh.</p>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <button onclick="presetAU('neutral')" class="px-3 py-1.5 text-xs bg-brand-panel hover:bg-brand-border text-gray-300 rounded border border-brand-border">Neutral</button>
+                    <button onclick="presetAU('subtle_smile')" class="px-3 py-1.5 text-xs bg-brand-panel hover:bg-brand-border text-brand-400 rounded border border-brand-border">Subtle Smile (AU12)</button>
+                    <button onclick="presetAU('brow_furrow')" class="px-3 py-1.5 text-xs bg-brand-panel hover:bg-brand-border text-purple-400 rounded border border-brand-border">Brows (AU1+AU4)</button>
+                    <button onclick="presetAU('surprise')" class="px-3 py-1.5 text-xs bg-brand-panel hover:bg-brand-border text-rose-400 rounded border border-brand-border">Surprise (AU1+AU2+AU26)</button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <!-- Sliders Panel -->
+                <div class="lg:col-span-5 space-y-4">
+                    <div>
+                        <div class="flex justify-between text-xs font-semibold text-gray-300 mb-1">
+                            <span>AU1 — Inner Brow Raiser</span>
+                            <span id="val-au1" class="text-brand-400 font-mono">0</span>
+                        </div>
+                        <input type="range" id="slider-au1" min="0" max="5" value="0" step="1" class="w-full accent-brand-500" oninput="updateAuCanvas()">
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between text-xs font-semibold text-gray-300 mb-1">
+                            <span>AU4 — Brow Lowerer / Furrow</span>
+                            <span id="val-au4" class="text-brand-400 font-mono">0</span>
+                        </div>
+                        <input type="range" id="slider-au4" min="0" max="5" value="0" step="1" class="w-full accent-brand-500" oninput="updateAuCanvas()">
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between text-xs font-semibold text-gray-300 mb-1">
+                            <span>AU12 — Lip Corner Puller (Smile)</span>
+                            <span id="val-au12" class="text-brand-400 font-mono">0</span>
+                        </div>
+                        <input type="range" id="slider-au12" min="0" max="5" value="0" step="1" class="w-full accent-brand-500" oninput="updateAuCanvas()">
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between text-xs font-semibold text-gray-300 mb-1">
+                            <span>AU26 — Jaw Drop / Open Mouth</span>
+                            <span id="val-au26" class="text-brand-400 font-mono">0</span>
+                        </div>
+                        <input type="range" id="slider-au26" min="0" max="5" value="0" step="1" class="w-full accent-brand-500" oninput="updateAuCanvas()">
+                    </div>
+
+                    <div class="p-3 bg-brand-panel rounded-xl border border-brand-border text-xs text-gray-400 space-y-1 font-mono">
+                        <div>Prompt Output:</div>
+                        <div id="prompt-output" class="text-brand-400 font-sans font-medium">neutral facial expression</div>
+                    </div>
+                </div>
+
+                <!-- Interactive Face Canvas -->
+                <div class="lg:col-span-7 flex flex-col items-center justify-center bg-[#07080b] p-4 rounded-xl border border-brand-border">
+                    <canvas id="auCanvas" width="450" height="380" class="w-full max-w-[450px] h-[320px] rounded-lg"></canvas>
+                    <span class="text-xs text-gray-500 mt-2">HTML5 Vector Canvas: Real-time Parametric Facial Action Unit Rendering</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- DEMO 2: Dual-GPU Pipeline Architecture Canvas -->
+        <div class="bg-brand-card border border-brand-border rounded-2xl p-6 shadow-2xl">
+            <div class="pb-4 border-b border-brand-border mb-6">
+                <span class="text-xs font-bold text-purple-400 uppercase tracking-widest bg-purple-500/10 px-2.5 py-1 rounded border border-purple-500/20">Demo 2</span>
+                <h3 class="text-xl font-bold text-white mt-2">Dual-GPU Hardware Pipeline Architecture</h3>
+                <p class="text-xs text-gray-400">Interactive execution canvas illustrating queue isolation, lock-free parallel streaming, and CPU offloading.</p>
+            </div>
+
+            <div class="flex flex-col items-center">
+                <canvas id="gpuCanvas" width="900" height="360" class="w-full max-w-[900px] h-auto bg-[#07080b] rounded-xl border border-brand-border p-2"></canvas>
+                <div class="flex flex-wrap justify-center gap-6 mt-4 text-xs text-gray-400">
+                    <span class="flex items-center space-x-2"><span class="w-3 h-3 rounded-full bg-brand-500"></span><span>GPU 0: Generation Pipeline</span></span>
+                    <span class="flex items-center space-x-2"><span class="w-3 h-3 rounded-full bg-purple-500"></span><span>GPU 1: Editing & Evaluation</span></span>
+                    <span class="flex items-center space-x-2"><span class="w-3 h-3 rounded-full bg-blue-400"></span><span>CPU RAM: Offloaded Models</span></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- DEMO 3 & DEMO 4: Interactive Split-View Comparison & Webcam Workflow -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            
+            <!-- DEMO 3: Image Editing Canvas Slider -->
+            <div class="bg-brand-card border border-brand-border rounded-2xl p-6 shadow-2xl flex flex-col justify-between">
+                <div>
+                    <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest bg-emerald-500/10 px-2.5 py-1 rounded border border-emerald-500/20">Demo 3</span>
+                    <h3 class="text-lg font-bold text-white mt-2">Post-Generation Editing Visualizer</h3>
+                    <p class="text-xs text-gray-400 mb-4">Drag the divider on the canvas to compare original generation vs FLUX.2 Turbo edit variants.</p>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <canvas id="splitCanvas" width="450" height="320" class="w-full max-w-[450px] h-[300px] bg-[#07080b] rounded-xl border border-brand-border cursor-ew-resize"></canvas>
+                    <div class="flex justify-between w-full text-xs text-gray-400 mt-2 px-4">
+                        <span>Original Generated Portrait</span>
+                        <span>Drag Slider &harr;</span>
+                        <span class="text-brand-400 font-semibold">Edited: Studio Lighting</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DEMO 4: Personalization & Webcam Crop Workflow -->
+            <div class="bg-brand-card border border-brand-border rounded-2xl p-6 shadow-2xl flex flex-col justify-between">
+                <div>
+                    <span class="text-xs font-bold text-rose-400 uppercase tracking-widest bg-rose-500/10 px-2.5 py-1 rounded border border-rose-500/20">Demo 4</span>
+                    <h3 class="text-lg font-bold text-white mt-2">Personalized Face Crop & Transfer</h3>
+                    <p class="text-xs text-gray-400 mb-4">Simulating Qwen2.5-VL automated face detection, square crop, and expression transfer onto user photos.</p>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <canvas id="cropCanvas" width="450" height="320" class="w-full max-w-[450px] h-[300px] bg-[#07080b] rounded-xl border border-brand-border"></canvas>
+                    <div class="flex justify-between w-full text-xs text-gray-400 mt-2 px-4">
+                        <span>1. Raw Input Photo</span>
+                        <span>2. Qwen-VL Crop</span>
+                        <span class="text-rose-400 font-semibold">3. AU Expression Applied</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 2: DISFA ACTION UNITS GRID -->
+    <section id="aus" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-white">Supported DISFA Action Units</h2>
+            <p class="text-gray-400 text-sm mt-1">Full 12-Action Unit vocabulary supported by fine-tuned Qwen parsing and FLUX.1 DISFA LoRA conditioning.</p>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+            <div class="bg-brand-card border border-brand-border p-4 rounded-xl hover:border-brand-500/50 transition">
+                <div class="flex justify-between items-center mb-1">
+                    <span class="text-xs font-bold text-brand-500 bg-brand-500/10 px-2 py-0.5 rounded">AU1</span>
+                    <span class="text-[10px] text-gray-400">1 - 5</span>
+                </div>
+                <h4 class="text-white font-semibold text-sm">Inner Brow Raiser</h4>
+                <p class="text-gray-400 text-xs mt-1">Elevates inner brow corners.</p>
+            </div>
+
+            <div class="bg-brand-card border border-brand-border p-4 rounded-xl hover:border-brand-500/50 transition">
+                <div class="flex justify-between items-center mb-1">
+                    <span class="text-xs font-bold text-brand-500 bg-brand-500/10 px-2 py-0.5 rounded">AU2</span>
+                    <span class="text-[10px] text-gray-400">1 - 5</span>
+                </div>
+                <h4 class="text-white font-semibold text-sm">Outer Brow Raiser</h4>
+                <p class="text-gray-400 text-xs mt-1">Elevates outer brow arch.</p>
+            </div>
+
+            <div class="bg-brand-card border border-brand-border p-4 rounded-xl hover:border-brand-500/50 transition">
+                <div class="flex justify-between items-center mb-1">
+                    <span class="text-xs font-bold text-brand-500 bg-brand-500/10 px-2 py-0.5 rounded">AU4</span>
+                    <span class="text-[10px] text-gray-400">1 - 5</span>
+                </div>
+                <h4 class="text-white font-semibold text-sm">Brow Lowerer</h4>
+                <p class="text-gray-400 text-xs mt-1">Pulls eyebrows down & together.</p>
+            </div>
+
+            <div class="bg-brand-card border border-brand-border p-4 rounded-xl hover:border-brand-500/50 transition">
+                <div class="flex justify-between items-center mb-1">
+                    <span class="text-xs font-bold text-brand-500 bg-brand-500/10 px-2 py-0.5 rounded">AU5</span>
+                    <span class="text-[10px] text-gray-400">1 - 5</span>
+                </div>
+                <h4 class="text-white font-semibold text-sm">Upper Lid Raiser</h4>
+                <p class="text-gray-400 text-xs mt-1">Widens eyelid aperture.</p>
+            </div>
+
+            <div class="bg-brand-card border border-brand-border p-4 rounded-xl hover:border-brand-500/50 transition">
+                <div class="flex justify-between items-center mb-1">
+                    <span class="text-xs font-bold text-brand-500 bg-brand-500/10 px-2 py-0.5 rounded">AU6</span>
+                    <span class="text-[10px] text-gray-400">1 - 5</span>
+                </div>
+                <h4 class="text-white font-semibold text-sm">Cheek Raiser</h4>
+                <p class="text-gray-400 text-xs mt-1">Elevates cheeks towards eyes.</p>
+            </div>
+
+            <div class="bg-brand-card border border-brand-border p-4 rounded-xl hover:border-brand-500/50 transition">
+                <div class="flex justify-between items-center mb-1">
+                    <span class="text-xs font-bold text-brand-500 bg-brand-500/10 px-2 py-0.5 rounded">AU9</span>
+                    <span class="text-[10px] text-gray-400">1 - 5</span>
+                </div>
+                <h4 class="text-white font-semibold text-sm">Nose Wrinkler</h4>
+                <p class="text-gray-400 text-xs mt-1">Wrinkles nose bridge.</p>
+            </div>
+
+            <div class="bg-brand-card border border-brand-border p-4 rounded-xl hover:border-brand-500/50 transition">
+                <div class="flex justify-between items-center mb-1">
+                    <span class="text-xs font-bold text-brand-500 bg-brand-500/10 px-2 py-0.5 rounded">AU12</span>
+                    <span class="text-[10px] text-gray-400">1 - 5</span>
+                </div>
+                <h4 class="text-white font-semibold text-sm">Lip Corner Puller</h4>
+                <p class="text-gray-400 text-xs mt-1">Pulls lip corners up into smile.</p>
+            </div>
+
+            <div class="bg-brand-card border border-brand-border p-4 rounded-xl hover:border-brand-500/50 transition">
+                <div class="flex justify-between items-center mb-1">
+                    <span class="text-xs font-bold text-brand-500 bg-brand-500/10 px-2 py-0.5 rounded">AU15</span>
+                    <span class="text-[10px] text-gray-400">1 - 5</span>
+                </div>
+                <h4 class="text-white font-semibold text-sm">Lip Depressor</h4>
+                <p class="text-gray-400 text-xs mt-1">Pulls lip corners downward.</p>
+            </div>
+
+            <div class="bg-brand-card border border-brand-border p-4 rounded-xl hover:border-brand-500/50 transition">
+                <div class="flex justify-between items-center mb-1">
+                    <span class="text-xs font-bold text-brand-500 bg-brand-500/10 px-2 py-0.5 rounded">AU17</span>
+                    <span class="text-[10px] text-gray-400">1 - 5</span>
+                </div>
+                <h4 class="text-white font-semibold text-sm">Chin Raiser</h4>
+                <p class="text-gray-400 text-xs mt-1">Pushes chin and lower lip up.</p>
+            </div>
+
+            <div class="bg-brand-card border border-brand-border p-4 rounded-xl hover:border-brand-500/50 transition">
+                <div class="flex justify-between items-center mb-1">
+                    <span class="text-xs font-bold text-brand-500 bg-brand-500/10 px-2 py-0.5 rounded">AU20</span>
+                    <span class="text-[10px] text-gray-400">1 - 5</span>
+                </div>
+                <h4 class="text-white font-semibold text-sm">Lip Stretcher</h4>
+                <p class="text-gray-400 text-xs mt-1">Stretches lips sideways.</p>
+            </div>
+
+            <div class="bg-brand-card border border-brand-border p-4 rounded-xl hover:border-brand-500/50 transition">
+                <div class="flex justify-between items-center mb-1">
+                    <span class="text-xs font-bold text-brand-500 bg-brand-500/10 px-2 py-0.5 rounded">AU25</span>
+                    <span class="text-[10px] text-gray-400">1 - 5</span>
+                </div>
+                <h4 class="text-white font-semibold text-sm">Lips Part</h4>
+                <p class="text-gray-400 text-xs mt-1">Separates lips slightly.</p>
+            </div>
+
+            <div class="bg-brand-card border border-brand-border p-4 rounded-xl hover:border-brand-500/50 transition">
+                <div class="flex justify-between items-center mb-1">
+                    <span class="text-xs font-bold text-brand-500 bg-brand-500/10 px-2 py-0.5 rounded">AU26</span>
+                    <span class="text-[10px] text-gray-400">1 - 5</span>
+                </div>
+                <h4 class="text-white font-semibold text-sm">Jaw Drop</h4>
+                <p class="text-gray-400 text-xs mt-1">Lowers jaw to open mouth.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: HUMAN EVALUATION QUESTIONNAIRE OVERVIEW -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div class="bg-brand-card border border-brand-border rounded-2xl p-6 shadow-2xl">
+            <h2 class="text-2xl font-bold text-white mb-2">Human Evaluation & Verification Protocol (v5.0)</h2>
+            <p class="text-gray-400 text-sm mb-6">Structured multi-stage evaluation pipeline for subjective and objective FACS verification.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                <div class="bg-brand-panel p-4 rounded-xl border border-brand-border">
+                    <div class="text-brand-500 font-bold text-sm mb-1">Part A — Blind Perception</div>
+                    <p class="text-xs text-gray-300">Raters judge expression emotion & visible movements from image evidence alone, prior to viewing prompt targets.</p>
+                </div>
+                <div class="bg-brand-panel p-4 rounded-xl border border-brand-border">
+                    <div class="text-purple-400 font-bold text-sm mb-1">Part B — Targeted AU Rating</div>
+                    <p class="text-xs text-gray-300">Detailed assessment of each requested AU: visibility, FACS A-E intensity scale, target comparison, and left/right symmetry.</p>
+                </div>
+                <div class="bg-brand-panel p-4 rounded-xl border border-brand-border">
+                    <div class="text-emerald-400 font-bold text-sm mb-1">Part C — Prompt Match</div>
+                    <p class="text-xs text-gray-300">Evaluates overall expression fidelity, micro-expression vs full pose distinction, and non-expression attribute preservation.</p>
+                </div>
+                <div class="bg-brand-panel p-4 rounded-xl border border-brand-border">
+                    <div class="text-rose-400 font-bold text-sm mb-1">Part D — Realism & Quality</div>
+                    <p class="text-xs text-gray-300">Ratings for facial realism, anatomical plausibility, participant identity preservation, and region-specific artifacts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: CODE ARCHITECTURE EXPLORER -->
+    <section id="code" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div class="mb-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div>
+                <h2 class="text-2xl font-bold text-white tracking-tight">Backend Code Architecture (`app23.py`)</h2>
+                <p class="text-gray-400 text-sm mt-1">Core excerpts demonstrating low-level VRAM optimization and multi-GPU routing.</p>
+            </div>
+            <button onclick="copyCode()" class="bg-brand-panel hover:bg-brand-border text-gray-300 text-sm px-4 py-2 rounded-lg border border-brand-border transition flex items-center space-x-2 self-start">
+                <i class="fa-regular fa-copy"></i>
+                <span id="copy-text">Copy Key Snippet</span>
+            </button>
+        </div>
+
+        <div class="bg-[#07080b] border border-brand-border rounded-xl overflow-hidden shadow-2xl">
+            <div class="bg-brand-panel px-4 py-3 border-b border-brand-border flex items-center justify-between text-xs font-mono text-gray-400">
+                <div class="flex items-center space-x-2">
+                    <span class="w-3 h-3 rounded-full bg-red-500/80 inline-block"></span>
+                    <span class="w-3 h-3 rounded-full bg-yellow-500/80 inline-block"></span>
+                    <span class="w-3 h-3 rounded-full bg-green-500/80 inline-block"></span>
+                    <span class="ml-2 text-gray-300 font-semibold">app23.py — Multi-GPU & FP8 Weight Casting</span>
+                </div>
+                <span>Python 3.10+ | Diffusers & PyTorch</span>
+            </div>
+            <pre class="p-6 text-sm font-mono text-gray-300 overflow-x-auto code-scroll max-h-[480px] leading-relaxed"><code id="python-code"># ============================================================
+# FP8 LINEAR WEIGHT CASTING & READ-WRITE LOCKING
+# ============================================================
+
+def store_linear_weights_fp8(model):
+    """
+    Stores Linear weights in FP8 (float8_e4m3fn) and upcasts a temporary 
+    copy per call. Thread-safe execution allows parallel jobs to share 
+    a single resident copy in VRAM (~12 GB FP8 FLUX.1 Transformer).
+    """
+    for name, module in model.named_modules():
+        if type(module) is not torch.nn.Linear or _FP8_SKIP.search(name):
+            continue
+        module.weight.data = module.weight.data.to(torch.float8_e4m3fn)
+        module.forward = functools.partial(_fp8_linear_forward, module)
+
+# ============================================================
+# MULTI-GPU STAGE LOCKING & CONCURRENCY
+# ============================================================
+
+_N_GPUS = torch.cuda.device_count() if torch.cuda.is_available() else 0
+GEN_GPU = int(os.getenv("GEN_GPU", "0"))
+EDIT_GPU = int(os.getenv("EDIT_GPU", "1" if _N_GPUS > 1 else "0"))
+DUAL_GPU = GEN_GPU != EDIT_GPU
+
+def stage_lock(stage):
+    if GEN_PARALLEL and stage == "qwen":
+        return _QWEN_LOCK
+    if GEN_PARALLEL and stage == "flux":
+        return _NO_LOCK
+    if EDIT_PARALLEL and stage == "vlm":
+        return _VLM_LOCK
+    if EDIT_PARALLEL and stage == "edit":
+        return _NO_LOCK
+    return _GPU_LOCKS[STAGE_GPU[stage]]</code></pre>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-brand-border mt-16 py-8 bg-brand-panel">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-400 gap-4">
+            <div>
+                <p>&copy; 2026 Micro-Expression Studio • PRIVE-SENSE</p>
+                <p class="mt-1 text-gray-500">School of Engineering, University of Galway, Ireland</p>
+            </div>
+            <div class="flex items-center space-x-4">
+                <span>Fatima Khalid</span>
+                <span>•</span>
+                <span>Muhammad Ali Farooq</span>
+                <span>•</span>
+                <span>Peter Corcoran</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- DYNAMIC CANVAS SIMULATOR SCRIPTS -->
+    <script>
+        // -------------------------------------------------------------
+        // DEMO 1: AU Micro-Expression Vector Canvas Simulator
+        // -------------------------------------------------------------
+        function updateAuCanvas() {
+            const au1 = parseInt(document.getElementById('slider-au1').value);
+            const au4 = parseInt(document.getElementById('slider-au4').value);
+            const au12 = parseInt(document.getElementById('slider-au12').value);
+            const au26 = parseInt(document.getElementById('slider-au26').value);
+
+            document.getElementById('val-au1').innerText = au1;
+            document.getElementById('val-au4').innerText = au4;
+            document.getElementById('val-au12').innerText = au12;
+            document.getElementById('val-au26').innerText = au26;
+
+            // Update text prompt output
+            let phrases = [];
+            if (au1 > 0) phrases.push(`AU1=${au1} inner brow raiser`);
+            if (au4 > 0) phrases.push(`AU4=${au4} brow lowerer`);
+            if (au12 > 0) phrases.push(`AU12=${au12} lip corner puller`);
+            if (au26 > 0) phrases.push(`AU26=${au26} jaw drop`);
+            
+            document.getElementById('prompt-output').innerText = phrases.length > 0 
+                ? "facial expression; " + phrases.join("; ")
+                : "neutral facial expression";
+
+            drawFace(au1, au4, au12, au26);
+        }
+
+        function drawFace(au1, au4, au12, au26) {
+            const canvas = document.getElementById('auCanvas');
+            const ctx = canvas.getContext('2d');
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            const centerX = canvas.width / 2;
+            const centerY = canvas.height / 2 - 10;
+
+            // Head Outline
+            ctx.beginPath();
+            ctx.ellipse(centerX, centerY + (au26 * 3), 110, 140 + (au26 * 4), 0, 0, 2 * Math.PI);
+            ctx.fillStyle = '#0f1015';
+            ctx.fill();
+            ctx.strokeStyle = '#31343e';
+            ctx.lineWidth = 3;
+            ctx.stroke();
+
+            // Eyes
+            const eyeY = centerY - 20;
+            ctx.fillStyle = '#f4f5f7';
+            ctx.beginPath();
+            ctx.ellipse(centerX - 45, eyeY, 16, 10, 0, 0, 2 * Math.PI);
+            ctx.ellipse(centerX + 45, eyeY, 16, 10, 0, 0, 2 * Math.PI);
+            ctx.fill();
+
+            // Irises
+            ctx.fillStyle = '#fb923c';
+            ctx.beginPath();
+            ctx.arc(centerX - 45, eyeY, 6, 0, 2 * Math.PI);
+            ctx.arc(centerX + 45, eyeY, 6, 0, 2 * Math.PI);
+            ctx.fill();
+
+            // Eyebrows (AU1 + AU4 Dynamics)
+            const browBaseY = centerY - 45;
+            const innerRaise = au1 * 5;
+            const browLower = au4 * 4;
+
+            // Left Eyebrow
+            ctx.beginPath();
+            ctx.moveTo(centerX - 70, browBaseY + browLower);
+            ctx.quadraticCurveTo(centerX - 45, browBaseY - 10 - innerRaise + browLower, centerX - 15, browBaseY - innerRaise + (au4 * 6));
+            ctx.strokeStyle = '#f97316';
+            ctx.lineWidth = 4;
+            ctx.lineCap = 'round';
+            ctx.stroke();
+
+            // Right Eyebrow
+            ctx.beginPath();
+            ctx.moveTo(centerX + 15, browBaseY - innerRaise + (au4 * 6));
+            ctx.quadraticCurveTo(centerX + 45, browBaseY - 10 - innerRaise + browLower, centerX + 70, browBaseY + browLower);
+            ctx.stroke();
+
+            // Nose
+            ctx.beginPath();
+            ctx.moveTo(centerX, centerY - 10);
+            ctx.lineTo(centerX - 8, centerY + 25);
+            ctx.lineTo(centerX + 8, centerY + 25);
+            ctx.strokeStyle = '#6f7787';
+            ctx.lineWidth = 2;
+            ctx.stroke();
+
+            // Mouth (AU12 + AU26 Dynamics)
+            const mouthY = centerY + 55 + (au26 * 3);
+            const smilePull = au12 * 6;
+            const jawDrop = au26 * 7;
+
+            ctx.beginPath();
+            ctx.moveTo(centerX - 40, mouthY - smilePull);
+            ctx.quadraticCurveTo(centerX, mouthY + 10 + (smilePull / 2), centerX + 40, mouthY - smilePull);
+            
+            if (jawDrop > 0) {
+                // Open Mouth
+                ctx.quadraticCurveTo(centerX, mouthY + 20 + jawDrop, centerX - 40, mouthY - smilePull);
+                ctx.fillStyle = '#23252d';
+                ctx.fill();
+            }
+            
+            ctx.strokeStyle = '#f43f5e';
+            ctx.lineWidth = 3.5;
+            ctx.stroke();
+        }
+
+        function presetAU(type) {
+            document.getElementById('slider-au1').value = 0;
+            document.getElementById('slider-au4').value = 0;
+            document.getElementById('slider-au12').value = 0;
+            document.getElementById('slider-au26').value = 0;
+
+            if (type === 'subtle_smile') {
+                document.getElementById('slider-au12').value = 3;
+            } else if (type === 'brow_furrow') {
+                document.getElementById('slider-au1').value = 2;
+                document.getElementById('slider-au4').value = 4;
+            } else if (type === 'surprise') {
+                document.getElementById('slider-au1').value = 4;
+                document.getElementById('slider-au26').value = 4;
+            }
+            updateAuCanvas();
+        }
+
+        // -------------------------------------------------------------
+        // DEMO 2: Multi-GPU Architecture Canvas
+        // -------------------------------------------------------------
+        function drawGpuDiagram() {
+            const canvas = document.getElementById('gpuCanvas');
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // GPU 0 Box
+            ctx.fillStyle = '#0f1015';
+            ctx.strokeStyle = '#f97316';
+            ctx.lineWidth = 2;
+            ctx.roundRect(40, 40, 380, 260, 12);
+            ctx.fill();
+            ctx.stroke();
+
+            ctx.fillStyle = '#fb923c';
+            ctx.font = 'bold 16px "Plus Jakarta Sans"';
+            ctx.fillText('GPU 0: Generation Worker', 60, 75);
+
+            ctx.fillStyle = '#99a2b1';
+            ctx.font = '12px "JetBrains Mono"';
+            ctx.fillText('• Qwen2.5-7B (Fine-Tuned LLM)', 70, 115);
+            ctx.fillText('• FLUX.1-dev Transformer (FP8)', 70, 145);
+            ctx.fillText('• DISFA LoRA Adapter (Rank 4)', 70, 175);
+            ctx.fillText('• Sequential Stream Queue (Parallel x2)', 70, 205);
+
+            // GPU 1 Box
+            ctx.fillStyle = '#0f1015';
+            ctx.strokeStyle = '#c026d3';
+            ctx.roundRect(480, 40, 380, 260, 12);
+            ctx.fill();
+            ctx.stroke();
+
+            ctx.fillStyle = '#c026d3';
+            ctx.font = 'bold 16px "Plus Jakarta Sans"';
+            ctx.fillText('GPU 1: Editing & Evaluation Worker', 500, 75);
+
+            ctx.fillStyle = '#99a2b1';
+            ctx.font = '12px "JetBrains Mono"';
+            ctx.fillText('• FLUX.2 Dev Turbo Editor (8 Steps)', 510, 115);
+            ctx.fillText('• Qwen2.5-VL-3B Image Evaluator', 510, 145);
+            ctx.fillText('• Automated Face Detection & Crop', 510, 175);
+            ctx.fillText('• Dedicated Editing Queue (Parallel x3)', 510, 205);
+
+            // Inter-GPU Connection Line
+            ctx.beginPath();
+            ctx.setLineDash([6, 6]);
+            ctx.moveTo(420, 170);
+            ctx.lineTo(480, 170);
+            ctx.strokeStyle = '#6f7787';
+            ctx.lineWidth = 2;
+            ctx.stroke();
+            ctx.setLineDash([]);
+        }
+
+        // -------------------------------------------------------------
+        // DEMO 3: Interactive Split-View Comparison Canvas
+        // -------------------------------------------------------------
+        let splitPos = 0.5;
+        let isDragging = false;
+
+        function initSplitCanvas() {
+            const canvas = document.getElementById('splitCanvas');
+            if (!canvas) return;
+
+            function render() {
+                const ctx = canvas.getContext('2d');
+                const w = canvas.width;
+                const h = canvas.height;
+                const splitX = w * splitPos;
+
+                ctx.clearRect(0, 0, w, h);
+
+                // Side 1: Original Image Representation
+                ctx.fillStyle = '#0b0c10';
+                ctx.fillRect(0, 0, w, h);
+                ctx.fillStyle = '#f4f5f7';
+                ctx.font = 'bold 16px "Plus Jakarta Sans"';
+                ctx.fillText('Neutral Studio Lighting', 30, 40);
+
+                // Simple Face Render Original
+                ctx.beginPath();
+                ctx.arc(w/2, h/2, 70, 0, Math.PI * 2);
+                ctx.fillStyle = '#1f2937';
+                ctx.fill();
+                ctx.strokeStyle = '#4b5563';
+                ctx.stroke();
+
+                // Side 2: Edited (Clipping Region)
+                ctx.save();
+                ctx.beginPath();
+                ctx.rect(splitX, 0, w - splitX, h);
+                ctx.clip();
+
+                ctx.fillStyle = '#180e05';
+                ctx.fillRect(0, 0, w, h);
+                ctx.fillStyle = '#fb923c';
+                ctx.fillText('Warm Studio Lighting', w - 210, 40);
+
+                // Face Render Edited (Warm Highlights)
+                ctx.beginPath();
+                ctx.arc(w/2, h/2, 70, 0, Math.PI * 2);
+                ctx.fillStyle = '#451a03';
+                ctx.fill();
+                ctx.strokeStyle = '#f97316';
+                ctx.stroke();
+
+                ctx.restore();
+
+                // Divider Line
+                ctx.beginPath();
+                ctx.moveTo(splitX, 0);
+                ctx.lineTo(splitX, h);
+                ctx.strokeStyle = '#f97316';
+                ctx.lineWidth = 3;
+                ctx.stroke();
+
+                // Handle
+                ctx.beginPath();
+                ctx.arc(splitX, h/2, 14, 0, Math.PI * 2);
+                ctx.fillStyle = '#f97316';
+                ctx.fill();
+                ctx.fillStyle = '#ffffff';
+                ctx.font = 'bold 12px sans-serif';
+                ctx.fillText('↔', splitX - 5, h/2 + 4);
+            }
+
+            canvas.addEventListener('mousedown', (e) => { isDragging = true; updatePos(e); });
+            window.addEventListener('mouseup', () => isDragging = false);
+            canvas.addEventListener('mousemove', (e) => { if (isDragging) updatePos(e); });
+
+            canvas.addEventListener('touchstart', (e) => { isDragging = true; updatePos(e.touches[0]); });
+            window.addEventListener('touchend', () => isDragging = false);
+            canvas.addEventListener('touchmove', (e) => { if (isDragging) updatePos(e.touches[0]); });
+
+            function updatePos(e) {
+                const rect = canvas.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                splitPos = Math.max(0.05, Math.min(0.95, x / rect.width));
+                render();
+            }
+
+            render();
+        }
+
+        // -------------------------------------------------------------
+        // DEMO 4: Crop Workflow Canvas
+        // -------------------------------------------------------------
+        function drawCropDiagram() {
+            const canvas = document.getElementById('cropCanvas');
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+            const w = canvas.width;
+            const h = canvas.height;
+
+            ctx.clearRect(0, 0, w, h);
+
+            // Step 1: Raw Image Simulation
+            ctx.fillStyle = '#0f1015';
+            ctx.roundRect(20, 40, 120, 220, 8);
+            ctx.fill();
+            ctx.strokeStyle = '#31343e';
+            ctx.stroke();
+            ctx.fillStyle = '#99a2b1';
+            ctx.font = '11px sans-serif';
+            ctx.fillText('1. Webcam Photo', 35, 275);
+
+            // Detected Bounding Box
+            ctx.strokeStyle = '#17c982';
+            ctx.lineWidth = 2;
+            ctx.strokeRect(40, 80, 80, 80);
+            ctx.fillStyle = '#17c982';
+            ctx.fillText('Qwen-VL Box', 45, 75);
+
+            // Arrow 1
+            ctx.fillStyle = '#f97316';
+            ctx.fillText('➔', 155, 150);
+
+            // Step 2: Crop Simulation
+            ctx.fillStyle = '#0f1015';
+            ctx.roundRect(185, 90, 100, 100, 8);
+            ctx.fill();
+            ctx.strokeStyle = '#17c982';
+            ctx.stroke();
+            ctx.fillStyle = '#99a2b1';
+            ctx.fillText('2. Square Crop', 200, 210);
+
+            // Arrow 2
+            ctx.fillStyle = '#f97316';
+            ctx.fillText('➔', 300, 150);
+
+            // Step 3: Expression Transfer Output
+            ctx.fillStyle = '#180e05';
+            ctx.roundRect(330, 80, 100, 120, 8);
+            ctx.fill();
+            ctx.strokeStyle = '#f97316';
+            ctx.stroke();
+            ctx.fillStyle = '#fb923c';
+            ctx.fillText('3. AU Applied', 345, 220);
+        }
+
+        // Copy Code Helper
+        function copyCode() {
+            const codeText = document.getElementById('python-code').innerText;
+            navigator.clipboard.writeText(codeText).then(() => {
+                const btnText = document.getElementById('copy-text');
+                btnText.innerText = 'Copied!';
+                setTimeout(() => { btnText.innerText = 'Copy Key Snippet'; }, 2000);
+            });
+        }
+
+        // Initialize All Canvas Renderers on Load
+        window.onload = function() {
+            updateAuCanvas();
+            drawGpuDiagram();
+            initSplitCanvas();
+            drawCropDiagram();
+        };
+    </script>
+</body>
+</html>
+```
+
+### Key Additions & Updates Included:
+1. **Interactive Parametric Face Renderer (Demo 1)**: Live HTML5 canvas where users move Action Unit sliders (AU1, AU4, AU12, AU26) to see real-time vector mesh movement and generated prompt string updates.
+2. **Dual-GPU Pipeline Blueprint (Demo 2)**: Visual architecture map of GPU 0 (Qwen LLM + FLUX.1 FP8) and GPU 1 (FLUX.2 Turbo + Qwen2.5-VL Evaluator).
+3. **Interactive Visual Comparison Slider (Demo 3)**: Draggable split-view canvas showing before/after facial lighting post-edits.
+4. **Webcam Personalization & Face Crop Workflow (Demo 4)**: Step-by-step canvas illustration of automated Qwen2.5-VL face detection, square crop, and expression transfer.
+5. **Code & FACS Explorer**: Excerpts highlighting FP8 weight casting, multi-GPU stage locking, and Questionnaire v5.0 verification guidelines.
