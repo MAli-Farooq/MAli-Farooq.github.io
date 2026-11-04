@@ -1,1 +1,741 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thermal VLM Studio | Multimodal LWIR Perception & Diagnostic Framework</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#fff7ed',
+                            100: '#ffedd5',
+                            400: '#fb923c',
+                            500: '#f97316',
+                            600: '#ea580c',
+                            dark: '#050506',
+                            card: '#0b0c10',
+                            panel: '#0f1015',
+                            border: '#23252d'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #050506;
+            color: #f4f5f7;
+            background-image: 
+                radial-gradient(circle at 12% 0%, rgba(249, 115, 22, 0.08), transparent 28%),
+                radial-gradient(circle at 90% 0%, rgba(109, 40, 217, 0.07), transparent 26%);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #fb923c 0%, #f43f5e 50%, #c026d3 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .code-scroll::-webkit-scrollbar {
+            height: 6px;
+            width: 6px;
+        }
+        .code-scroll::-webkit-scrollbar-track {
+            background: #07080b;
+        }
+        .code-scroll::-webkit-scrollbar-thumb {
+            background: #23252d;
+            border-radius: 4px;
+        }
+        canvas {
+            touch-action: none;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-brand-500 selection:text-white">
 
+    <!-- Header Navigation -->
+    <nav class="sticky top-0 z-50 backdrop-blur-md bg-[#050506]/85 border-b border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-500 to-purple-600 flex items-center justify-center shadow-lg shadow-brand-500/20">
+                    <i class="fa-solid fa-fire-flame-curved text-white text-xl"></i>
+                </div>
+                <div>
+                    <span class="font-bold text-lg text-white tracking-tight">Thermal VLM <span class="text-brand-500">Studio</span></span>
+                    <span class="hidden sm:inline-block text-xs text-gray-400 ml-2 px-2 py-0.5 rounded border border-brand-border bg-brand-panel">IEEE 2026</span>
+                </div>
+            </div>
+            <div class="flex items-center space-x-5 text-sm font-medium">
+                <a href="#simulators" class="text-gray-300 hover:text-brand-400 transition hidden sm:inline">Interactive Demos</a>
+                <a href="#benchmarks" class="text-gray-300 hover:text-brand-400 transition hidden md:inline">Benchmark Results</a>
+                <a href="#datasets" class="text-gray-300 hover:text-brand-400 transition hidden lg:inline">Public Datasets</a>
+                <a href="#code" class="text-gray-300 hover:text-brand-400 transition">Code Reference</a>
+                <a href="https://github.com/MAli-Farooq/ThermalVLMStudio" target="_blank" class="bg-brand-panel hover:bg-brand-border text-white px-4 py-2 rounded-lg border border-brand-border transition flex items-center space-x-2">
+                    <i class="fa-brands fa-github text-lg"></i>
+                    <span class="hidden sm:inline">Repository</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+            <div class="lg:col-span-7 space-y-6">
+                <!-- Badges -->
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 flex items-center gap-1.5">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> IEEE Conference Paper
+                    </span>
+                    <span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-brand-500/10 text-brand-400 border border-brand-500/30">PyTorch 2.x</span>
+                    <span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-purple-500/10 text-purple-400 border border-purple-500/30">QLoRA 4-bit</span>
+                    <span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-amber-500/10 text-amber-400 border border-amber-500/30">YOLOv8n Hybrid</span>
+                    <span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/30">5 VLM Backbones</span>
+                </div>
+
+                <h1 class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight">
+                    Dual-Pathway Thermal Vision-Language Models & <br>
+                    <span class="gradient-text">Radiometric Inspection Studio</span>
+                </h1>
+
+                <p class="text-base sm:text-lg text-gray-300 leading-relaxed">
+                    A unified framework for object quantification, spatial grounding, and scene reasoning in low-visibility automotive ADAS and UAV perception under adverse thermal conditions (night, fog, and rain).
+                </p>
+
+                <!-- Action Buttons Grid -->
+                <div class="pt-2 flex flex-wrap gap-3 sm:gap-4 items-center">
+                    <a href="#simulators" class="bg-gradient-to-r from-brand-500 to-amber-600 hover:from-brand-600 hover:to-amber-700 text-white font-semibold px-5 py-3 rounded-xl shadow-lg shadow-brand-500/25 transition flex items-center space-x-2">
+                        <i class="fa-solid fa-sliders text-sm"></i>
+                        <span>Explore Canvas Demos</span>
+                    </a>
+
+                    <a href="https://github.com/MAli-Farooq/ThermalVLMStudio" target="_blank" class="bg-brand-panel hover:bg-brand-border text-gray-200 font-semibold px-5 py-3 rounded-xl border border-brand-border transition flex items-center space-x-2">
+                        <i class="fa-brands fa-github text-lg"></i>
+                        <span>View Code on GitHub</span>
+                    </a>
+
+                    <a href="#benchmarks" class="bg-brand-panel/60 hover:bg-brand-panel text-gray-300 hover:text-brand-400 font-medium px-5 py-3 rounded-xl border border-brand-border/60 transition flex items-center space-x-2">
+                        <i class="fa-solid fa-chart-line text-sm"></i>
+                        <span>Benchmark Metrics</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Institution & Credits Card -->
+            <div class="lg:col-span-5">
+                <div class="bg-brand-card border border-brand-border rounded-2xl p-6 shadow-2xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-36 h-36 bg-brand-500/5 rounded-full filter blur-3xl"></div>
+                    <div class="flex items-center space-x-3 mb-4 pb-4 border-b border-brand-border">
+                        <i class="fa-solid fa-building-columns text-brand-500 text-2xl"></i>
+                        <div>
+                            <h3 class="text-sm font-bold text-white uppercase tracking-wider">Research Institutions</h3>
+                            <p class="text-xs text-gray-400">School of Engineering, C3I Group</p>
+                            <p class="text-xs text-gray-400">University of Galway, Ireland & FotoNation (Tobii)</p>
+                        </div>
+                    </div>
+                    <div class="space-y-3 text-sm">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Project</span>
+                            <span class="text-brand-400 font-mono font-semibold">Thermal VLM Studio</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Lead Author</span>
+                            <span class="text-white font-medium">Dr. Muhammad Ali Farooq</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Co-Author / Supervisor</span>
+                            <span class="text-white font-medium">Prof. Peter Corcoran</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Statistical Significance</span>
+                            <span class="text-emerald-400 font-mono text-xs">McNemar p &le; 3.3 &times; 10⁻¹⁴</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECTION 1: INTERACTIVE CANVAS SIMULATORS -->
+    <section id="simulators" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12">
+        <div class="border-b border-brand-border pb-4">
+            <h2 class="text-2xl font-bold text-white">Platform Capabilities & Interactive Visual Canvas Demos</h2>
+            <p class="text-gray-400 text-sm mt-1">Real-time parametric simulators demonstrating dual-pathway grounding, radiometric intensity mapping, hardware Pareto bounds, and weather robustness.</p>
+        </div>
+
+        <!-- DEMO 1: Dual-Pathway Spatial Grounding & VQA Simulator -->
+        <div class="bg-brand-card border border-brand-border rounded-2xl p-6 shadow-2xl">
+            <div class="flex flex-col md:flex-row md:items-center justify-between pb-4 border-b border-brand-border gap-4 mb-6">
+                <div>
+                    <span class="text-xs font-bold text-brand-500 uppercase tracking-widest bg-brand-500/10 px-2.5 py-1 rounded border border-brand-500/20">Demo 1</span>
+                    <h3 class="text-xl font-bold text-white mt-2">Dual-Pathway Spatial Grounding & VQA Simulator</h3>
+                    <p class="text-xs text-gray-400">Adjust parameters to observe bounding box fusion (Green = Ground Truth, Red = YOLOv8n, Blue = VLM Grounding) and deterministic VQA grounding.</p>
+                </div>
+                <div class="flex flex-wrap items-center gap-2">
+                    <button onclick="presetScene('sparse_night')" class="px-3 py-1.5 text-xs bg-brand-panel hover:bg-brand-border text-gray-300 rounded border border-brand-border">Sparse Night</button>
+                    <button onclick="presetScene('dense_parking')" class="px-3 py-1.5 text-xs bg-brand-panel hover:bg-brand-border text-brand-400 rounded border border-brand-border">Dense Parking Lot</button>
+                    <button onclick="presetScene('night_fog')" class="px-3 py-1.5 text-xs bg-brand-panel hover:bg-brand-border text-purple-400 rounded border border-brand-border">Night Fog Street</button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <!-- Sliders & Controls Panel -->
+                <div class="lg:col-span-5 space-y-4">
+                    <div>
+                        <div class="flex justify-between text-xs font-semibold text-gray-300 mb-1">
+                            <span>VLM Backbone Architecture</span>
+                            <span id="val-backbone" class="text-purple-400 font-mono">Qwen3-VL-4B</span>
+                        </div>
+                        <select id="select-backbone" class="w-full bg-brand-panel text-xs text-gray-200 border border-brand-border rounded p-2 focus:outline-none" onchange="updateDemo1()">
+                            <option value="Qwen3-VL-4B">Qwen3-VL-4B (Optimal Pareto Frontier)</option>
+                            <option value="Qwen2.5-VL-7B">Qwen2.5-VL-7B QLoRA</option>
+                            <option value="Gemma-3-4B">Gemma-3-4B QLoRA</option>
+                            <option value="Llama-3.2-11B">Llama-3.2-11B-Vision QLoRA</option>
+                            <option value="Pixtral-12B">Pixtral-12B QLoRA</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between text-xs font-semibold text-gray-300 mb-1">
+                            <span>Execution Mode</span>
+                            <span id="val-mode" class="text-emerald-400 font-mono">Hybrid Ensemble</span>
+                        </div>
+                        <select id="select-mode" class="w-full bg-brand-panel text-xs text-gray-200 border border-brand-border rounded p-2 focus:outline-none" onchange="updateDemo1()">
+                            <option value="ensemble">Hybrid Ensemble (YOLO + VLM Fallback)</option>
+                            <option value="yolo">Deterministic YOLOv8n Detector Only</option>
+                            <option value="vlm">Pure Adapted VLM Grounding Only</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between text-xs font-semibold text-gray-300 mb-1">
+                            <span>Detector Confidence Threshold (&tau;)</span>
+                            <span id="val-tau" class="text-brand-400 font-mono">0.40</span>
+                        </div>
+                        <input type="range" id="slider-tau" min="0.10" max="0.90" value="0.40" step="0.05" class="w-full accent-brand-500" oninput="updateDemo1()">
+                    </div>
+
+                    <div class="p-3 bg-brand-panel rounded-xl border border-brand-border text-xs text-gray-400 space-y-2 font-mono">
+                        <div class="flex justify-between border-b border-brand-border/60 pb-1">
+                            <span>VQA Question:</span>
+                            <span class="text-emerald-400 text-[10px]">Grounded (0.00s)</span>
+                        </div>
+                        <div id="vqa-question" class="text-gray-300 font-sans">"How many pedestrians are visible in this thermal scene?"</div>
+                        <div id="vqa-output" class="text-brand-400 font-sans font-semibold text-sm">Answer: 4 pedestrians (from detections)</div>
+                        <div id="vqa-desc" class="text-[11px] text-gray-400 font-sans italic">Scene Description: "A night road view showing pedestrians near the sidewalk..."</div>
+                    </div>
+                </div>
+
+                <!-- Interactive Canvas -->
+                <div class="lg:col-span-7 flex flex-col items-center justify-center bg-[#07080b] p-4 rounded-xl border border-brand-border">
+                    <canvas id="groundingCanvas" width="550" height="340" class="w-full max-w-[550px] h-[320px] rounded-lg"></canvas>
+                    <div class="flex flex-wrap gap-4 text-[11px] text-gray-400 mt-3">
+                        <span class="flex items-center gap-1.5"><span class="w-3 h-3 bg-emerald-500 rounded-sm"></span> Ground Truth Boxes</span>
+                        <span class="flex items-center gap-1.5"><span class="w-3 h-3 bg-red-500 rounded-sm"></span> YOLOv8n Detections</span>
+                        <span class="flex items-center gap-1.5"><span class="w-3 h-3 bg-blue-500 rounded-sm"></span> VLM Grounding Boxes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DEMO 2: Radiometric Intensity & Linear Temperature Scale Mapper -->
+        <div class="bg-brand-card border border-brand-border rounded-2xl p-6 shadow-2xl">
+            <div class="pb-4 border-b border-brand-border mb-6">
+                <span class="text-xs font-bold text-purple-400 uppercase tracking-widest bg-purple-500/10 px-2.5 py-1 rounded border border-purple-500/20">Demo 2</span>
+                <h3 class="text-xl font-bold text-white mt-2">Radiometric Intensity & Linear Temperature Scale Mapper</h3>
+                <p class="text-xs text-gray-400">Maps 8-bit uncooled microbolometer relative intensity values $v \in [0, 255]$ to user-calibrated temperature bounds: $T(v) = T_{\min} + \frac{v}{255} \cdot (T_{\max} - T_{\min})$.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-4 space-y-4">
+                    <div>
+                        <div class="flex justify-between text-xs font-semibold text-gray-300 mb-1">
+                            <span>Minimum Temperature $T_{\min}$ (&deg;C)</span>
+                            <span id="val-tmin" class="text-brand-400 font-mono">-5 &deg;C</span>
+                        </div>
+                        <input type="range" id="slider-tmin" min="-20" max="20" value="-5" step="1" class="w-full accent-brand-500" oninput="updateDemo2()">
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between text-xs font-semibold text-gray-300 mb-1">
+                            <span>Maximum Temperature $T_{\max}$ (&deg;C)</span>
+                            <span id="val-tmax" class="text-brand-400 font-mono">45 &deg;C</span>
+                        </div>
+                        <input type="range" id="slider-tmax" min="25" max="80" value="45" step="1" class="w-full accent-brand-500" oninput="updateDemo2()">
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between text-xs font-semibold text-gray-300 mb-1">
+                            <span>Pseudo-Color Palette</span>
+                            <span id="val-cmap" class="text-purple-400 font-mono">Inferno</span>
+                        </div>
+                        <select id="select-cmap" class="w-full bg-brand-panel text-xs text-gray-200 border border-brand-border rounded p-2 focus:outline-none" onchange="updateDemo2()">
+                            <option value="inferno">Inferno Colormap</option>
+                            <option value="turbo">Turbo Colormap</option>
+                            <option value="plasma">Plasma Colormap</option>
+                            <option value="grayscale">Grayscale / Mono</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between text-xs font-semibold text-gray-300 mb-1">
+                            <span>Selected Pixel Intensity ($v$)</span>
+                            <span id="val-pixel" class="text-emerald-400 font-mono">180 / 255</span>
+                        </div>
+                        <input type="range" id="slider-pixel" min="0" max="255" value="180" step="1" class="w-full accent-emerald-500" oninput="updateDemo2()">
+                    </div>
+
+                    <div class="p-3 bg-brand-panel rounded-xl border border-brand-border text-xs space-y-1">
+                        <div class="text-gray-400">Calculated Pixel Temperature:</div>
+                        <div id="temp-calc" class="text-xl font-bold text-emerald-400 font-mono">30.3 &deg;C</div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-8 flex flex-col items-center">
+                    <canvas id="radiometricCanvas" width="650" height="280" class="w-full max-w-[650px] h-[260px] bg-[#07080b] rounded-xl border border-brand-border p-2"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- DEMO 3 & DEMO 4 Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- DEMO 3: Hardware Pareto Frontier Canvas -->
+            <div class="bg-brand-card border border-brand-border rounded-2xl p-6 shadow-2xl flex flex-col justify-between">
+                <div>
+                    <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest bg-emerald-500/10 px-2.5 py-1 rounded border border-emerald-500/20">Demo 3</span>
+                    <h3 class="text-lg font-bold text-white mt-2">Hardware Pareto Frontier (VRAM vs. Latency)</h3>
+                    <p class="text-xs text-gray-400 mb-4">Interactive plot on an NVIDIA RTX A6000 GPU comparing 16-bit FP16 zero-shot vs 4-bit QLoRA models.</p>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <canvas id="paretoCanvas" width="450" height="260" class="w-full max-w-[450px] h-[240px] bg-[#07080b] rounded-xl border border-brand-border"></canvas>
+                </div>
+            </div>
+
+            <!-- DEMO 4: Weather Robustness Diagnostic -->
+            <div class="bg-brand-card border border-brand-border rounded-2xl p-6 shadow-2xl flex flex-col justify-between">
+                <div>
+                    <span class="text-xs font-bold text-rose-400 uppercase tracking-widest bg-rose-500/10 px-2.5 py-1 rounded border border-rose-500/20">Demo 4</span>
+                    <h3 class="text-lg font-bold text-white mt-2">Cross-Dataset Weather Robustness</h3>
+                    <p class="text-xs text-gray-400 mb-2">Select environmental condition to compare Top-1 accuracy across system components.</p>
+                    <div class="flex gap-2 mb-4">
+                        <button onclick="setWeather('fog')" class="px-3 py-1 text-xs bg-brand-panel hover:bg-brand-border text-brand-400 rounded border border-brand-border">Night Fog</button>
+                        <button onclick="setWeather('rain')" class="px-3 py-1 text-xs bg-brand-panel hover:bg-brand-border text-blue-400 rounded border border-brand-border">Night Rain</button>
+                        <button onclick="setWeather('clear')" class="px-3 py-1 text-xs bg-brand-panel hover:bg-brand-border text-emerald-400 rounded border border-brand-border">Day Clear</button>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <canvas id="weatherCanvas" width="450" height="220" class="w-full max-w-[450px] h-[200px] bg-[#07080b] rounded-xl border border-brand-border"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: PUBLIC DATASETS & BENCHMARK EVALUATION -->
+    <section id="datasets" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div class="mb-8 border-b border-brand-border pb-4">
+            <h2 class="text-2xl font-bold text-white">Public Thermal Datasets & Benchmark Evaluation</h2>
+            <p class="text-gray-400 text-sm mt-1">Rigorously evaluated across three public LWIR driving datasets covering unseen environmental regimes.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div class="bg-brand-card border border-brand-border p-5 rounded-xl space-y-2">
+                <div class="flex justify-between items-center">
+                    <span class="text-xs font-bold text-brand-500 uppercase tracking-wider">Primary Split</span>
+                    <span class="text-xs text-gray-400 font-mono">311 Frames</span>
+                </div>
+                <h3 class="text-lg font-bold text-white">LYNRED Thermal Test Set</h3>
+                <p class="text-xs text-gray-400">1,188 QA pairs spanning day (203) and night (108) driving sequences with dense pedestrian and vehicle instances.</p>
+            </div>
+
+            <div class="bg-brand-card border border-brand-border p-5 rounded-xl space-y-2">
+                <div class="flex justify-between items-center">
+                    <span class="text-xs font-bold text-purple-400 uppercase tracking-wider">Roadside Transfer</span>
+                    <span class="text-xs text-gray-400 font-mono">300 Frames</span>
+                </div>
+                <h3 class="text-lg font-bold text-white">NUIG C3I Thermal</h3>
+                <p class="text-xs text-gray-400">1,800 QA pairs evaluating static roadside camera perspectives across day, evening, and night lighting conditions.</p>
+            </div>
+
+            <div class="bg-brand-card border border-brand-border p-5 rounded-xl space-y-2">
+                <div class="flex justify-between items-center">
+                    <span class="text-xs font-bold text-blue-400 uppercase tracking-wider">Adverse Weather</span>
+                    <span class="text-xs text-gray-400 font-mono">300 Frames</span>
+                </div>
+                <h3 class="text-lg font-bold text-white">FLIR ADAS v2</h3>
+                <p class="text-xs text-gray-400">1,200 QA pairs benchmarking performance under extreme night fog, night rain, dawn, and un-tagged weather split.</p>
+            </div>
+        </div>
+
+        <!-- Metric Highlight Cards -->
+        <div id="benchmarks" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="bg-brand-card border border-brand-border p-5 rounded-xl">
+                <div class="text-xs font-bold text-brand-500 uppercase tracking-wider mb-1">Peak Top-1 Accuracy</div>
+                <div class="text-3xl font-extrabold text-white">61.3%</div>
+                <div class="text-xs text-gray-400 mt-1">+10.4% gain over detector standalone</div>
+            </div>
+            <div class="bg-brand-card border border-brand-border p-5 rounded-xl">
+                <div class="text-xs font-bold text-emerald-400 uppercase tracking-wider mb-1">Presence Accuracy</div>
+                <div class="text-3xl font-extrabold text-white">91.9%</div>
+                <div class="text-xs text-gray-400 mt-1">Detector-Grounded Fallback Protocol</div>
+            </div>
+            <div class="bg-brand-card border border-brand-border p-5 rounded-xl">
+                <div class="text-xs font-bold text-purple-400 uppercase tracking-wider mb-1">Statistical Test</div>
+                <div class="text-2xl font-extrabold text-white">p &le; 3.3e-14</div>
+                <div class="text-xs text-gray-400 mt-1">McNemar test with Holm-Bonferroni</div>
+            </div>
+            <div class="bg-brand-card border border-brand-border p-5 rounded-xl">
+                <div class="text-xs font-bold text-rose-400 uppercase tracking-wider mb-1">VLM Hedging Rate</div>
+                <div class="text-3xl font-extrabold text-white">0.0%</div>
+                <div class="text-xs text-gray-400 mt-1">4-bit QLoRA eliminates zero-shot refusals</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: CODE ARCHITECTURE EXPLORER -->
+    <section id="code" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div class="mb-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div>
+                <h2 class="text-2xl font-bold text-white tracking-tight">Backend Code Architecture (`studio_pipeline.py`)</h2>
+                <p class="text-gray-400 text-sm mt-1">Core implementation of 4-bit QLoRA VLM loading, IoU fusion, and grounded VQA routing.</p>
+            </div>
+            <button onclick="copyCode()" class="bg-brand-panel hover:bg-brand-border text-gray-300 text-sm px-4 py-2 rounded-lg border border-brand-border transition flex items-center space-x-2 self-start">
+                <i class="fa-regular fa-copy"></i>
+                <span id="copy-text">Copy Key Snippet</span>
+            </button>
+        </div>
+
+        <div class="bg-[#07080b] border border-brand-border rounded-xl overflow-hidden shadow-2xl">
+            <div class="bg-brand-panel px-4 py-3 border-b border-brand-border flex items-center justify-between text-xs font-mono text-gray-400">
+                <div class="flex items-center space-x-2">
+                    <span class="w-3 h-3 rounded-full bg-red-500/80 inline-block"></span>
+                    <span class="w-3 h-3 rounded-full bg-yellow-500/80 inline-block"></span>
+                    <span class="w-3 h-3 rounded-full bg-green-500/80 inline-block"></span>
+                    <span class="ml-2 text-gray-300 font-semibold">studio_pipeline.py — Dual-Pathway Routing</span>
+                </div>
+                <span>Python 3.10+ | PyTorch & Transformers</span>
+            </div>
+            <pre class="p-6 text-sm font-mono text-gray-300 overflow-x-auto code-scroll max-h-[480px] leading-relaxed"><code id="python-code"># ============================================================
+# DUAL-PATHWAY DETECTOR-VLM GROUNDING & FALLBACK ROUTING
+# ============================================================
+
+import torch
+import numpy as np
+from transformers import AutoModelForCausalLM, BitsAndBytesConfig
+from ultralytics import YOLO
+
+def initialize_thermal_vlm_studio(vlm_checkpoint="Qwen/Qwen3-VL-4B-Instruct", detector_weights="yolov8n_thermal.pt"):
+    """
+    Loads 4-bit NF4 quantized VLM backbone paired with lightweight YOLOv8n detector.
+    Peak memory allocation: ~4.24 GB VRAM on NVIDIA RTX A6000.
+    """
+    bnb_config = BitsAndBytesConfig(
+        load_in_4bit=True,
+        bnb_4bit_quant_type="nf4",
+        bnb_4bit_compute_dtype=torch.bfloat16
+    )
+    vlm_model = AutoModelForCausalLM.from_pretrained(
+        vlm_checkpoint,
+        quantization_config=bnb_config,
+        device_map="auto"
+    )
+    detector = YOLO(detector_weights)
+    return vlm_model, detector
+
+def grounded_vqa_pipeline(image_matrix, user_query, detector, vlm_model, conf_threshold=0.40):
+    """
+    Executes grounded VQA: counting/presence queries resolve deterministically 
+    from YOLO detections (0.00s latency); open-ended queries fallback to 4-bit VLM.
+    """
+    det_results = detector(image_matrix, conf=conf_threshold)[0]
+    boxes, classes = parse_yolo_outputs(det_results)
+
+    if is_quantification_query(user_query):
+        # Deterministic Grounded Answering (0.00s execution)
+        count = count_class_instances(boxes, classes, query_class=parse_target_class(user_query))
+        return f"Answer: {count} (from detections)"
+    else:
+        # Contextual Prompt Injection
+        context_prompt = f"Context: Delineated items {classes} at {boxes} | Question: {user_query}"
+        inputs = tokenizer(context_prompt, return_tensors="pt").to("cuda")
+        outputs = vlm_model.generate(**inputs, max_new_tokens=128)
+        return tokenizer.decode(outputs[0], skip_special_tokens=True)</code></pre>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-brand-border mt-16 py-8 bg-brand-panel">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-400 gap-4">
+            <div>
+                <p>&copy; 2026 Thermal VLM Studio • IEEE Conference Publication</p>
+                <p class="mt-1 text-gray-500">School of Engineering, University of Galway, Ireland & FotoNation (Tobii)</p>
+            </div>
+            <div class="flex items-center space-x-4">
+                <span>Dr. Muhammad Ali Farooq</span>
+                <span>&bull;</span>
+                <span>Prof. Peter Corcoran</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- DYNAMIC CANVAS SIMULATOR SCRIPTS -->
+    <script>
+        // -------------------------------------------------------------
+        // DEMO 1: Dual-Pathway Spatial Grounding Simulator
+        // -------------------------------------------------------------
+        let activeScene = 'dense_parking';
+
+        function presetScene(sceneType) {
+            activeScene = sceneType;
+            updateDemo1();
+        }
+
+        function updateDemo1() {
+            const tau = parseFloat(document.getElementById('slider-tau').value);
+            document.getElementById('val-tau').innerText = tau.toFixed(2);
+
+            const backbone = document.getElementById('select-backbone').value;
+            document.getElementById('val-backbone').innerText = backbone;
+
+            const mode = document.getElementById('select-mode').value;
+            document.getElementById('val-mode').innerText = mode === 'ensemble' ? 'Hybrid Ensemble' : mode === 'yolo' ? 'YOLO Standalone' : 'VLM Grounding';
+
+            const canvas = document.getElementById('groundingCanvas');
+            const ctx = canvas.getContext('2d');
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Render LWIR Background Gradient (Inferno Palette)
+            const grad = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+            grad.addColorStop(0, '#000004');
+            grad.addColorStop(0.3, '#3b0f70');
+            grad.addColorStop(0.7, '#8c2981');
+            grad.addColorStop(1, '#fe9f6d');
+            ctx.fillStyle = grad;
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            // Ground Truth Boxes Data
+            let gtBoxes = [];
+            if (activeScene === 'sparse_night') {
+                gtBoxes = [{x: 220, y: 170, w: 28, h: 55, cls: 'person'}, {x: 340, y: 160, w: 65, h: 42, cls: 'car'}];
+                document.getElementById('vqa-question').innerText = '"How many vehicles are present?"';
+            } else if (activeScene === 'dense_parking') {
+                gtBoxes = [
+                    {x: 100, y: 180, w: 22, h: 48, cls: 'person'}, {x: 140, y: 175, w: 24, h: 50, cls: 'person'},
+                    {x: 180, y: 185, w: 20, h: 45, cls: 'person'}, {x: 220, y: 178, w: 25, h: 52, cls: 'person'},
+                    {x: 290, y: 155, w: 60, h: 38, cls: 'car'}, {x: 360, y: 160, w: 58, h: 40, cls: 'car'}
+                ];
+                document.getElementById('vqa-question').innerText = '"How many pedestrians are visible?"';
+            } else {
+                gtBoxes = [{x: 150, y: 185, w: 22, h: 45, cls: 'person'}, {x: 300, y: 165, w: 55, h: 38, cls: 'car'}, {x: 400, y: 140, w: 15, h: 60, cls: 'pole'}];
+                document.getElementById('vqa-question').innerText = '"Are pedestrians and poles visible?"';
+            }
+
+            // Draw Ground Truth (Green)
+            gtBoxes.forEach(b => {
+                ctx.strokeStyle = '#10b981';
+                ctx.lineWidth = 2;
+                ctx.strokeRect(b.x, b.y, b.w, b.h);
+            });
+
+            // Draw YOLO Detections (Red) if enabled
+            let yoloCount = 0;
+            if (mode === 'yolo' || mode === 'ensemble') {
+                gtBoxes.forEach((b, idx) => {
+                    const conf = 0.85 - (idx * 0.07);
+                    if (conf >= tau && b.cls !== 'pole') {
+                        ctx.strokeStyle = '#ef4444';
+                        ctx.lineWidth = 1.5;
+                        ctx.strokeRect(b.x - 2, b.y - 2, b.w + 4, b.h + 4);
+                        yoloCount++;
+                    }
+                });
+            }
+
+            // Draw VLM Grounding (Blue) if enabled
+            if (mode === 'vlm' || mode === 'ensemble') {
+                gtBoxes.forEach(b => {
+                    if (mode === 'vlm' || (mode === 'ensemble' && b.cls === 'pole')) {
+                        ctx.strokeStyle = '#3b82f6';
+                        ctx.lineWidth = 1.5;
+                        ctx.setLineDash([4, 4]);
+                        ctx.strokeRect(b.x - 4, b.y - 4, b.w + 8, b.h + 8);
+                        ctx.setLineDash([]);
+                    }
+                });
+            }
+
+            // Update VQA response text
+            const pCount = gtBoxes.filter(b => b.cls === 'person').length;
+            const outputCount = mode === 'vlm' ? Math.max(1, pCount - 2) : pCount;
+            document.getElementById('vqa-output').innerText = `Answer: ${outputCount} pedestrians (${mode === 'vlm' ? 'VLM guess' : 'from detections'})`;
+        }
+
+        // -------------------------------------------------------------
+        // DEMO 2: Radiometric Temperature Mapper
+        // -------------------------------------------------------------
+        function updateDemo2() {
+            const tmin = parseInt(document.getElementById('slider-tmin').value);
+            const tmax = parseInt(document.getElementById('slider-tmax').value);
+            const cmap = document.getElementById('select-cmap').value;
+            const pixel = parseInt(document.getElementById('slider-pixel').value);
+
+            document.getElementById('val-tmin').innerText = tmin + ' °C';
+            document.getElementById('val-tmax').innerText = tmax + ' °C';
+            document.getElementById('val-cmap').innerText = cmap;
+            document.getElementById('val-pixel').innerText = pixel + ' / 255';
+
+            const temp = tmin + (pixel / 255.0) * (tmax - tmin);
+            document.getElementById('temp-calc').innerText = temp.toFixed(1) + ' °C';
+
+            const canvas = document.getElementById('radiometricCanvas');
+            const ctx = canvas.getContext('2d');
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Draw Temperature Line Curve
+            ctx.beginPath();
+            ctx.strokeStyle = '#f97316';
+            ctx.lineWidth = 3;
+            ctx.moveTo(50, canvas.height - 40);
+            ctx.lineTo(canvas.width - 50, 40);
+            ctx.stroke();
+
+            // Draw Selected Marker
+            const markerX = 50 + (pixel / 255.0) * (canvas.width - 100);
+            const markerY = (canvas.height - 40) - (pixel / 255.0) * (canvas.height - 80);
+
+            ctx.beginPath();
+            ctx.arc(markerX, markerY, 7, 0, Math.PI * 2);
+            ctx.fillStyle = '#a855f7';
+            ctx.fill();
+            ctx.strokeStyle = '#ffffff';
+            ctx.lineWidth = 2;
+            ctx.stroke();
+
+            // Axis labels
+            ctx.fillStyle = '#94a3b8';
+            ctx.font = '11px sans-serif';
+            ctx.fillText(`0 count (${tmin}°C)`, 40, canvas.height - 15);
+            ctx.fillText(`255 count (${tmax}°C)`, canvas.width - 120, canvas.height - 15);
+        }
+
+        // -------------------------------------------------------------
+        // DEMO 3: Pareto Frontier Plot
+        // -------------------------------------------------------------
+        function drawPareto() {
+            const canvas = document.getElementById('paretoCanvas');
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            const points = [
+                {name: 'Qwen3-VL-4B (4bit)', lat: 0.94, vram: 4.24, pareto: true},
+                {name: 'Qwen2.5-VL-7B (4bit)', lat: 0.80, vram: 5.60, pareto: true},
+                {name: 'Gemma-3-4B (4bit)', lat: 3.54, vram: 4.50, pareto: false},
+                {name: 'Llama-3.2-11B (4bit)', lat: 1.38, vram: 7.67, pareto: false},
+                {name: 'Pixtral-12B (4bit)', lat: 1.28, vram: 8.63, pareto: false}
+            ];
+
+            points.forEach(p => {
+                const x = 50 + (p.lat / 4.0) * (canvas.width - 80);
+                const y = canvas.height - 35 - (p.vram / 10.0) * (canvas.height - 60);
+
+                ctx.beginPath();
+                ctx.arc(x, y, p.pareto ? 8 : 5, 0, Math.PI * 2);
+                ctx.fillStyle = p.pareto ? '#10b981' : '#f97316';
+                ctx.fill();
+
+                ctx.fillStyle = '#e2e8f0';
+                ctx.font = '10px sans-serif';
+                ctx.fillText(p.name, x + 10, y + 4);
+            });
+
+            // Axes
+            ctx.strokeStyle = '#334155';
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(40, 15); ctx.lineTo(40, canvas.height - 30); ctx.lineTo(canvas.width - 20, canvas.height - 30);
+            ctx.stroke();
+
+            ctx.fillStyle = '#94a3b8';
+            ctx.font = '10px sans-serif';
+            ctx.fillText('Latency (s) →', canvas.width - 70, canvas.height - 10);
+            ctx.fillText('↑ Peak VRAM (GB)', 5, 12);
+        }
+
+        // -------------------------------------------------------------
+        // DEMO 4: Weather Robustness Plot
+        // -------------------------------------------------------------
+        let currentWeather = 'fog';
+
+        function setWeather(w) {
+            currentWeather = w;
+            drawWeather();
+        }
+
+        function drawWeather() {
+            const canvas = document.getElementById('weatherCanvas');
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            const stats = currentWeather === 'fog' 
+                ? [{label: 'YOLO Only', acc: 88.0}, {label: 'VLM Only', acc: 65.7}, {label: 'Dual Pathway', acc: 97.0}]
+                : currentWeather === 'rain'
+                ? [{label: 'YOLO Only', acc: 74.3}, {label: 'VLM Only', acc: 61.3}, {label: 'Dual Pathway', acc: 63.7}]
+                : [{label: 'YOLO Only', acc: 56.3}, {label: 'VLM Only', acc: 52.5}, {label: 'Dual Pathway', acc: 63.7}];
+
+            stats.forEach((s, idx) => {
+                const x = 50 + idx * 130;
+                const h = (s.acc / 100.0) * (canvas.height - 50);
+                const y = canvas.height - 25 - h;
+
+                ctx.fillStyle = idx === 2 ? '#10b981' : idx === 0 ? '#ef4444' : '#3b82f6';
+                ctx.fillRect(x, y, 60, h);
+
+                ctx.fillStyle = '#ffffff';
+                ctx.font = 'bold 11px sans-serif';
+                ctx.fillText(s.acc + '%', x + 12, y - 5);
+
+                ctx.fillStyle = '#94a3b8';
+                ctx.font = '10px sans-serif';
+                ctx.fillText(s.label, x - 5, canvas.height - 8);
+            });
+        }
+
+        // Copy Code Helper
+        function copyCode() {
+            const codeText = document.getElementById('python-code').innerText;
+            navigator.clipboard.writeText(codeText).then(() => {
+                const btnText = document.getElementById('copy-text');
+                btnText.innerText = 'Copied!';
+                setTimeout(() => { btnText.innerText = 'Copy Key Snippet'; }, 2000);
+            });
+        }
+
+        // Initialize All Simulators
+        window.onload = function() {
+            updateDemo1();
+            updateDemo2();
+            drawPareto();
+            drawWeather();
+        };
+    </script>
+</body>
+</html>
