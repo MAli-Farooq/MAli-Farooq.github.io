@@ -242,6 +242,15 @@ table.data th { color: var(--muted); font-weight: 600; }
 @media (max-width: 980px) { .hero-logo { position: static; width: 150px; margin: -40px 0 10px; text-align: left; } .logo-hint { display: none; } }
 @media (prefers-reduced-motion: reduce) { .logo-svg .lg-scan, .logo-svg .lg-lane { animation: none; } }
 
+/* ---------------------------------------------------------------- dataset links */
+a.ds-link { display: flex; flex-direction: column; color: inherit; text-decoration: none; transition: border-color .15s, transform .15s, box-shadow .15s; }
+a.ds-link:hover, a.ds-link:focus-visible { border-color: var(--accent); transform: translateY(-2px); box-shadow: var(--shadow); text-decoration: none; }
+a.ds-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+a.ds-link p { color: var(--text-2); }
+a.ds-link .tag { align-self: flex-start; }
+.ds-go { margin-top: auto; padding-top: 6px; font-weight: 600; font-size: .9rem; color: var(--accent); }
+a.ds-link:hover .ds-go { text-decoration: underline; }
+
 /* ---------------------------------------------------------------- drive simulation */
 kbd { font: 600 .8rem var(--mono); border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 6px; padding: 0 6px; background: var(--surface-2); }
 .drive-controls { margin-top: 18px; }
