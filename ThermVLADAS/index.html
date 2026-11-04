@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ThermVLADAS | Grounded Vision-Language Understanding for LWIR Driving Scenes</title>
+  <meta name="description" content="Five vision-language models adapted to long-wave infrared driving scenes, a dual detector + VLM pipeline, rigorous evaluation on LYNRED, C3I and FLIR ADAS, and the interactive Thermal VLM Studio.">
+  <meta property="og:title" content="ThermVLADAS: Grounded Vision-Language Understanding for LWIR Driving Scenes">
+  <meta property="og:description" content="QLoRA-adapted VLMs + a thermal detector for counting, presence and scene reasoning in night, fog and rain.">
+  <meta property="og:image" content="images/studio/overview.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='1' x2='0' y2='0'%3E%3Cstop offset='0' stop-color='%23d95926'/%3E%3Cstop offset='1' stop-color='%23fab219'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='16' cy='16' r='14' fill='url(%23g)'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <nav class="nav">
+      <a class="brand" href="#top"><span class="brand-dot" aria-hidden="true"></span>ThermVLADAS</a>
+      <div class="nav-links" id="navLinks">
+        <a href="#overview">Overview</a>
+        <a href="#drive">Drive</a>
+        <a href="#method">Method</a>
+        <a href="#results">Results</a>
+        <a href="#findings">Findings</a>
+        <a href="#cases">Cases</a>
+        <a href="#studio">Studio</a>
+        <a href="#datasets">Datasets</a>
+        <a href="#cite">Cite</a>
+      </div>
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle light and dark theme" title="Toggle theme">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 3a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0V4a1 1 0 0 1 1-1Zm0 15a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0v-1a1 1 0 0 1 1-1Zm9-7a1 1 0 1 1 0 2h-1a1 1 0 1 1 0-2h1ZM5 11a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2h1Zm12.66-5.66a1 1 0 0 1 0 1.41l-.71.71a1 1 0 1 1-1.41-1.41l.7-.71a1 1 0 0 1 1.42 0ZM8.46 15.54a1 1 0 0 1 0 1.41l-.71.71a1 1 0 0 1-1.41-1.41l.7-.71a1 1 0 0 1 1.42 0Zm9.9 1.41a1 1 0 0 1-1.42 1.42l-.7-.71a1 1 0 0 1 1.41-1.41l.7.7ZM8.46 8.46a1 1 0 0 1-1.42 0l-.7-.71a1 1 0 0 1 1.41-1.41l.71.7a1 1 0 0 1 0 1.42ZM12 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8Z"/></svg>
+      </button>
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ============================================================ HERO -->
+    <section class="hero" id="top">
+      <canvas id="heatCanvas" class="hero-bg" aria-hidden="true"></canvas>
+      <div class="wrap hero-inner">
+        <p class="eyebrow">Long-wave infrared &middot; Vision-language models &middot; Driver situational awareness</p>
+        <h1>ThermVLADAS<span class="h1-sub">Grounded vision-language understanding for LWIR driving scenes</span></h1>
+        <p class="authors">[Author Names] &middot; [Affiliation] &middot; 2026</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#" aria-disabled="true" title="Add the paper link">Paper (coming soon)</a>
+          <a class="btn" href="https://github.com/[your-username]/[your-repo]" title="Replace with your repository URL">Code on GitHub</a>
+          <a class="btn" href="#drive">Try the drive demo</a>
+          <a class="btn" href="#studio">Thermal VLM Studio</a>
+          <a class="btn ghost" href="#cite">BibTeX</a>
+        </div>
+        <div class="stat-row" role="list">
+          <div class="stat" role="listitem"><span class="stat-num" data-count="5">0</span><span class="stat-label">VLM backbones, 4B&ndash;12B, one QLoRA recipe</span></div>
+          <div class="stat" role="listitem"><span class="stat-num" data-count="3">0</span><span class="stat-label">thermal test sets: LYNRED, C3I, FLIR ADAS</span></div>
+          <div class="stat" role="listitem"><span class="stat-num" data-count="4188" data-sep="1">0</span><span class="stat-label">closed-form questions with human-annotated answers</span></div>
+          <div class="stat" role="listitem"><span class="stat-num" data-count="61.3" data-dec="1" data-suffix="%">0</span><span class="stat-label">best dual-pathway Top-1 on unseen LYNRED sequences</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ OVERVIEW -->
+    <section class="section" id="overview">
+      <div class="wrap two-col">
+        <div>
+          <h2>Overview</h2>
+          <p class="lead">Thermal cameras see pedestrians and vehicles at night, in glare, and in fog, where visible-light cameras fail. Vision-language models (VLMs) could turn those frames into answers a driver-assistance interface can use, but models pretrained on RGB images transfer poorly to thermal imagery: they hedge, invent colours, and miscount.</p>
+          <p>We adapt five open VLMs to LWIR imagery with an identical 4-bit QLoRA recipe and combine them with a thermal YOLOv8n detector in a <strong>dual pathway</strong>: counting and presence questions are answered deterministically from the detections, and the adapted VLM answers everything else. We evaluate every configuration on unseen LYNRED sequences and on two public datasets, C3I and FLIR ADAS v2, with human-annotated ground truth, shared question sets, bootstrap confidence intervals and paired McNemar tests, and package the pipeline in an interactive tool, <a href="#studio">Thermal VLM Studio</a>.</p>
+          <ul class="ticks">
+            <li>Adaptation removes zero-shot hedging: unusable answers drop from up to 41.5% to 0%.</li>
+            <li>The dual pathway is significantly better than the adapted VLM alone on every dataset and backbone (15 of 15).</li>
+            <li>Honest negatives: the adapted VLMs under-count dense scenes, and on the detector's own sensor (FLIR) the detector alone is best.</li>
+          </ul>
+        </div>
+        <figure class="shot">
+          <img src="images/studio/overview.jpg" alt="Thermal VLM Studio showing a night street with detected pedestrians, a car and a bicycle" loading="lazy" data-zoom>
+          <figcaption>Thermal VLM Studio on an unseen LYNRED night frame: 4 people, 1 car and 1 bicycle found in 0.1&nbsp;s.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============================================================ DRIVE SIMULATION -->
+    <section class="section" id="drive">
+      <div class="wrap">
+        <p class="eyebrow">Interactive simulation</p>
+        <h2>Take the wheel</h2>
+        <p class="lead narrow">Drive a simulated LWIR road and watch the two pathways at work. The detector updates the object feed on every frame and answers counts at once; the VLM describes the scene on its own, slower clock. Steer with <kbd>&larr;</kbd> <kbd>&rarr;</kbd> (or the buttons), and click an object to inspect it.</p>
+        <div class="controls drive-controls" role="group" aria-label="Simulation controls">
+          <button class="btn small" id="drvPlay" aria-pressed="true">Pause</button>
+          <div class="seg" id="drvCond" role="tablist" aria-label="Conditions"></div>
+          <div class="seg" id="drvFinder" role="tablist" aria-label="Object finder"></div>
+          <div class="seg" id="drvPal" role="tablist" aria-label="Colour map"></div>
+          <label class="drv-speed">Speed <input type="range" id="drvSpeed" min="20" max="90" step="5" value="50" aria-label="Speed in km/h"> <output id="drvSpeedOut">50 km/h</output></label>
+          <label class="drv-check"><input type="checkbox" id="drvBoxes" checked> Boxes</label>
+        </div>
+        <div class="drive-grid">
+          <div class="drive-main">
+            <div class="drive-view">
+              <canvas id="driveCanvas" tabindex="0" aria-label="Simulated thermal driving view with detection boxes. Use the left and right arrow keys to steer."></canvas>
+              <div class="drv-alert" id="drvAlert" role="status" aria-live="polite"></div>
+              <div class="drv-hudtop"><span id="drvCondLabel">night, clear</span> &middot; <span id="drvFinderLabel">YOLO detector</span></div>
+              <div class="drv-dash">
+                <button class="icon-btn" id="drvLeft" aria-label="Steer left">&#9664;</button>
+                <svg class="drv-wheel" id="drvWheel" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="42" fill="none" stroke="currentColor" stroke-width="9"/><circle cx="50" cy="50" r="10" fill="currentColor"/><path d="M8 50h32M60 50h32M50 60v32" stroke="currentColor" stroke-width="8" stroke-linecap="round"/></svg>
+                <div class="drv-speedo"><b id="drvKmh">50</b><span>km/h</span></div>
+                <button class="icon-btn" id="drvRight" aria-label="Steer right">&#9654;</button>
+              </div>
+            </div>
+            <div class="drive-row">
+              <div class="hud-block">
+                <h3>VLM narration <span class="tag">slow path</span></h3>
+                <div class="drv-progress" aria-hidden="true"><i id="drvVlmBar"></i></div>
+                <p class="drv-vlm" id="drvVlm">Waiting for the first description&hellip;</p>
+                <p class="hud-note">Time-compressed &times;4: in the Studio, one scene description took about 25&nbsp;s on one GPU.</p>
+              </div>
+              <div class="hud-block">
+                <h3>Ask the co-pilot</h3>
+                <div class="drv-ask" id="drvAsk"></div>
+                <ol class="drv-log" id="drvLog" aria-live="polite"></ol>
+              </div>
+            </div>
+          </div>
+          <aside class="drive-hud" aria-label="Situational awareness feeds">
+            <div class="hud-block">
+              <h3>Detector feed <span class="tag">every frame</span></h3>
+              <div class="drv-counts" id="drvCounts"></div>
+              <table class="drv-table"><thead><tr><th>ID</th><th>Class</th><th>Where</th><th>Range</th><th title="Mean / max relative intensity (0-255)">Int.</th></tr></thead><tbody id="drvRows"></tbody></table>
+            </div>
+            <div class="hud-block">
+              <h3>Intensity feed</h3>
+              <canvas id="drvSpark" height="90" aria-label="Hottest detected object and scene mean intensity over the last 20 seconds"></canvas>
+              <div class="drv-legend"><span><i class="k-hot"></i>hottest detection (max)</span><span><i class="k-mean"></i>scene mean</span></div>
+              <p class="hud-note">Relative 8-bit intensity (0&ndash;255) of an uncooled microbolometer, not calibrated temperature.</p>
+            </div>
+            <div class="hud-block">
+              <h3>Object inspector</h3>
+              <div id="drvInspect" class="drv-inspect">Click a box in the view.</div>
+            </div>
+          </aside>
+        </div>
+        <p class="small-print muted drive-disclaimer"><strong>Illustrative simulation.</strong> The road and objects are generated in your browser, and the detector and VLM are emulated from the behaviour we measured: detections need confidence &ge; 0.40, recall falls for small and low-contrast objects, the detector has no pole class (poles come only from VLM grounding in Ensemble mode), and counts are answered from detections. The text is not model output and the page is not a real-time benchmark. See <a href="#cases">Cases</a> and <a href="#studio">Studio</a> for real outputs.</p>
+      </div>
+    </section>
+
+    <!-- ============================================================ METHOD -->
+    <section class="section alt" id="method">
+      <div class="wrap">
+        <h2>Method</h2>
+        <p class="lead narrow">Two complementary pathways share one thermal frame and are combined on their outputs, not inside either network. Select a block to see what it does.</p>
+        <div class="pipeline-wrap">
+          <svg id="pipeline" viewBox="0 0 1000 360" role="img" aria-label="Dual-pathway pipeline diagram"></svg>
+          <aside class="pipe-info" id="pipeInfo" aria-live="polite"></aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ RESULTS -->
+    <section class="section" id="results">
+      <div class="wrap">
+        <h2>Results explorer</h2>
+        <p class="lead narrow">Every system answers the same questions per test set. Switch dataset and metric; hover a bar for its value. The dashed line marks the YOLO detector on its own.</p>
+        <div class="viz-card">
+          <div class="controls" role="group" aria-label="Chart controls">
+            <div class="seg" id="dsSeg" role="tablist" aria-label="Dataset"></div>
+            <div class="seg" id="metricSeg" role="tablist" aria-label="Metric"></div>
+            <button class="btn small" id="tableBtn" aria-pressed="false">Table view</button>
+          </div>
+          <p class="ds-note" id="dsNote"></p>
+          <div class="legend" id="resLegend"></div>
+          <div class="chart" id="resChart"></div>
+          <div class="table-wrap" id="resTable" hidden></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ FINDINGS -->
+    <section class="section alt" id="findings">
+      <div class="wrap">
+        <h2>Key findings</h2>
+        <div class="cards" id="findingCards"></div>
+
+        <div class="two-col charts-row">
+          <div class="viz-card">
+            <h3>Fine-tuned VLMs under-count</h3>
+            <p class="muted">Counting accuracy of the QLoRA models by true count. Counts in the training captions mention only salient objects, so the adapted models learn to answer small numbers.</p>
+            <div class="seg" id="biasSeg" role="tablist" aria-label="Dataset"></div>
+            <div class="legend" id="biasLegend"></div>
+            <div class="chart" id="biasChart"></div>
+          </div>
+          <div class="viz-card">
+            <h3>Fine-tuning can erase box grounding</h3>
+            <p class="muted">Share of unseen LYNRED frames on which each QLoRA model still returns bounding boxes when asked to localize objects. Only Qwen3-VL-4B keeps useful grounding.</p>
+            <div class="chart" id="groundChart"></div>
+          </div>
+        </div>
+
+        <div class="viz-card weather">
+          <h3>Fog and rain at night (FLIR ADAS)</h3>
+          <p class="muted">Top-1 accuracy on the night videos by weather tag (two videos and 300 questions per condition, so treat these as descriptive).</p>
+          <div class="seg" id="weatherSeg" role="tablist" aria-label="Systems"></div>
+          <div class="legend" id="weatherLegend"></div>
+          <div class="chart" id="weatherChart"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ CASES -->
+    <section class="section" id="cases">
+      <div class="wrap">
+        <h2>Visual question answering cases</h2>
+        <p class="lead narrow">Real test frames with human boxes (green), YOLO detections (red), and every system's parsed answer (correct or wrong). Click a frame to open it; use the arrow keys to browse.</p>
+        <div class="controls">
+          <div class="seg" id="caseSeg" role="tablist" aria-label="Dataset"></div>
+        </div>
+        <div class="case-grid" id="caseGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============================================================ STUDIO -->
+    <section class="section alt" id="studio">
+      <div class="wrap">
+        <h2>Thermal VLM Studio</h2>
+        <p class="lead narrow">The end product: an interactive tool built on exactly the evaluated components. Numbers come from detections shown on screen; the VLM is used for description and reasoning.</p>
+        <div class="tour">
+          <div class="tour-tabs" id="tourTabs" role="tablist" aria-label="Studio features"></div>
+          <figure class="tour-fig">
+            <img id="tourImg" src="images/studio/overview.jpg" alt="" data-zoom>
+            <figcaption id="tourCap"></figcaption>
+          </figure>
+        </div>
+        <div class="latency">
+          <div class="lat"><span class="lat-num">0.1&nbsp;s</span><span>YOLO object finding</span></div>
+          <div class="lat"><span class="lat-num">0.0&nbsp;s</span><span>count / presence answer from detections</span></div>
+          <div class="lat"><span class="lat-num">24.7&nbsp;s</span><span>VLM scene description</span></div>
+          <div class="lat"><span class="lat-num">4.1&nbsp;GB</span><span>GPU memory, Qwen3-VL-4B QLoRA</span></div>
+        </div>
+        <p class="muted small-print">Interactive response times on one NVIDIA RTX A6000, not a real-time benchmark. The tool is a research prototype for analysis and situational awareness with a human in the loop.</p>
+        <div class="scenario-grid">
+          <article class="scenario"><h3>Night &amp; low-visibility driving</h3><p>Answer &ldquo;is there a person ahead?&rdquo; from detector evidence through darkness and fog; keep the VLM for slower descriptive feedback.</p></article>
+          <article class="scenario"><h3>ADAS development &amp; data curation</h3><p>Batch-screen recordings, export per-frame counts to CSV, and compare object finders to see what a detector misses.</p></article>
+          <article class="scenario"><h3>Roadside &amp; infrastructure monitoring</h3><p>Fixed thermal cameras counting pedestrians, vehicles and poles at night, as in the C3I roadside recordings.</p></article>
+          <article class="scenario"><h3>Robotics &amp; UAVs</h3><p>The same detector + VLM design extends to search and rescue or inspection in smoke and darkness (not evaluated here).</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ DATASETS -->
+    <section class="section" id="datasets">
+      <div class="wrap">
+        <h2>Test sets</h2>
+        <div class="cards ds-cards">
+          <article class="card">
+            <span class="tag">primary</span>
+            <h3>LYNRED (unseen sequences)</h3>
+            <p>311 frames from two recording sequences never used in training: 203 day / 108 night. Human-box counts for person and car; 1,188 questions.</p>
+          </article>
+          <article class="card">
+            <span class="tag">public &middot; cross-dataset</span>
+            <h3>C3I (NUIG)</h3>
+            <p>300 frames, day / evening / night, roadside and vehicle-mounted cameras. Person, car and pole, plus JSON-count questions; 1,800 questions.</p>
+          </article>
+          <article class="card">
+            <span class="tag">public &middot; cross-dataset</span>
+            <h3>FLIR ADAS v2 (test videos)</h3>
+            <p>300 frames from the held-out test split: night fog, night rain, day, dawn. Person and car; 1,200 questions.</p>
+          </article>
+        </div>
+        <details class="limits">
+          <summary>Limitations we report</summary>
+          <ul>
+            <li>Training counts were parsed from automatic captions, which under-report objects; the adapted VLMs inherit this bias.</li>
+            <li>Captions generated by the adapted models reproduce errors of their training captions; caption metrics measure agreement with that style.</li>
+            <li>The dual pathway helps over the detector alone only where detector recall is low; on FLIR, deferring undetected classes to the VLM hurts.</li>
+            <li>Intensities are relative 8-bit values, not calibrated temperatures. The VLM is not real-time; the tool is not validated for safety-critical use.</li>
+          </ul>
+        </details>
+      </div>
+    </section>
+
+    <!-- ============================================================ CITE -->
+    <section class="section alt" id="cite">
+      <div class="wrap">
+        <h2>Citation</h2>
+        <div class="bib">
+          <button class="btn small copy-btn" id="copyBib">Copy</button>
+<pre id="bibtex">@article{thermvladas2026,
+  title   = {ThermVLADAS: Grounded Vision-Language Understanding
+             for LWIR Driving Scenes},
+  author  = {[Author Names]},
+  journal = {[Venue]},
+  year    = {2026}
+}</pre>
+        </div>
+        <p class="muted small-print">Datasets: LYNRED Mobility Dataset V1, C3I Thermal Automotive Dataset (NUIG), Teledyne FLIR ADAS v2. Please cite and respect their licenses.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">ThermVLADAS &middot; 2026 &middot; Built as a static page for GitHub Pages.</div>
+  </footer>
+
+  <div class="tooltip" id="tooltip" role="tooltip" hidden></div>
+  <div class="lightbox" id="lightbox" hidden aria-modal="true" role="dialog" aria-label="Case viewer">
+    <button class="icon-btn lb-close" id="lbClose" aria-label="Close">&times;</button>
+    <button class="icon-btn lb-prev" id="lbPrev" aria-label="Previous">&#8249;</button>
+    <figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+    <button class="icon-btn lb-next" id="lbNext" aria-label="Next">&#8250;</button>
+  </div>
+
+  <script src="assets/data.js"></script>
+  <script src="assets/cases.js"></script>
+  <script src="assets/app.js"></script>
+  <script src="assets/drive.js"></script>
+</body>
+</html>
