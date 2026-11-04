@@ -93,6 +93,38 @@
     size(); window.addEventListener("resize", size); draw();
   })();
 
+  /* ------------------------------------------------------------ interactive logo */
+  (function logo() {
+    const box = $("#heroLogo"); if (!box) return;
+    const svg = $(".logo-svg", box), blob = $(".lg-blob", svg), hint = $("#logoHint");
+    const MAPS = [
+      ["Inferno", ["#fcffa4", "#f98e09", "#bc3754", "#57106e", "#000004"]],
+      ["White-hot", ["#ffffff", "#d6d6d6", "#8a8a8a", "#3a3a3a", "#000000"]],
+      ["Black-hot", ["#000000", "#3a3a3a", "#8a8a8a", "#d6d6d6", "#ffffff"]],
+      ["Ironbow", ["#fffbe0", "#ffd02a", "#f2621b", "#a1137e", "#14045c"]],
+    ];
+    let mi = 0;
+    const home = [122, 118];
+    const setBlob = (x, y) => { blob.setAttribute("cx", x.toFixed(1)); blob.setAttribute("cy", y.toFixed(1)); };
+    // the heat follows the pointer anywhere in the hero, limited to the lens
+    $(".hero").addEventListener("pointermove", (e) => {
+      const r = svg.getBoundingClientRect();
+      const dx = (e.clientX - (r.left + r.width / 2)) / r.width, dy = (e.clientY - (r.top + r.height / 2)) / r.height;
+      const d = Math.hypot(dx, dy), k = Math.min(1, 0.55 / Math.max(d, 1e-6));
+      setBlob(100 + dx * k * 80, 100 + dy * k * 80);
+      box.classList.toggle("active", d < 0.75);
+    });
+    $(".hero").addEventListener("pointerleave", () => { setBlob(...home); box.classList.remove("active"); });
+    const cycle = () => {
+      mi = (mi + 1) % MAPS.length;
+      const [name, cols] = MAPS[mi];
+      cols.forEach((c, i) => $(".lg-s" + i, svg).setAttribute("stop-color", c));
+      hint.textContent = name + " \u00b7 click to change";
+    };
+    svg.addEventListener("click", cycle);
+    svg.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); cycle(); } });
+  })();
+
   /* ------------------------------------------------------------ tooltip */
   const tip = $("#tooltip");
   function showTip(html, ev) {

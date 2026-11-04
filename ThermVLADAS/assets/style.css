@@ -217,6 +217,31 @@ table.data th { color: var(--muted); font-weight: 600; }
 .footer { padding: 30px 0; color: var(--muted); font-size: .88rem; border-top: 1px solid var(--line); }
 
 /* ---------------------------------------------------------------- responsive */
+/* ---------------------------------------------------------------- logo */
+.brand-logo { width: 28px; height: 28px; flex: none; overflow: visible; }
+.brand-logo .lg-scan { transform-origin: 100px 100px; transition: transform .6s ease; }
+.brand:hover .brand-logo .lg-scan { transform: rotate(240deg); }
+.hero-logo { position: absolute; right: 20px; top: -20px; width: 250px; text-align: center; }
+.logo-svg { width: 100%; height: auto; overflow: visible; cursor: pointer; filter: drop-shadow(0 0 28px rgba(250, 178, 25, .25)); transition: transform .25s ease; }
+.logo-svg:hover { transform: scale(1.03); }
+.logo-svg:focus-visible { outline: 2px solid var(--accent); outline-offset: 6px; border-radius: 50%; }
+.logo-svg .lg-scan { transform-origin: 100px 100px; animation: lgspin 6s linear infinite; }
+.hero-logo.active .lg-scan { animation-duration: 1.6s; }
+.logo-svg .lg-blob { transition: cx .25s ease-out, cy .25s ease-out; }
+.logo-svg .lg-box { transform-origin: 128px 127px; transition: transform .3s ease, opacity .3s; transform: scale(1.35); opacity: .4; }
+.hero-logo.active .lg-box, .logo-svg:focus .lg-box { transform: scale(1); opacity: 1; }
+.logo-svg .lg-tag { opacity: 0; transform: translateY(6px); transition: opacity .3s, transform .3s; }
+.hero-logo.active .lg-tag, .logo-svg:focus .lg-tag { opacity: 1; transform: none; }
+.logo-svg .lg-lane { animation: lglane .9s linear infinite; }
+.logo-svg .lg-tail { transform-origin: 140px 165px; transition: transform .3s ease; }
+.hero-logo.active .lg-tail { transform: scale(1.08) rotate(-3deg); }
+.logo-hint { display: block; margin-top: 4px; font: 600 .7rem var(--mono); text-transform: uppercase; letter-spacing: .1em; color: var(--muted); }
+@keyframes lgspin { to { transform: rotate(360deg); } }
+@keyframes lglane { to { stroke-dashoffset: -17; } }
+@media (max-width: 1100px) { .hero-logo { width: 200px; top: 0; } }
+@media (max-width: 980px) { .hero-logo { position: static; width: 150px; margin: -40px 0 10px; text-align: left; } .logo-hint { display: none; } }
+@media (prefers-reduced-motion: reduce) { .logo-svg .lg-scan, .logo-svg .lg-lane { animation: none; } }
+
 /* ---------------------------------------------------------------- drive simulation */
 kbd { font: 600 .8rem var(--mono); border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 6px; padding: 0 6px; background: var(--surface-2); }
 .drive-controls { margin-top: 18px; }
