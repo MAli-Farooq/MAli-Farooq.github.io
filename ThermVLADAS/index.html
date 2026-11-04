@@ -7,8 +7,9 @@
   <meta name="description" content="Five vision-language models adapted to long-wave infrared driving scenes, a dual detector + VLM pipeline, rigorous evaluation on LYNRED, C3I and FLIR ADAS, and the interactive Thermal VLM Studio.">
   <meta property="og:title" content="ThermVLADAS: Grounded Vision-Language Understanding for LWIR Driving Scenes">
   <meta property="og:description" content="QLoRA-adapted VLMs + a thermal detector for counting, presence and scene reasoning in night, fog and rain.">
-  <meta property="og:image" content="images/studio/overview.jpg">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='1' x2='0' y2='0'%3E%3Cstop offset='0' stop-color='%23d95926'/%3E%3Cstop offset='1' stop-color='%23fab219'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='16' cy='16' r='14' fill='url(%23g)'/%3E%3C/svg%3E">
+  <meta property="og:image" content="https://mali-farooq.github.io/ThermVLADAS/images/studio/overview.jpg">
+  <meta property="og:url" content="https://mali-farooq.github.io/ThermVLADAS/">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
@@ -18,7 +19,29 @@
 
   <header class="topbar">
     <nav class="nav">
-      <a class="brand" href="#top"><span class="brand-dot" aria-hidden="true"></span>ThermVLADAS</a>
+      <a class="brand" href="#top"><svg class="brand-logo" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <defs>
+    <radialGradient id="nvHeat"><stop class="lg-s0" offset="0" stop-color="#fcffa4"/><stop class="lg-s1" offset=".28" stop-color="#f98e09"/><stop class="lg-s2" offset=".55" stop-color="#bc3754"/><stop class="lg-s3" offset=".8" stop-color="#57106e"/><stop class="lg-s4" offset="1" stop-color="#000004" stop-opacity="0"/></radialGradient>
+    <linearGradient id="nvRing" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe08a"/><stop offset=".45" stop-color="#fab219"/><stop offset="1" stop-color="#d95926"/></linearGradient>
+    <clipPath id="nvClip"><circle cx="100" cy="100" r="80"/></clipPath>
+  </defs>
+  <path class="lg-tail" d="M150 158 L190 192 L132 172 Z" fill="url(#nvRing)"/>
+  <circle cx="100" cy="100" r="86" fill="#07040d"/>
+  <g clip-path="url(#nvClip)">
+    <circle class="lg-blob" cx="122" cy="118" r="70" fill="url(#nvHeat)"/>
+    <path d="M100 104 L18 184 L182 184 Z" fill="#000004" opacity=".55"/>
+    <path class="lg-lane" d="M100 108 L100 184" stroke="#fcffa4" stroke-opacity=".55" stroke-width="3" stroke-dasharray="8 9"/>
+    <path d="M100 104 L28 184 M100 104 L172 184" stroke="#fab219" stroke-opacity=".35" stroke-width="2"/>
+    <g class="lg-ped" fill="#fffbe0" stroke="#000004" stroke-opacity=".45" stroke-width="1.5">
+      <circle cx="128" cy="104" r="6"/>
+      <path d="M121 113 h14 l2 22 h-5 l-1 24 h-4 l-1-17 l-1 17 h-4 l-1-24 h-5 z"/>
+    </g>
+    <path class="lg-box" d="M112 100 v-8 h8 M136 92 h8 v8 M144 154 v8 h-8 M120 162 h-8 v-8" fill="none" stroke="#1baf7a" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <circle cx="100" cy="100" r="86" fill="none" stroke="url(#nvRing)" stroke-width="7"/>
+  <circle class="lg-scan" cx="100" cy="100" r="96" fill="none" stroke="#fab219" stroke-width="3" stroke-linecap="round" stroke-dasharray="70 534" opacity=".85"/>
+  
+</svg>ThermVLADAS</a>
       <div class="nav-links" id="navLinks">
         <a href="#overview">Overview</a>
         <a href="#drive">Drive</a>
@@ -44,12 +67,35 @@
     <section class="hero" id="top">
       <canvas id="heatCanvas" class="hero-bg" aria-hidden="true"></canvas>
       <div class="wrap hero-inner">
+        <div class="hero-logo" id="heroLogo"><svg class="logo-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="button" tabindex="0" aria-label="ThermVLADAS logo. Move the pointer to steer the heat, click to change the colour map.">
+  <defs>
+    <radialGradient id="hlHeat"><stop class="lg-s0" offset="0" stop-color="#fcffa4"/><stop class="lg-s1" offset=".28" stop-color="#f98e09"/><stop class="lg-s2" offset=".55" stop-color="#bc3754"/><stop class="lg-s3" offset=".8" stop-color="#57106e"/><stop class="lg-s4" offset="1" stop-color="#000004" stop-opacity="0"/></radialGradient>
+    <linearGradient id="hlRing" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe08a"/><stop offset=".45" stop-color="#fab219"/><stop offset="1" stop-color="#d95926"/></linearGradient>
+    <clipPath id="hlClip"><circle cx="100" cy="100" r="80"/></clipPath>
+  </defs>
+  <path class="lg-tail" d="M150 158 L190 192 L132 172 Z" fill="url(#hlRing)"/>
+  <circle cx="100" cy="100" r="86" fill="#07040d"/>
+  <g clip-path="url(#hlClip)">
+    <circle class="lg-blob" cx="122" cy="118" r="70" fill="url(#hlHeat)"/>
+    <path d="M100 104 L18 184 L182 184 Z" fill="#000004" opacity=".55"/>
+    <path class="lg-lane" d="M100 108 L100 184" stroke="#fcffa4" stroke-opacity=".55" stroke-width="3" stroke-dasharray="8 9"/>
+    <path d="M100 104 L28 184 M100 104 L172 184" stroke="#fab219" stroke-opacity=".35" stroke-width="2"/>
+    <g class="lg-ped" fill="#fffbe0" stroke="#000004" stroke-opacity=".45" stroke-width="1.5">
+      <circle cx="128" cy="104" r="6"/>
+      <path d="M121 113 h14 l2 22 h-5 l-1 24 h-4 l-1-17 l-1 17 h-4 l-1-24 h-5 z"/>
+    </g>
+    <path class="lg-box" d="M112 100 v-8 h8 M136 92 h8 v8 M144 154 v8 h-8 M120 162 h-8 v-8" fill="none" stroke="#1baf7a" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <circle cx="100" cy="100" r="86" fill="none" stroke="url(#hlRing)" stroke-width="7"/>
+  <circle class="lg-scan" cx="100" cy="100" r="96" fill="none" stroke="#fab219" stroke-width="3" stroke-linecap="round" stroke-dasharray="70 534" opacity=".85"/>
+  <g class="lg-tag"><rect x="104" y="70" width="58" height="16" rx="4" fill="#1baf7a"/><text x="133" y="82" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="700" fill="#fff">person</text></g>
+</svg><span class="logo-hint" id="logoHint">click to change colour map</span></div>
         <p class="eyebrow">Long-wave infrared &middot; Vision-language models &middot; Driver situational awareness</p>
         <h1>ThermVLADAS<span class="h1-sub">Grounded vision-language understanding for LWIR driving scenes</span></h1>
         <p class="authors">[Muhammad Ali Farooq] &middot; [Research Fellow @ University of Galway] &middot; 2026</p>
         <div class="cta-row">
           <a class="btn primary" href="#" aria-disabled="true" title="Add the paper link">Paper (coming soon)</a>
-          <a class="btn" href="https://github.com/[your-username]/[your-repo]" title="Replace with your repository URL">Code on GitHub</a>
+          <a class="btn" href="https://github.com/MAli-Farooq/MAli-Farooq.github.io/tree/main/ThermVLADAS">Code on GitHub</a>
           <a class="btn" href="#drive">Try the drive demo</a>
           <a class="btn" href="#studio">Thermal VLM Studio</a>
           <a class="btn ghost" href="#cite">BibTeX</a>
