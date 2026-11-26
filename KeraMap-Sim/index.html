@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Keratoconus Repair Simulator</title>
+<style>
+:root{color-scheme:light;--page:#f9f9f7;--surface:#fcfcfb;--ink:#0b0b0b;--ink2:#52514e;--muted:#898781;--grid:#e1e0d9;--axis:#c3c2b7;--ring:rgba(11,11,11,.10);
+--uni:#2a78d6;--cone:#eb6834;--opt:#1baf7a;--warn:#fab219;--mid:#f0efec}
+@media (prefers-color-scheme:dark){:root{color-scheme:dark;--page:#0d0d0d;--surface:#1a1a19;--ink:#f0efec;--ink2:#c3c2b7;--grid:#2c2c2a;--axis:#383835;--ring:rgba(255,255,255,.10);
+--uni:#3987e5;--cone:#d95926;--opt:#199e70;--mid:#383835}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--page);color:var(--ink);font:14px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif}
+header{padding:16px 20px 0}h1{font-size:20px;margin:0}h2{font-size:15px;margin:0 0 2px}
+p.sub{margin:2px 0 10px;color:var(--ink2);font-size:12.5px}
+.warn{border-left:4px solid var(--warn);background:var(--surface);padding:8px 12px;margin:10px 0 0;font-size:13px}
+main{display:grid;grid-template-columns:290px minmax(0,1fr);gap:16px;padding:16px 20px 30px}
+@media (max-width:860px){main{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--ring);border-radius:8px;padding:14px;margin-bottom:16px;min-width:0}
+details{border-top:1px solid var(--grid);padding:6px 0}summary{cursor:pointer;font-weight:600}
+label{display:block;margin:8px 0 0;font-size:12.5px;color:var(--ink2)}
+label output{float:right;color:var(--ink);font-variant-numeric:tabular-nums}
+input[type=range]{width:100%}select,button{font:inherit;color:var(--ink);background:var(--page);border:1px solid var(--axis);border-radius:6px;padding:6px 8px}
+select{width:100%}button{cursor:pointer;margin:6px 6px 0 0}button:disabled{opacity:.5;cursor:default}
+#status{font-size:12px;color:var(--ink2);min-height:18px;margin-top:6px}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+th,td{padding:6px 8px;border-bottom:1px solid var(--grid);text-align:right;font-size:13px}th:first-child,td:first-child{text-align:left;white-space:nowrap}th{color:var(--ink2);font-weight:600}
+.key{display:inline-block;width:14px;height:3px;vertical-align:middle;margin-right:6px}
+.scroll{overflow-x:auto}
+.maps{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+figure{margin:0;text-align:center}figcaption{font-size:12.5px;margin-bottom:4px}
+canvas{width:100%;max-width:240px;height:auto}
+.scale{display:flex;align-items:center;gap:8px;justify-content:center;font-size:12px;color:var(--ink2);margin-top:8px}
+.bar{width:180px;height:10px;border-radius:3px}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px}.two>.card{margin:0}.two{margin-bottom:16px}
+svg{width:100%;height:auto;display:block}svg text{fill:var(--muted);font-size:11px}
+.legend{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12px;color:var(--ink2);margin-bottom:4px}
+.row{display:flex;flex-wrap:wrap;gap:0 6px;align-items:center;margin-bottom:8px}.row button{margin:4px 0 0}
+button[aria-pressed="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+label.inline{margin:4px 0 0 8px;display:inline-flex;gap:5px;align-items:center}
+.eyebox{position:relative;border-radius:8px;overflow:hidden;background:#0e0f12}
+canvas#eye{display:block;width:100%;max-width:none;height:min(62vh,500px);min-height:300px;touch-action:none;cursor:grab}
+#eyeLabel{position:absolute;left:10px;top:8px;color:#f0efec;font-size:12.5px;pointer-events:none;white-space:pre-line;text-shadow:0 1px 3px #000}
+#tip{position:fixed;display:none;pointer-events:none;background:var(--surface);border:1px solid var(--axis);border-radius:6px;padding:6px 9px;font-size:12px;box-shadow:0 2px 8px rgba(0,0,0,.15);z-index:5;white-space:nowrap}
+</style>
+</head>
+<body>
+<header>
+  <h1>Image-guided corneal repair: scenario simulator</h1>
+  <div class="warn"><strong>Illustrative simulation.</strong> Shapes, material values and protein response are assumed. It uses a simplified shell model and thin-element optics, with no patient or laboratory data. It does not show that any protein or treatment works.</div>
+</header>
+<main>
+  <aside>
+    <div class="card" id="controls">
+      <label>Repair assumption
+        <select id="mode">
+          <option value="budget">A: matched stiffness budget</option>
+          <option value="delivery">B: matched protein dose (transport)</option>
+        </select>
+      </label>
+      <div id="sliders"></div>
+      <label>Spectacle correction removed
+        <select id="correction">
+          <option value="spherocyl">Sphere and cylinder</option>
+          <option value="sphere">Sphere only</option>
+          <option value="none">None (tilt only)</option>
+        </select>
+      </label>
+      <button id="reset">Proposal figure cone</button><button id="mild">Mild cone</button>
+      <div id="status" role="status"></div>
+    </div>
+  </aside>
+  <section>
+    <div class="card" id="eyeCard">
+      <h2>3D human eye</h2>
+      <p class="sub">Rendered anatomical model, not a photograph or patient scan. Drag to rotate. Only the corneal shape comes from the simulation.</p>
+      <div class="row" id="eyeScen" role="group" aria-label="Scenario shown on the eye"></div>
+      <div class="eyebox"><canvas id="eye" role="img" aria-label="Three-dimensional human eye"></canvas><div id="eyeLabel"></div></div>
+      <div class="row" role="group" aria-label="View">
+        <button data-view="front">Front</button><button data-view="angle">Angled</button><button data-view="side">Side profile</button><button data-view="section">Cut section</button>
+        <label class="inline"><input type="checkbox" id="eyeHeat"> Shape-change colours</label>
+        <label class="inline"><input type="checkbox" id="eyeRings"> Reflected rings</label>
+      </div>
+      <label for="eyeMag">Magnification of the difference from healthy<output id="eyeMagOut"></output></label>
+      <input type="range" id="eyeMag" min="1" max="10" step="1" value="4">
+      <p class="sub" id="eyeNote"></p>
+    </div>
+    <div class="card">
+      <h2>Scenario comparison</h2>
+      <p class="sub" id="optNote"></p>
+      <div class="scroll"><table id="results"></table></div>
+      <button id="uncert">Run uncertainty (60 samples)</button><button id="csv">Download results (CSV)</button>
+      <div class="scroll"><table id="uncertTable"></table></div>
+    </div>
+    <div class="card">
+      <h2>Front surface minus healthy reference (µm)</h2>
+      <p class="sub">Central 8 mm. Red sits further out than healthy, blue further in. Dashed circle: cone half-maximum.</p>
+      <div class="maps" id="heightMaps"></div><div class="scale" id="heightScale"></div>
+    </div>
+    <div class="card">
+      <h2>Added stiffness factor</h2>
+      <p class="sub">Hypothetical change added to the weakened stiffness factor (healthy = 1). Cross: footprint centre.</p>
+      <div class="maps" id="stiffMaps"></div><div class="scale" id="stiffScale"></div>
+    </div>
+    <div class="two">
+      <div class="card"><h2>Contrast transfer (MTF)</h2><p class="sub">Higher is better. Geometric rays multiplied by the diffraction limit.</p><div id="mtfChart"></div></div>
+      <div class="card"><h2>Section through the cone centre</h2><p class="sub">Front-surface height minus healthy (µm) along x.</p><div id="secChart"></div></div>
+    </div>
+    <div class="card">
+      <h2>Predicted blur of a test letter</h2>
+      <p class="sub" id="blurNote"></p>
+      <div class="maps" id="blur"></div>
+    </div>
+    <div class="two">
+      <div class="card"><h2>Protein in the stroma over time</h2><p class="sub">Depth average, free plus bound, relative to the starting reservoir. Used only in mode B.</p><div id="timeChart"></div></div>
+      <div class="card"><h2>Protein by depth at the final time</h2><p class="sub">0 µm is the front of the stroma. Epithelium acts as a surface barrier.</p><div id="depthChart"></div></div>
+    </div>
+  </section>
+</main>
+<div id="tip"></div>
+<script src="model.js"></script>
+<script src="eye3d.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
